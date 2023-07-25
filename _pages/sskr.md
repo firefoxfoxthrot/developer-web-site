@@ -113,8 +113,7 @@ creating a more complex procedure.
     <td width="50%">
       <b>SSKR in Blockchain Commons Technology Overview:</b>
 
-<iframe width="50%" src="https://www.youtube.com/embed/RYgOFSdUqWY?start=1612s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+{% include video id="RYgOFSdUqWY?start=1612s" provider="youtube" %}
 
     </td>
     <td width="50%">
