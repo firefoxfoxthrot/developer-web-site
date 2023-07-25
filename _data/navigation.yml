@@ -7,3 +7,10 @@ main:
     url: /tags/
   - title: "About"
     url: /about/
+seed_recovery:
+  - title: "SSKR"
+    url: /sskr/
+  - title: "CSR"
+    url: /csr/
+  - title: "CKM"
+    url: /ckm/
