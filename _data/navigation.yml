@@ -12,8 +12,9 @@ seedrecovery:
     children:
     - title: "SSKR"
       url: /sskr/
-    - title: "CSR"
+    - title: "CSR: Collaborative Seed Recovery"
       url: /csr/
-    - title: "CKM"
+    - title: "CKM: Collaborative Key Management"
       url: /ckm/
-
+    - title "#SmartCustody"
+      url: "https://www.smartcustody.com"
