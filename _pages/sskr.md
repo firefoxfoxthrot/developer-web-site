@@ -120,7 +120,7 @@ creating a more complex procedure.
     <td width="50%">
       <b>Early Demo Video:</b>
 
-<iframe width="50%" src="https://www.youtube.com/embed/PIND7J096U8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{% include video id="PIND7J096U8" provider="youtube" %}
 
     </td>
   </tr>
