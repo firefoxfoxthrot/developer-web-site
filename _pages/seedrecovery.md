@@ -10,6 +10,7 @@ hide_description: true
 classes:
   - wide
 permalink: /seedrecovery/
+author_profile: false
 sidebar:
   nav: seedrecovery
 ---

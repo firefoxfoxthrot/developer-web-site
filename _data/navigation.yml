@@ -8,9 +8,11 @@ main:
   - title: "About"
     url: /about/
 seedrecovery:
-  - title: "SSKR"
-    url: /sskr/
-  - title: "CSR"
-    url: /csr/
-  - title: "CKM"
-    url: /ckm/
+  - title: Seed Recovery
+    children:
+    - title: "SSKR"
+      url: /sskr/
+    - title: "CSR"
+      url: /csr/
+    - title: "CKM"
+      url: /ckm/
