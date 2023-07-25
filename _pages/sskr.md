@@ -12,7 +12,6 @@ classes:
 permalink: /sskr/
 sidebar:
   nav: sskr
-  nav: seedrecovery
 ---
 
 ## Overview

@@ -23,3 +23,5 @@ sskr:
     children:
     - title: "Intro to SSKR"
       url: /sskr/
+    - title "Return to Seed Recovery"
+      url: /seedrecovery/
