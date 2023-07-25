@@ -18,3 +18,8 @@ seedrecovery:
       url: /ckm/
     - title: "Smart Custody"
       url: www.smartcustody.com
+sskr:
+  - title: SSKR
+    children:
+    - title: "Intro to SSKR"
+      url: /sskr/
