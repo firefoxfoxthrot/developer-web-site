@@ -16,5 +16,4 @@ seedrecovery:
       url: /csr/
     - title: "CKM"
       url: /ckm/
-    - title "Smart Custody"
-      url: "https://www.smartcustody.com"
+
