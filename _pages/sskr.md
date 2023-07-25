@@ -54,7 +54,7 @@ creating three shares, of which two must be recovered.
 
 The user would take these shares and give one each to three different
 trusted people (or places, such as a safe or bank vault). (Or, this
-could be automated using [CSR](/csr/).
+could be automated using [CSR](/csr/).)
 
 Note [the overlap in words in different
 shares](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/ur-3-sskrs.md#the-difference-between-sskr-bytewords-and-sskr-urs):
