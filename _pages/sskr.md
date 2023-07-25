@@ -112,11 +112,16 @@ creating a more complex procedure.
   <tr>
     <td width="50%">
       <b>SSKR in Blockchain Commons Technology Overview:</b>
-      <a href="https://www.youtube.com/watch?v=RYgOFSdUqWY&start=1612s"><img src="https://i.ytimg.com/vi/RYgOFSdUqWY/hqdefault.jpg"></a>
+
+<iframe width="50%" src="https://www.youtube.com/embed/RYgOFSdUqWY?start=1612s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
     </td>
     <td width="50%">
       <b>Early Demo Video:</b>
-      <a href="https://www.youtube.com/watch?v=PIND7J096U8"><img src="https://i.ytimg.com/vi/PIND7J096U8/hqdefault.jpg"></a>
+
+<iframe width="50%" src="https://www.youtube.com/embed/PIND7J096U8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
     </td>
   </tr>
 </table>
