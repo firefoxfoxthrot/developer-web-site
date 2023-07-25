@@ -105,3 +105,22 @@ Once you generate advanced SSKR shares, the user would distribute them
 just like basic SSKR shares, but here being very careful to understand
 the roles of everyone they'ree giving shares to, since they're
 creating a more complex procedure.
+
+## Videos
+
+<table width="100%">
+  <tr>
+    <td width="50%">
+      <b>SSKR in Blockchain Commons Technology Overview:</b>
+      <a href="https://www.youtube.com/watch?v=RYgOFSdUqWY&start=1612s"><img src="https://i.ytimg.com/vi/RYgOFSdUqWY/hqdefault.jpg"></a>
+    </td>
+    <td width="50%">
+      <b>Early Demo Video:</b>
+      <a href="https://www.youtube.com/watch?v=PIND7J096U8"><img src="https://i.ytimg.com/vi/PIND7J096U8/hqdefault.jpg"></a>
+    </td>
+  </tr>
+</table>
+  
+## Links
+
+* [Shamir's Secret Sharing: An Overview](https://docs.google.com/document/d/1rZJlFZcftrCM_KaxFnHUIskJKlSQzF0zFn4WIRQGDLU/edit#heading=h.imy5xgr88lxa) (Google Doc)
