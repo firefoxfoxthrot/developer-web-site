@@ -58,6 +58,7 @@ author:
   name   : "Blockchain Commons"
   avatar : "/assets/images/bc-logo-white-avatar.png"
   bio    : "Docs for Developers"
+  links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/blockchaincommons"
