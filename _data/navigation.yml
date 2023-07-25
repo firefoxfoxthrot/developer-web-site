@@ -16,5 +16,5 @@ seedrecovery:
       url: /csr/
     - title: "CKM: Collaborative Key Management"
       url: /ckm/
-    - title "#SmartCustody"
-      url: "https://www.smartcustody.com"
+    - title: "Smart Custody"
+      url: www.smartcustody.com
