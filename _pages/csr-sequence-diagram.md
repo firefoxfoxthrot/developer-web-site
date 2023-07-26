@@ -13,6 +13,15 @@ permalink: /csr/sequence-diagram/
 sidebar:
   nav: csr
 ---
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js"></script>
+    </head>
+	 
+<body>
+
 This set of exemplar sequence diagrams for a CSR Share Servers assumes the sample API from [ExampleStore](https://github.com/BlockchainCommons/BCSwiftFoundation/blob/d355f0847d8bea9bac5fba8ddfdb8c29c281f9f7/Tests/BCFoundationTests/ExampleStore/ExampleStore.swift). It is not necessarily the only way to construct the flow of similar functions.
 
 **Associated Video:**
@@ -24,7 +33,7 @@ This set of exemplar sequence diagrams for a CSR Share Servers assumes the sampl
 
 The standard data flow for a share server involves the storage of data and the later retrieval of that data.
 
-```mermaid
+<pre><code class="language-mermaid">
 sequenceDiagram
 actor Alice
 participant localAPI
@@ -51,7 +60,37 @@ else Receipts? No
 end    
 storeShare->>localAPI: data
 localAPI->>Alice: response(ID, data)
-```
+</code></pre>
+
+<div class="mermaid">
+sequenceDiagram
+actor Alice
+participant localAPI
+participant storeShare
+participant storage
+Note over Alice,storage: Data Storage
+Alice->>localAPI: request(ID,keyPair,storeShare,data)
+localAPI->>storeShare: storeShare(data,pubKey,signature)
+alt isPubKeyNew?
+    storeShare->>storage: createAccount(pubKey)
+end    
+storeShare->>storage: addShare(pubKey,data)
+storeShare->>localAPI: receipt
+localAPI->>Alice: response(ID, receipt)
+
+Note over Alice,storage: Data Retrieval
+Alice->>localAPI: request(ID,keyPair,retrieveShares,receipts?)
+localAPI->>storeShare: retrieveShares(receipts?,pubKey,signature)
+storeShare->>storage: retrieveData(pubKey,receipts?)
+alt Receipts? Yes
+    storage->>storeShare: selectedShares
+else Receipts? No
+    storage->>storeShare: allShares
+end    
+storeShare->>localAPI: data
+localAPI->>Alice: response(ID, data)
+</div>
+
 
 **Depicted API:**
 ```
@@ -216,3 +255,19 @@ func deleteAccount(publicKey: PublicKeyBase)
 /// as the fallback contact method. Deleting an account is idempotent; in other words,
 /// deleting a nonexistent account is not an error.
 ```
+
+</body>
+<script>
+var config = {
+    startOnLoad:true,
+    theme: 'forest',
+    flowchart:{
+            useMaxWidth:false,
+            htmlLabels:true
+        }
+};
+mermaid.initialize(config);
+window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+</script>
+
+</html>
