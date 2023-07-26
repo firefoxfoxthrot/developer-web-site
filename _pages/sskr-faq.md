@@ -59,7 +59,7 @@ Currently, SSKR supports one secret-sharing algorithm: Shamir's Secret
 Sharing, which is version `0` of SSKR types. As such, it's intended to
 replace SLIP-39 as a specification for Shamir's Secret Sharing.
 
-## Why Use Shamir's Secret Sharing?
+### Why Use Shamir's Secret Sharing?
 
 Shamir's Secret Sharing (SSS) is built on an old, well-respected
 cryptographic proof, and so we have faith in its foundational
