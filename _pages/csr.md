@@ -32,7 +32,7 @@ keys, because you're only giving them fragments (shards), but you can
 trust that they'll likely still be around when you need to reconstruct
 your key._
 
-_CSR is built using [SSKR](/sskr/) to lock [Envelopes](/envelope/ of
+_CSR is built using [SSKR](/sskr/) to lock [Envelopes](/envelope/) of
 data and to allow recovery using a variety of Authentication
 methods._
 
@@ -98,11 +98,11 @@ Envelope._
 
 **Intro:**
 
-* [Architectural Overview](csr-architecture.md)
+* [Architectural Overview](/csr/architecture/)
 
 **Developer Resources:**
 
-* [Sequence Diagram](csr-sequence-diagram.md)
+* [Sequence Diagram](/csr/sequence-diagram/)
 
 **Developer Reference Apps:**
 
@@ -110,4 +110,4 @@ Envelope._
 
 **Use Cases:**
 
-* [Progressive Use Cases](csr-use-cases.md)
+* [Progressive Use Cases](/csr/use-cases/)

@@ -9,7 +9,7 @@ title: "SSKR Use Case: Cold Storage"
 hide_description: true
 classes:
   - wide
-permalink: /sskr/use-case/cold/
+permalink: /sskr/use-cases/cold/
 sidebar:
   nav: sskr
 ---

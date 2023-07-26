@@ -150,7 +150,7 @@ creating a more complex procedure.
 * [SeedTool CLI](https://github.com/BlockchainCommons/bc-seedtool-cli) (CLI implementation)
 
 **Use Cases:**
-* [Cold Storage](/sskr/use-case/cold/)
+* [Cold Storage](/sskr/use-cases/cold/)
 
 **Other Resources:**
 

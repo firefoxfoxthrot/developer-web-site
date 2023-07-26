@@ -18,6 +18,19 @@ seedrecovery:
       url: /ckm/
     - title: "Smart Custody"
       url: www.smartcustody.com
+csr:
+  - title: CSR
+    children:
+    - title: "Intro to CSR"
+      url: /csr/
+    - title: "Architectural Overview"
+      url: /csr/architecture/
+    - title: "Sequence Diagram"
+      url: /csr/sequence-diagram
+    - title: "Use Cases"
+      url: /csr/use-cases
+    - title: "Return to Seed Recovery"
+      url: /seedrecovery/
 sskr:
   - title: SSKR
     children:
@@ -28,6 +41,6 @@ sskr:
     - title: "Test Vectors"
       url: /sskr/vectors/
     - title: "Use Case"
-      url: /sskr/use-case/cold/
+      url: /sskr/use-cases/cold/
     - title: "Return to Seed Recovery"
       url: /seedrecovery/
