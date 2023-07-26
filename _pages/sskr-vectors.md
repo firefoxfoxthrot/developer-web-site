@@ -123,7 +123,7 @@ ur:crypto-sskr/hddalewfaeadaofdaecyrdwzzecwhhfgwkdistghcskigonbpajnfdwnmhihenclr
 ```
 A UR uses the minimal [ByteWords](/bytewords/) form, meaning that it
 shows only the first and last letter of each word. This means that
-"go" is "gyro", "jy" is "jury", "jp" is "jump", "ae" is "able",
+"hd" is "hard", "da" is "data", "le" is "love", "wf" is "wolf",
 etc. You can see that the "UR" form of the three shares thus precisely
 matches the ByteWords except that the first three words ("tuna acid
 epic"), identifying it as an SSKR, has been omitted, and this changes
@@ -139,11 +139,19 @@ Finally, here are the shares in scannable QRs:
 
 #### The Two-of-Three Two-of-Three SSKR
 
-SSKR can support arbitrary groups, where you can then reconstruct a secret by using some number of shares from some number of groups.
+SSKR can support arbitrary groups, where you can then reconstruct a
+secret by using some number of shares from some number of groups.
 
-One example is a two-of-three two-of-three (grouped four-of-nine) SSKR. Three groups are created, each of which has three shares. Reconstructing the secret requires a threshold of two shares from a threshold of two groups. In other words, the secret can be reconstructed from four of the nine shares, provided that they are two each from two of the groups.
+One example is a two-of-three two-of-three (grouped four-of-nine)
+SSKR. Three groups are created, each of which has three
+shares. Reconstructing the secret requires a threshold of two shares
+from a threshold of two groups. In other words, the secret can be
+reconstructed from four of the nine shares, provided that they are two
+each from two of the groups.
 
-For a more complex SSKR such as this, you might want to use Gordian SeedTool's print function, rather than cutting and pasting SSKRs or URs:
+For a more complex SSKR such as this, you might want to use Gordian
+SeedTool's print function, rather than cutting and pasting SSKRs or
+URs:
 
 ![](/assets/images/sskr/256-sskrgroup-1.jpeg)
 ![](/assets/images/sskr/256-sskrgroup-2.jpeg)
