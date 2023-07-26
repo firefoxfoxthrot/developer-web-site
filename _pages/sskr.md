@@ -137,3 +137,20 @@ creating a more complex procedure.
 
 * [Shamir's Secret Sharing: An Overview](https://docs.google.com/document/d/1rZJlFZcftrCM_KaxFnHUIskJKlSQzF0zFn4WIRQGDLU/edit#heading=h.imy5xgr88lxa) (Google Doc)
 * [BCR-011: UR Type Definition for SSKR](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-011-sskr.md) (GitHub)
+
+** Developer Resources:**
+
+* [Developer FAQ](/sskr/faq/)
+* [Test Vectors](/sskr/vectors/)
+* [Using URs for SSKR](/ur/sskr/)
+* [Use Case: Cold Storage](/sskr/use-case/cold/)
+
+** Developer Reference Apps:**
+
+* [Gordian SeedTool](https://github.com/BlockchainCommons/GordianSeedTool-iOS) (app implementation)
+* [SeedTool CLI](https://github.com/BlockchainCommons/bc-seedtool-cli) (CLI implementation)
+
+**Other Resources:**
+
+* [Designing SSKR Share Scenarios](https://github.com/BlockchainCommons/SmartCustody/blob/master/Docs/SSKR-Sharing.md) (#SmartCustody)
+* [SSKR Dangers](https://github.com/BlockchainCommons/SmartCustody/blob/master/Docs/SSKR-Dangers.md) (#SmartCustody)
