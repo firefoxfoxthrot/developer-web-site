@@ -18,7 +18,7 @@ These use cases are detailed progressively within a number of categories, such t
 
 The use cases are primarily focused on Collaborative Seed Recovery (CSR), a methodology for recovering seeds using `crypto-envelopes` and traditional secret-sharing. 
 
-The next generation of usage will be [Collaborative Key Management (CKM)](/ckm/, which will allow for the collaborative generation of keys, such that they don't exist anywhere until they're used. Some of the most complex progressive use cases shade over from CSR into CKM, as noted.
+The next generation of usage will be [Collaborative Key Management (CKM)](/ckm/), which will allow for the collaborative generation of keys, such that they don't exist anywhere until they're used. Some of the most complex progressive use cases shade over from CSR into CKM, as noted.
 
 ## CSR-Focused Use Cases
 
