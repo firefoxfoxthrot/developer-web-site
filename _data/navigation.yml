@@ -17,7 +17,7 @@ seedrecovery:
     - title: "Collaborative Key Management"
       url: /ckm/
     - title: "Smart Custody"
-      url: www.smartcustody.com
+      url: https://www.smartcustody.com
 csr:
   - title: CSR
     children:
