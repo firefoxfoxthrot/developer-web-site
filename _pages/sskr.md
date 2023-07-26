@@ -143,12 +143,14 @@ creating a more complex procedure.
 * [Developer FAQ](/sskr/faq/)
 * [Test Vectors](/sskr/vectors/)
 * [Using URs for SSKR](/ur/sskr/)
-* [Use Case: Cold Storage](/sskr/use-case/cold/)
 
 **Developer Reference Apps:**
 
 * [Gordian SeedTool](https://github.com/BlockchainCommons/GordianSeedTool-iOS) (app implementation)
 * [SeedTool CLI](https://github.com/BlockchainCommons/bc-seedtool-cli) (CLI implementation)
+
+**Use Cases:**
+* [Cold Storage](/sskr/use-case/cold/)
 
 **Other Resources:**
 
