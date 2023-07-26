@@ -18,7 +18,7 @@ seedrecovery:
       url: /ckm/
     - title: "Smart Custody"
       url: https://www.smartcustody.com
-ckm::
+ckm:
   - title: CKM
     children:
     - title: "Intro to CKM"
