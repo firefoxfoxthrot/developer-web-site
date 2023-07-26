@@ -23,5 +23,7 @@ sskr:
     children:
     - title: "Intro to SSKR"
       url: /sskr/
+    - title: "Test Vectors"
+      url: /sskr/vectors/
     - title: "Return to Seed Recovery"
       url: /seedrecovery/
