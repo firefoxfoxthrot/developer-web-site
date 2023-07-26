@@ -25,5 +25,7 @@ sskr:
       url: /sskr/
     - title: "Test Vectors"
       url: /sskr/vectors/
+    - title: "Use Case"
+      url: /sskr/use-case/cold/
     - title: "Return to Seed Recovery"
       url: /seedrecovery/
