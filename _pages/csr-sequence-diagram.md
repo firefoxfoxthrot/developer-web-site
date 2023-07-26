@@ -19,7 +19,7 @@ This set of exemplar sequence diagrams for a CSR Share Servers assumes the sampl
 **Associated Video:**
 
 
-{% include video id="mpCEGUiCwFg" provider="youtube" %}
+[![CSR API](https://img.youtube.com/vi/mpCEGUiCwFg/mqdefault.jpg)](https://youtu.be/mpCEGUiCwFg)
 
 ## I. Data Flow: Storing & Retrieving a Share
 
