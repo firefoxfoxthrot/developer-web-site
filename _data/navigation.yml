@@ -18,6 +18,15 @@ seedrecovery:
       url: /ckm/
     - title: "Smart Custody"
       url: https://www.smartcustody.com
+ckm::
+  - title: CKM
+    children:
+    - title: "Intro to CKM"
+      url: /ckm/
+    - title: "Architectural Overview"
+      url: /ckm/architecture/
+    - title: "Return to Seed Recovery"
+      url: /seedrecovery/
 csr:
   - title: CSR
     children:
