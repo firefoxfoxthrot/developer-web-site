@@ -40,7 +40,7 @@ sskr:
       url: /sskr/faq/
     - title: "SSKR Lexicon"
       url: /sskr/lexicon/
-      - title: "Test Vectors"
+    - title: "Test Vectors"
       url: /sskr/vectors/
     - title: "Use Case"
       url: /sskr/use-cases/cold/
