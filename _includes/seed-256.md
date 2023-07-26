@@ -9,7 +9,7 @@ The example uses Blockchain Commons' default 256-bit seed, KHAKI.
 * **Gordian Envelope:** See QR code, above
 
 :warning: _Do not use this seed to hold real monies; they could
-disappear immediately!
+disappear immediately!_
 {% endcapture%}
 
 <div class="notice--info">{{ seed-256 | markdownify }}</div>
