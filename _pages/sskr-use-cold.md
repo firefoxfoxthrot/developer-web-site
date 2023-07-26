@@ -25,7 +25,7 @@ and the [test vector](/sskr/vectors/).
 
 Ken's complete method requires the following shopping list (with two
 different options for the military embossing machine):
-https://gist.github.com/ksedgwic/d4d34cab504ac453eaf2a3656f86e2f6#file-dogtag-parts-md
+[https://gist.github.com/ksedgwic/d4d34cab504ac453eaf2a3656f86e2f6#file-dogtag-parts-md](https://gist.github.com/ksedgwic/d4d34cab504ac453eaf2a3656f86e2f6#file-dogtag-parts-md)
 
 The overall procedure is simple:
 
