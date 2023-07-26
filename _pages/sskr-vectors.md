@@ -18,16 +18,7 @@ The following examples demonstrate test vectors for Blockchain Commons' standard
 
 ## 128-bit Seed
 
-Blockchain Commons' standard 128-bit seed is:
-
-* **Hex:** 59f2293a5bce7d4de59e71b4207ac5d2
-* **BIP-39 Words:** fly mule excess resource treat plunge nose soda reflect adult ramp planet
-* **ByteWords:** hawk whiz diet fact help taco kiwi gift view noon jugs quiz crux kiln silk tied omit keno lung jade
-* **Gordian Envelope:** ur:envelope/lptpsptpcsgdhkwzdtfthptokigtvwnnjsqzcxknsktdtpsptpsolftpsptpsgaatpsptpcskkadwdghisinjkcxinjkcxjyisihcxeheyetdpidinjycxdeeyeecxktjljpiedtcxjkihihiecxkpjkihiecxhsjkcxhscxjokpidjziniacxjpihiojpihjkjkinjljtcxjyihjkjycxkoihiajyjljpcxiyjljpcxgogmjkdwcxfljljpieinhsjtcxguihihiecxghjljljzdwcxhsjtiecxjkihihiejyjljljzdpiajzindmbkbkghisinjkcxjkihihiecxhsjtiecxhsjzjzcxjeihkkjkcxioihjtihjphsjyihiecxiyjpjljncxinjycxjkisjlkpjziecxidihcxiajljtjkinieihjpihiecxkpjtjkihiakpjpihcxhsjkcxjyisinjkcxjeihkkcxjnhsjyihjpinhsjzcxinjkcxidihinjtiocxjkishsjpihiecxjokpidjziniajzkkcxhsjkcxhscxjyihjkjycxkoihiajyjljpdmbkbkfpjzjkjlcxjejtjlktjtcxhsjkcxfygdfpgscxdpcxvolansfyhsjpjecxgdkpjpjojzihcxfpjskphscxgsjlkoihvolantcxhsjkcxhsjtcxjljziecxkoihjpjkinjljtcxjliycxgsiniyihfdhsjkiscxishsiecxjyishsjycxiajljzjljpdmbkbkfwinjyiajlinjtcxgthsjkjyihjpcxgrihkkcxfginjtioihjpjojpinjtjyftcxendyeeideseoiyeybkfejyisihjpihkpjncxfpiaiajlkpjtjycxcndycxfpieiejpihjkjkcxhpjndleeeedidlendyvolanldldyvolanldldydldyhlftcxdyksececemeceyeciedyeeeoeneceniheseoetecfyetfefgfpfpesfxieeehseohsihfpiefedyehehenetbktpsptpsolftpsptpsgadtpsptpsgcssptpsptpsolftpsptpsgbetpsptpcssecyhnencyahtpsptpsolftpsptpsgbdtpsptpcskseceheyetdpidinjycxguihihiecxgdkpidjziniacxghihjkjycxhfihiajyjljpcxdehkinjtjnjtcxfwjzkpihdtcxendyeeideseoiyeyjkgwtetk
-  
-The Lifehash for the seed and its master key can be examined in [Gordian SeedTool](https://github.com/BlockchainCommons/GordianSeedTool-iOS):
-
-![](/assets/images/seed-128b.png)
+{% include seed-128.md %}
 
 #### Two-of-Three SSKR
 
@@ -71,16 +62,7 @@ For a more complex SSKR such as this, you might want to use Gordian SeedTool's p
 
 ## 256-bit Seed
 
-Blockchain Commons' standard 128-bit seed is:
-
-* **Hex:** e3955cda304771c0031895637f55c3abe45153c87abd81c51ed14e8aafa1af13
-* **BIP-39 Words:** toe priority custom gauge jacket theme arrest bargain gloom wide ill fit eagle prepare capable fish limb cigar reform other priority speak rough imitate
-* **ByteWords:** vial mild high twin duty fuel jugs rust apex cats mild idea lamb gyro scar play vibe gray guru soap kiln ruby lazy silk cook tent girl love pose obey pose brew exit gray king iced
-* **Gordian Envelope:** 
-
-The Lifehash for the seed and its master key can be examined in [Gordian SeedTool](https://github.com/BlockchainCommons/GordianSeedTool-iOS):
-
-![](/assets/images/seed-256b.png)
+{% include seed-256.md %}
 
 #### Two-of-Three SSKR
 
