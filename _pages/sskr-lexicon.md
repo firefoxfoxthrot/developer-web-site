@@ -9,7 +9,7 @@ title: "SSKR Lexicon"
 hide_description: true
 classes:
   - wide
-permalink: /sskr/lexicon
+permalink: /sskr/lexicon/
 sidebar:
   nav: sskr
 ---
