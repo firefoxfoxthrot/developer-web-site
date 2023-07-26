@@ -112,7 +112,7 @@ Envelope._
 
 **Developer Resources:**
 
-* [Sequence Diagram](/csr/sequence-diagram/)
+* [Sequence Diagram](https://github.com/BlockchainCommons/developer-web-site/blob/master/_pages/csr-sequence-diagram.md) (GitHub repo)
 
 **Developer Reference Apps:**
 
