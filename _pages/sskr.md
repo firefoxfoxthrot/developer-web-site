@@ -111,7 +111,7 @@ creating a more complex procedure.
 <table width="100%">
   <tr>
     <td width="640px">
-      <b>SSKR in Technology Overview:</b>
+      <b>SSKR in Overview:</b>
 
 {% include video id="RYgOFSdUqWY?start=1612" provider="youtube" %}
 
