@@ -63,6 +63,11 @@ include everything from passwords and email responses to personal
 identification. Each authentication retrieves a share, and when
 sufficient shares have been restored, the seed is reconstructed.
 
+The following example depicts the recovery of a seed complete with
+note and name, something not possible with bare SSKR.
+
+![](/assets/images/csr/example.jpg)
+
 _See the [CSR Architectural Overview](csr-architecture.md) for more
 information._
 
@@ -82,6 +87,11 @@ information._
 {% include video id="mpCEGUiCwFg" provider="youtube" %}
 
     </td>
+    <td width="640px">
+      <b>CSR Demo:</b>
+{% include video id="9fyICk0lwL0&t=3255s" provider="youtube" %}
+    </td>
+
   </tr>
 </table>
 
