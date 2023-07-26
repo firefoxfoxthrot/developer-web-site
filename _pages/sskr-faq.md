@@ -7,8 +7,6 @@ header:
   og_image: /assets/images/bc-card.jpg
 title: "SSKR FAQ"
 hide_description: true
-classes:
-  - wide
 permalink: /sskr/faq/
 sidebar:
   nav: sskr
