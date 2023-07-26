@@ -89,7 +89,7 @@ information._
     </td>
     <td width="640px">
       <b>CSR Demo:</b>
-{% include video id="9fyICk0lwL0&t=3255s" provider="youtube" %}
+{% include video id="9fyICk0lwL0?start=3255" provider="youtube" %}
     </td>
 
   </tr>
