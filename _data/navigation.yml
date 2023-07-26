@@ -26,7 +26,7 @@ csr:
     - title: "Architectural Overview"
       url: /csr/architecture/
     - title: "Sequence Diagram"
-      url: /csr/sequence-diagram
+      url: https://github.com/BlockchainCommons/developer-web-site/blob/master/_pages/csr-sequence-diagram.md
     - title: "Use Cases"
       url: /csr/use-cases
     - title: "Return to Seed Recovery"
