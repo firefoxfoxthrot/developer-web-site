@@ -23,6 +23,8 @@ sskr:
     children:
     - title: "Intro to SSKR"
       url: /sskr/
+    - title: "SSKR FAQ"
+      url: /sskr/faq/
     - title: "Test Vectors"
       url: /sskr/vectors/
     - title: "Use Case"
