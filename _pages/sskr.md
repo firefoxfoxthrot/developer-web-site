@@ -111,9 +111,9 @@ creating a more complex procedure.
 <table width="100%">
   <tr>
     <td width="50%">
-      <b>SSKR in Blockchain Commons Technology Overview:</b>
+      <b>SSKR in Technology Overview:</b>
 
-{% include video id="RYgOFSdUqWY?start=1612s" provider="youtube" %}
+{% include video id="RYgOFSdUqWY?start=1612" provider="youtube" %}
 
     </td>
     <td width="50%">
