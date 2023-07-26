@@ -23,7 +23,7 @@ fiduciaries. If the user ever loses their seed, they can then
 "reconstruct" it by collecting sufficient of the shares (the
 "threshold")._
 
-## Why SSKR is Important
+## Why is SSKR Important?
 
 One of the biggest challenges in the control of digital assets
 (particularly the self-sovereign control of digital assets) is
