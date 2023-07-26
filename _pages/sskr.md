@@ -154,3 +154,4 @@ creating a more complex procedure.
 
 * [Designing SSKR Share Scenarios](https://github.com/BlockchainCommons/SmartCustody/blob/master/Docs/SSKR-Sharing.md) (#SmartCustody)
 * [SSKR Dangers](https://github.com/BlockchainCommons/SmartCustody/blob/master/Docs/SSKR-Dangers.md) (#SmartCustody)
+* [Evaluating Social Schemes for Recovery](https://github.com/WebOfTrustInfo/rwot8-barcelona/blob/master/final-documents/evaluating-social-recovery.md) (#RWOT8)
