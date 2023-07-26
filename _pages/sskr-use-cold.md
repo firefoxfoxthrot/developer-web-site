@@ -19,7 +19,7 @@ copies of keys etched in metal. This is an excellent use case for
 SSKR, as it allows for the storage of key shares that don't allow for
 the compromise of a key if an individual set of etchings is
 discovered.  Ken Sedgwick demonstrated one way to do so using dogtags
-and the [test vector](../vectors/).
+and the [test vector](/sskr/vectors/).
 
 {% include seed-128.md %}
 
