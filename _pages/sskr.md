@@ -85,7 +85,7 @@ The following shows an example from [Gordian
 SeedTool](https://github.com/BlockchainCommons/GordianSeedTool-iOS)
 where 2 of 3 shares must come back from 2 of 3 groups.
 
-<figure class="third">
+
   <a href="/assets/images/sskr/export-4.jpg"><img src="/assets/images/sskr/export-4.jpeg"></a>
   <a href="/assets/images/sskr/export-5.jpg"><img src="/assets/images/sskr/export-5.jpeg"></a>
   <a href="/assets/images/sskr/export-6.jpg"><img src="/assets/images/sskr/export-6.jpeg"></a>  
@@ -111,7 +111,7 @@ creating a more complex procedure.
 <table width="100%">
   <tr>
     <td width="50%">
-      <b>SSKR in Technology Overview:</b>
+      <b>SSKR in Blockchain Commons Technology Overview:</b>
 
 {% include video id="RYgOFSdUqWY?start=1612" provider="youtube" %}
 
