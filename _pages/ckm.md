@@ -5,104 +5,34 @@ header:
   overlay_filter: "0.25"
   overlay_image: /assets/images/dev-seed-background.jpg
   og_image: /assets/images/bc-card.jpg
-title: "CSR: Collaborative Seed Recovery"
+title: "CKM: Collaborative Key Management"
 hide_description: true
 classes:
   - wide
-permalink: /csr/
+permalink: /ckm/
 sidebar:
-  nav: csr
+  nav: ckm
 ---
 
 ## Overview
 
-_CSR allows for the recovery of seeds and other secrets by dividing
-responsibility for recovery up between multiple devices, some (but not
-all) of which will be necessary for recovery. Its baseline recovery
-mechanism uses self-sovereign recovery, while more advanced scenarios
-allow for social key recovery. Backup is meant to be largely
-automated, especially in the baseline scenario, while recovery may
-require some user intervention._
+_Collaborative Key Management (CKM) is a Blockchain Commons architecture for generating, storing, and using keys in a collaborative way, where several different devices or entities come together and use their individual secrets to generate and regenerate keys solely for the brief instant that they're needed. Our roadmap target for deployment of solutions leveraging this CKM architecture is 2024+._
 
-_One of the advantages of CSR over traditional social key recovery is
-that you don't have to choose friends or family that you trust. Though
-you can do so, you can also entrust fragments of keys to companies
-running share servers. You don't have to worry about them stealing
-keys, because you're only giving them fragments (shards), but you can
-trust that they'll likely still be around when you need to reconstruct
-your key._
+_CKM expands upon [Collaborative Seed Recovery (CSR)](/csr/), our existing architecture (begun in 2019 with [SSKR](/sskr/)), which supports the resilience and recovery of seeds (not keys) using well-reviewed cryptographic code. It's still a future project, but these current pages are intended to create a touchstone for the current CSR work, so that it's appropriately future-proofed against prospective CKM development._
 
-_CSR is built using [SSKR](/sskr/) to lock [Envelopes](/envelope/) of
-data and to allow recovery using a variety of Authentication
-methods._
+## Why Is CKM Important?
 
-## Why is CSR Important?
+Digital assets are an emerging asset class in the 21st century economy. Unlike physical assets, they require a secure digital custody solution. However, in order to protect digital assets, we need someone in the physical world who will protect the keys underlying the digital assets — acting as an interface to the digital landscape.
 
-CSR focuses on
-[Resilience](https://github.com/BlockchainCommons/Gordian#gordian-principles),
-but it takes the next step beyond [SSKR](/sskr/). Whereas SSKR
-provides a robust way to protect a seed _if_ the user is careful and
-knows what to do, CSR goes beyond that by making it easy for users to
-store their seeds in an automated way.
+CKM resolves the current problems of centralization and of self-custody solutions by providing a new solution that is not endangered by the lossage possibilities of self-custody or the censorship and compromise dangers of third-party custody. It also improves on CSR by creating a system much less prone to compromise and incrementally less vulnerable to censorship.
 
-CSR is also built using [Gordian Envelope](/envelope/), which allows
-for the storage of larger amounts of data, such as SSKR shares with
-metadata.
+_See [CKM Architectural Overview](/ckm/architecture) for more information on both general and specific problems solved by CKM._
 
 ## How Does CSR Work?
 
-CSR is integrated into Wallet and Seed Storage apps. When a user
-chooses to backup a seed, it will automatically shard the seed and
-send it off to designated Share Servers. If a user wishes to assert
-more agency, they can choose where those shares are stored, or even
-take them offline.
+CKM depends on SMPC (Secure Multi Party Computation). Its ultimate goal is to use secrets held by Secret Server on the internet to generate keys to be used for a variety of services. No Secret Server individually has enough key material to access digital assets; instead those keys are only generated just as they're needed by the Secret Servers working together.
 
-Seed reconstruction requires the user to authentication using
-different, predetermined methods with each Share Server. They can
-include everything from passwords and email responses to personal
-identification. Each authentication retrieves a share, and when
-sufficient shares have been restored, the seed is reconstructed.
-
-The following example depicts the recovery of a seed complete with
-note and name, something not possible with bare SSKR.
-
-![](/assets/images/csr/example.jpg)
-
-_See the [CSR Architectural Overview](csr-architecture.md) for more
-information._
-
-## Videos
-
-<table width="100%">
-  <tr>
-    <td width="640px">
-      <b>CSR Kickoff Meeting:</b>
-
-{% include video id="FVzTRsqcyMU" provider="youtube" %}
-
-    </td>
-    <td width="640px">
-      <b>CSR Example API:</b>
-
-{% include video id="mpCEGUiCwFg" provider="youtube" %}
-
-    </td>
-    <td width="640px">
-      <b>CSR Demo:</b>
-{% include video id="9fyICk0lwL0?start=3255" provider="youtube" %}
-    </td>
-
-  </tr>
-</table>
-
-_See the [Gordian Developer Meetings: CSR &
-Envelope](https://www.youtube.com/playlist?list=PLCkrqxOY1Fbp-P1Yv-7gmu75i2QS2Z6vk)
-playlist for even more videos on the development of CSR and Gordian
-Envelope._
-
-## Libraries
-
-{% include lib-envelope.md %}
+_See [CKM Architectural Overview](/ckm/architecture) for more on the new technologies making this possible._
 
 ## Links
 
@@ -110,14 +40,6 @@ Envelope._
 
 * [Architectural Overview](/csr/architecture/)
 
-**Developer Resources:**
-
-* [Sequence Diagram](https://github.com/BlockchainCommons/developer-web-site/blob/master/_pages/csr-sequence-diagram.md) (GitHub repo)
-
-**Developer Reference Apps:**
-
-* [Gordian SeedTool](https://github.com/BlockchainCommons/GordianSeedTool-iOS) (app implementation)
-
 **Use Cases:**
 
-* [Progressive Use Cases](/csr/use-cases/)
+* [CSR-Focused Progressive Use Cases](/csr/use-cases/) (CSR Docs)
