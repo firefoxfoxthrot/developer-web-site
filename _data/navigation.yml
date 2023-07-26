@@ -21,7 +21,7 @@ seedrecovery:
 sskr:
   - title: SSKR
     children:
-    - title: "Intro SSKR"
+    - title: "Intro to SSKR"
       url: /sskr/
     - title: "Return to Seed Recovery"
       url: /seedrecovery/
