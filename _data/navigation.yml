@@ -38,7 +38,9 @@ sskr:
       url: /sskr/
     - title: "SSKR FAQ"
       url: /sskr/faq/
-    - title: "Test Vectors"
+    - title: "SSKR Lexicon"
+      url: /sskr/lexicon/
+      - title: "Test Vectors"
       url: /sskr/vectors/
     - title: "Use Case"
       url: /sskr/use-cases/cold/

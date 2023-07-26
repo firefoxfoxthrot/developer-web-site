@@ -137,6 +137,7 @@ creating a more complex procedure.
 
 * [Shamir's Secret Sharing: An Overview](https://docs.google.com/document/d/1rZJlFZcftrCM_KaxFnHUIskJKlSQzF0zFn4WIRQGDLU/edit#heading=h.imy5xgr88lxa) (#RWOT9)
 * [BCR-011: UR Type Definition for SSKR](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-011-sskr.md) (Blockchain Commons Research)
+* [SSKR Lexicon](/sskr/lexicon/)
 
 **Developer Resources:**
 
