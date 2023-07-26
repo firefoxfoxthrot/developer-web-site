@@ -12,6 +12,8 @@ classes:
 permalink: /sskr/faq/
 sidebar:
   nav: sskr
+toc: true
+toc_label: SSKR FAQ
 ---
 
 ## Using SSKR
