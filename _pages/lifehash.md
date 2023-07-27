@@ -62,7 +62,7 @@ recognizability.
 
     </td>
     <td width="640px">
-      <b>LifeHash in Technology Overview:
+      <b>LifeHash in Technology Overview:</b>
 
 {% include video id="RYgOFSdUqWY?start=1495" provider="youtube" %}
 
