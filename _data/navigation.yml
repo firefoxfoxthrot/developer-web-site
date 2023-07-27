@@ -54,10 +54,10 @@ sskr:
 ux:
   - title: UX Design
     children:
-    - title: "Object Identity Block"
-      url: /oib/
     - title: "LifeHash"
       url: /lifehash/
+    - title: "Object Identity Block"
+      url: /oib/
 lifehash:
   - title: LifeHash
     children:
