@@ -61,7 +61,6 @@ ux:
 lifehash:
   - title: LifeHash
     children:
-    children:
     - title: "Intro to LifeHash"
       url: /lifehash/
     - title: "Test Vectors"
