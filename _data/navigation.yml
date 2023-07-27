@@ -49,3 +49,20 @@ sskr:
       url: /sskr/use-cases/cold/
     - title: "Return to Seed Recovery"
       url: /seedrecovery/
+ux:
+  - title: UX Design
+    children:
+    - title: "Object Identity Block
+      url: /oib/
+    - title: "LifeHash"
+      url: /lifehash/
+lifehash:
+  - title: LifeHash
+    children:
+    children:
+    - title: "Intro to LifeHash"
+      url: /lifehash/
+    - title: "Test Vectors"
+      url: /lifehash/vectors/
+    - title: "Return to UX Design"
+      url: /ux/
