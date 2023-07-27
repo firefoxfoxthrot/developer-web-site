@@ -1,6 +1,8 @@
 main:
   - title: "Seed Recovery"
     url: /seedrecovery/
+  - title: "UX Design"
+    url: /ux/
   - title: "About"
     url: /about/
 seedrecovery:
