@@ -50,6 +50,10 @@ Some bits of the initial hash are then used to deterministically apply
 symmetry and color to the icon to add beauty and quick
 recognizability.
 
+_Please note that LifeHash is not a cryptographic hash. More research
+and analysis would be needed before anything could be said about its
+security characteristics. Please see the [FAQ](/lifehash/faq/) for
+more information._
 
 ## Videos
 

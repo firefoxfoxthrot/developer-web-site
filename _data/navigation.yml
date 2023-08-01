@@ -63,7 +63,9 @@ lifehash:
     children:
     - title: "Intro to LifeHash"
       url: /lifehash/
-    - title: "Creating Digests"
+    - title: "LifeHash FAQ"
+      url: /lifehash/faq/
+      - title: "Creating Digests"
       url: /lifehash/creation/
     - title: "Best Practices"
       url: /lifehash/best-practices/
