@@ -77,3 +77,14 @@ lifehash:
       url: /lifehash/use-cases/
     - title: "Return to UX Design"
       url: /ux/
+oib:
+  - title: OIB
+    children:
+    - title: "Intro to OIB"
+      url: /oib/
+    - title: "Best Practices"
+      url: /oib/best-practices/
+    - title: "Test Vectors"
+      url: /oib/vectors/
+    - title: "Return to UX Design"
+      url: /ux/

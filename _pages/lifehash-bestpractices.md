@@ -18,14 +18,18 @@ LifeHashes can improve the security of digital data in conjunection
 with other methods of inspection and hashing, but they must be
 presented well, as discussed in the following best practices.
 
-## Present LifeHash as a Square
+_Also see the [OIB Best Practices](/oib/best-practices/)._
+
+## LifeHash Presentation
+
+### Present LifeHash as a Square
 
 **Don't** vignette or round the corners of a LifeHash image. Every
 pixel contributes to the security of the image, so show the image as a
 square. If you *really* want to round the corners, make the radius
 small enough to still show the corner pixels.
 
-## Present LifeHash Crisply
+### Present LifeHash Crisply
 
 **Don't** interpolate or blur a LifeHash image: show every pixel
 crisply. On iOS UIKit this is accomplished by setting
@@ -34,17 +38,9 @@ SwiftUI you call `myImage.interpolation(.none)`. The [Swift LifeHash
 library](https://github.com/BlockchainCommons/LifeHash) already does
 this for you.
 
-## Optimize Your Use of the Library
+## LifeHash Inclusion
 
-The [Swift LifeHash
-library](https://github.com/BlockchainCommons/LifeHash) renders
-LifeHash images asynchronously and caches the result, so if you pass
-in the same fingerprint you'll get the same image back right away. If
-LifeHash rendering seems slow, be sure you're compiling the Release
-configuration of your target: LifeHash is *really fast* when compiled
-for Release.
-
-## Use LifeHash as a Complementary Tool
+### Use LifeHash as a Complementary Tool
 
 The biggest challenge in using LifeHash is in determining how to
 ensure the LifeHash that's being tested against is valid.
@@ -63,3 +59,16 @@ senders, through closely held devices, certs, or peer-to-peer
 connections; and if we check other data such as the digital hash
 itself; then we can increase our security through the examination of a
 LifeHash as well.
+
+## Library Usage
+
+### Optimize Your Use of the Library
+
+The [Swift LifeHash
+library](https://github.com/BlockchainCommons/LifeHash) renders
+LifeHash images asynchronously and caches the result, so if you pass
+in the same fingerprint you'll get the same image back right away. If
+LifeHash rendering seems slow, be sure you're compiling the Release
+configuration of your target: LifeHash is *really fast* when compiled
+for Release.
+
