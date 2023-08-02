@@ -27,7 +27,7 @@ _From the top down, these formats are:_
 * [**Envelope**](/envelope/) is a Uniform Resource format that can be
 used to preserve both digital assets and metadata and which can be
 selectively elided to allow for the maintenance of privacy.
-* [**Uniform Resource**](/ur/) is a self-identifying data format that
+* [**Uniform Resources**](/urs/) is a self-identifying data format that
 ensures that data is interoperable and will not suffer from bitrot if
 it's rediscovered far in the future.
 * [**ByteWords**](/bytewords/) is a methodology for representing data as

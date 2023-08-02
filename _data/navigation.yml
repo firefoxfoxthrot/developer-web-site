@@ -5,6 +5,17 @@ main:
     url: /ux/
   - title: "About"
     url: /about/
+dataformat:
+  - title: Data Formats
+    children:
+    - title: "ByteWords"
+      url: /bytewords/
+    - title: "dCBOR"
+      url: /dCBOR/
+    - title: "Envelope"
+      url: /envelope/
+    - title: "Uniform Resources"
+      url: /urs/
 seedrecovery:
   - title: Seed Recovery
     children:
