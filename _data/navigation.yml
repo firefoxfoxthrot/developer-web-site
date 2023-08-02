@@ -65,7 +65,7 @@ lifehash:
       url: /lifehash/
     - title: "LifeHash FAQ"
       url: /lifehash/faq/
-      - title: "Creating Digests"
+    - title: "Creating Digests"
       url: /lifehash/creation/
     - title: "Best Practices"
       url: /lifehash/best-practices/
