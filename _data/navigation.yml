@@ -1,4 +1,6 @@
 main:
+  - title: "Data Format"
+    url: /dataformat/
   - title: "Seed Recovery"
     url: /seedrecovery/
   - title: "UX Design"
