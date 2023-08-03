@@ -55,7 +55,7 @@ follow the specifications laid out in this Draft.
 
     </td>
     <td width="640px">
-      <b>dCBOR Library from Blockchain Commons</>
+      <b>dCBOR Library from Blockchain Commons</b>
 
 {% include video id="NlJE8oF1B5M" provider="youtube" %}
 
@@ -67,15 +67,16 @@ follow the specifications laid out in this Draft.
 
 {% include lib-dcbor.md %}
 
-## Preliminary dCBOR Specification
+## Links
+
+**Developer Resources:**
 
 * **dCBOR IETF I-D** — https://datatracker.ietf.org/doc/draft-mcnally-deterministic-cbor/
 * **Editor's Draft (Repo)** — https://github.com/BlockchainCommons/WIPs-IETF-draft-deterministic-cbor
 
-## dCBOR Developer Libraries & Applications
 
-* **bc-dcbor-rust Library** - https://github.com/BlockchainCommons/bc-dcbor-rust
-* **BCSwiftDCBOR Library** - https://github.com/BlockchainCommons/BCSwiftDCBOR
+**Developer Resource Apps:**
+
 * **dcbor-cli Parser/Validator** - https://github.com/BlockchainCommons/dcbor-cli
 
 ## dCBOR Discussions
