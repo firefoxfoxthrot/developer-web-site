@@ -72,7 +72,7 @@ follow the specifications laid out in this Draft.
 **Developer Resources:**
 
 * [**dCBOR IETF I-D**](https://datatracker.ietf.org/doc/draft-mcnally-deterministic-cbor/) (IETF)
-* [**Editor's Draft (Repo)](https://github.com/BlockchainCommons/WIPs-IETF-draft-deterministic-cbor) (GitHub)
+* [**Editor's Draft (Repo)**](https://github.com/BlockchainCommons/WIPs-IETF-draft-deterministic-cbor) (GitHub)
 
 **Developer Resource Apps:**
 
