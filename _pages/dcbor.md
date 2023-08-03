@@ -9,7 +9,7 @@ title: Deterministic CBOR (dCBOR)
 hide_description: true
 classes:
   - wide
-permalink: /dcbor//
+permalink: /dcbor/
 sidebar:
   nav: dataformat
 ---
