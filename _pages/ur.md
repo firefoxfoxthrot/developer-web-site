@@ -33,7 +33,7 @@ structures](https://cbor.io/) in a URI.
 
 URs allow for the self-identified encoding of a variety of
 cryptographic data. This has been [widely
-adopted](https://github.com/BlockchainCommons/Gordian-Developer-Community#urs)
+adopted](/ur/implementations/)
 for use in PSBTs and is also available for many other types of data
 such as seeds, keys, and shards, [all listed in a registry of data
 types](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md). It's
@@ -170,7 +170,7 @@ For example:
 
 **Intro:**
 
-* [List of UR Implementations](https://github.com/BlockchainCommons/Gordian-Developer-Community/blob/master/README.md#urs)
+* [List of UR Implementations](/usr/implementations/)
 
 **Developer Resources:**
 
