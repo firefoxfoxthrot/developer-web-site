@@ -59,7 +59,7 @@ URs are important because:
     the data encoded within QR codes is not, resulting in inconsistent
     usage among developers. URs resolve these
     interoperability issues by creating a specified method for
-    encoding binary data using CBOR and by specifying how to sequence
+    encoding binary data using CBOR and by specifying [how to sequence](/animated-qrs/)
     larger binary encoding (as version 40 QR codes max out at 2,953
     bytes).
 * **They focus on the multisig experience.** Multisig is the
@@ -71,7 +71,7 @@ URs are important because:
 
 > :bulb: _URs are used widely in the Gordian reference apps, but
 community members have focused most on UR's sequencing feature to
-create animated QRs that support PSBTs. URs can do a lot more: they
+create [animated QRs](/animated-qrs) that support PSBTs. URs can do a lot more: they
 can support any airgapped Bitcoin function and more than that, can
 support data encoding and storage for a large number of decentralized
 technologies whether they're airgapped or not._
@@ -171,7 +171,7 @@ For example:
 **Intro:**
 
 * [List of UR Implementations](https://github.com/BlockchainCommons/Gordian-Developer-Community/blob/master/README.md#urs)
-* [Animated QRs](animated-qrs.md)
+
 **Developer Resources:**
 
 * [**BCR-2020-005: UR Specification**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-005-ur.md) (Blockchain Commons Research)

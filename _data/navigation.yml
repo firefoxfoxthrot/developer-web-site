@@ -10,6 +10,8 @@ main:
 dataformat:
   - title: Data Formats
     children:
+    - title: "Animated QRs"
+      url: /animated-qrs/
     - title: "ByteWords"
       url: /bytewords/
     - title: "dCBOR"
