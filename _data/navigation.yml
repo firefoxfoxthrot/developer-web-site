@@ -20,6 +20,23 @@ dataformat:
       url: /envelope/
     - title: "Uniform Resources"
       url: /urs/
+ckm:
+  - title: Uniform Resources
+    children:
+    - title: "Intro to URs"
+      url: /ur/
+    - title: "UR FAQs"
+      url: /ur/faq/
+    - title: "UR Implementations"
+      url: /ur/implementations/
+    - title: "crypto-seed Vectors"
+      url: /ur/vectors/seeds
+    - title: "URs for Keys"
+      url: /ur/keys/
+    - title: "URs for PSBTs"
+      url: /ur/psbts/
+    - title: "URs for SSKR"
+      url: /ur/sskr/
 seedrecovery:
   - title: Seed Recovery
     children:
