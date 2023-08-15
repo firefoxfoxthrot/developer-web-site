@@ -29,7 +29,7 @@ used to preserve both digital assets and metadata and which can be
 selectively elided to allow for the maintenance of privacy.
 * [**Animated QRs**](/animated-qrs/) offer a way to sequence QRs using
 Uniform Resources, allowing for the transmission of larger amounts of data.
-* [**Uniform Resources**](/urs/) is a self-identifying data format that
+* [**Uniform Resources**](/ur/) is a self-identifying data format that
 ensures that data is interoperable and will not suffer from bitrot if
 it's rediscovered far in the future.
 * [**ByteWords**](/bytewords/) is a methodology for representing data as

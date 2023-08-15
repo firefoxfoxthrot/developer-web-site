@@ -35,7 +35,7 @@ including: use of words with a uniform length of four letters; ability
 to minimally encode words with two letters; addition of a checksum;and
 specific selection of "interesting" words for improved memory.
 
-Bytewords is used by our [Uniform Resources](/urs/) specification.
+Bytewords is used by our [Uniform Resources](/ur/) specification.
 
 ## How Does Bytewords Work?
 
