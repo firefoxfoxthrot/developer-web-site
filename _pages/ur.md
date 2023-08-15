@@ -170,7 +170,7 @@ For example:
 
 **Intro:**
 
-* [List of UR Implementations](/usr/implementations/)
+* [List of UR Implementations](/ur/implementations/)
 
 **Developer Resources:**
 
@@ -179,7 +179,7 @@ For example:
 https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md) (Blockchain Commons Research)
 * [**Other UR Research Papers**](https://github.com/BlockchainCommons/Research/tree/master) (Blockchain Commons Research)
 
-* [**UR FAQ](ur-faq.md)
+* [**UR FAQ**](ur-faq.md)
 * [**A Guide to Using URs for PSBTs**](/ur/psbts/) [our biggest success story]
 * [**A Guide to Using URs for Key Material**](/ur/keys/)
 * [**A Guide to Using URs for SSKR**](/ur/sskr/)
@@ -192,4 +192,9 @@ https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-ur
 
 * [**Gordian Seed Tool**](https://github.com/BlockchainCommons/GordianSeedTool-iOS) (iOS)
 * [**seedtool-cli**](https://github.com/BlockchainCommons/seedtool-cli) (CLI)
+
+
+
+
+
 

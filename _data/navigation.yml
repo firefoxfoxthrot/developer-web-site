@@ -20,7 +20,7 @@ dataformat:
       url: /envelope/
     - title: "Uniform Resources"
       url: /urs/
-ckm:
+ur:
   - title: Uniform Resources
     children:
     - title: "Intro to URs"
