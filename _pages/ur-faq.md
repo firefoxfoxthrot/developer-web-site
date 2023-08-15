@@ -41,7 +41,7 @@ reference apps that support new ways to protect your digital
 assets. This discussion happens primarily in the [Gordian Developer
 Community](https://github.com/BlockchainCommons/Gordian-Developer-Community/discussions).
 
-### What Tools Can I Use to Understand CBOR?
+## What Tools Can I Use to Understand CBOR?
 
 Obviously, the most important tool is the [CBOR
 reference](https://tools.ietf.org/html/rfc7049), with our [dCBOR
@@ -66,7 +66,7 @@ CLI](https://github.com/BlockchainCommons/bytewords-cli) can also be
 of use, since CBOR is converted to bytewords for text encoding when
 constructing URs.
 
-### What Can Be Encoded in URs?
+## What Can Be Encoded in URs?
 
 *Any* data can be encoded as URs as long as it has a CBOR encoding and a user-defined UR type. The [Registry of Uniform Resource types](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md) lists data types that Blockchain Commons specifies, maintains, and promotes. You can also define proprietary [user-defined types](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md#user-defined-types-x-).
 
