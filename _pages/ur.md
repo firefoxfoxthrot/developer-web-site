@@ -10,6 +10,8 @@ hide_description: true
 classes:
   - wide
 permalink: /ur/
+redirect_from:
+	- /urs/
 sidebar:
   nav: ur
 ---
