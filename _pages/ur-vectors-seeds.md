@@ -43,7 +43,7 @@ sidebar:
 
 ### Seed with Date & Name
 
-![](/assets/images/ur/vectors/vector-seed-yinmn-name.png)
+![](/assets/images/ur/vector-seed-yinmn-name.png)
 
 ```
 {
