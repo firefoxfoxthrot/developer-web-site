@@ -184,6 +184,9 @@ https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-ur
 * [**A Guide to Using URs for SSKR**](ur-sskrs.md)
 * A Guide to Using URs for Request & Response (new version pending)
 
+* [**crypto-seed Test Vectors**](ur-seed-vectors.md)
+* Request & Response Test Vectors (new version pending)
+
 **Developer Reference Apps:**
 
 * [**Gordian Seed Tool**](https://github.com/BlockchainCommons/GordianSeedTool-iOS) (iOS)
