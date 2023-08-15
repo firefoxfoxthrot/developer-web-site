@@ -11,7 +11,7 @@ classes:
   - wide
 permalink: /ur/
 redirect_from:
-	- /urs/
+  - /urs/
 sidebar:
   nav: ur
 ---
