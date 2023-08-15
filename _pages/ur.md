@@ -181,6 +181,7 @@ For example:
 https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md) (Blockchain Commons Research)
 * [**Other UR Research Papers**](https://github.com/BlockchainCommons/Research/tree/master) (Blockchain Commons Research)
 
+* [**UR FAQ](ur-faq.md)
 * [**A Guide to Using URs for PSBTs**](ur-psbt.md) [our biggest success story]
 * [**A Guide to Using URs for Key Material**](ur-keys.md)
 * [**A Guide to Using URs for SSKR**](ur-sskrs.md)
