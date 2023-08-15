@@ -45,29 +45,44 @@ interoperability for Bitcoin apps released by different companies.
 URs are important because:
 
 * **They're self-identifying.** Different methodologies for
-    transferring keys such as `xpub`, `ypub`, and `zpub` have
-    proliferated and caused confusion. Worse, they've created layer
-    violations by mixing encoding and policy. UR is a
-    specification with more clearly defined layers that could be
-    expandable, yet still self-identify its contents.
-* **They're focused on security.** The transfer of key material
-    between devices is a prime point of vulnerability, and so URs do
-    their best to minimize that danger, ideally by supporting the
-    transmission of those keys (and seeds and other private
-    information) in an airgapped fashion.
-* **They integrate with QRs.** While QR codes themselves are standardized,
-    the data encoded within QR codes is not, resulting in inconsistent
-    usage among developers. URs resolve these
-    interoperability issues by creating a specified method for
-    encoding binary data using CBOR and by specifying [how to sequence](/animated-qrs/)
-    larger binary encoding (as version 40 QR codes max out at 2,953
-    bytes).
-* **They focus on the multisig experience.** Multisig is the
-    future of Bitcoin, allowing for the creation of independent and
-    resilient cryptocurrency addresses. Previous specifications are
-    locked into the single-sig paradigm, while URs include
-    specifications for a variety of data types crucial to multisig
-    use.
+transferring keys such as `xpub`, `ypub`, and `zpub` have proliferated
+and caused confusion. Worse, they've created layer violations by
+mixing encoding and policy. UR is a specification with more clearly
+defined layers that could be expandable, yet still self-identify its
+contents.
+* **They Provide Strong Layering.** Fundamentally, URs are a binary
+encoding with an optional textual encoding built atop that. Anything
+else is optional.
+* **They're transport independent.** Though URs offer powerful support
+for certain forms of transport, they're not directly linked to those
+other layers: they can be used uniformly for URIs, QRs, NFCs, or other
+transport methodologies, offering strong interoperability.
+
+Depending on how URs are used, they can offer even more advantages.
+
+* **They Can Offer Support for QRs.** While QR codes themselves are
+standardized, the data encoded within QR codes is not, resulting in
+inconsistent usage among developers. When used with QRs, URs resolve
+these interoperability issues by creating a specified method for
+encoding binary data using CBOR and by specifying [how to
+sequence](/animated-qrs/) larger binary encoding (as version 40 QR
+codes max out at 2,953 bytes).
+* **They Can Improve Human Factors.** If the [Bytewords](/bytewords/)
+encoding is used with QRs, they become easy to visual and verify,
+thanks to the careful selection of the Bytewords to ensure that
+they're both unique and easy to remember/distinguish.
+* **They Can Offer Support for Security.** Similarly, URs can offer
+improved security if they are used with a transport mechanism such
+as QR or NFCs, which enable airgaps. Since the transfer of key
+material between devices is a prime point of vulnerability, this can
+be a big gain.
+* **They Can Make Multisigs Easy.** Multisig is the future of Bitcoin,
+allowing for the creation of independent and resilient cryptocurrency
+addresses. Previous specifications are locked into the single-sig
+paradigm, while URs include specifications for a variety of data types
+crucial to multisig use, and can also allow for the transport of the
+larger PSBTs required by multisigs, thanks to its options for
+[Animated QRs](/animated-qrs/).
 
 > :bulb: _URs are used widely in the Gordian reference apps, but
 community members have focused most on UR's sequencing feature to
