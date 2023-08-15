@@ -19,7 +19,7 @@ dataformat:
     - title: "Envelope"
       url: /envelope/
     - title: "Uniform Resources"
-      url: /urs/
+      url: /ur/
 ur:
   - title: Uniform Resources
     children:
