@@ -32,15 +32,15 @@ envelope:
     - title: "Use Cases Summary"
       url: /envelope/use-cases-summary/
     - title: "Educational Use Cases"
-      url: /envelope/use-cases-educational/
+      url: https://github.com/BlockchainCommons/developer-web-site/blob/master/_pages/envelope-usecases-educational.md
     - title: "Wellness Use Cases"
-      url: /envelope/use-cases-wellness/
+      url: https://github.com/BlockchainCommons/developer-web-site/blob/master/_pages/envelope-usecases-wellness.md
     - title: "Data Use Cases"
-      url: /envelope/use-cases-data/
+      url: https://github.com/BlockchainCommons/developer-web-site/blob/master/_pages/envelope-usecases-data.md
     - title: "Digital Assets Use Cases"
-      url: /envelope/use-cases-assets/
+      url: https://github.com/BlockchainCommons/developer-web-site/blob/master/_pages/envelope-usecases-assets.md
     - title: "Software Release Use Cases"
-      url: /envelope/use-cases-software/
+      url: https://github.com/BlockchainCommons/developer-web-site/blob/master/_pages/envelope-usecases-software.md
     - title: "Return to Data Format"
       url: /dataformat/
 ur:
