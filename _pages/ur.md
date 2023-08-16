@@ -40,7 +40,7 @@ types](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020
 optimized for airgapped usage and allows for standardized
 interoperability for Bitcoin apps released by different companies.
 
-## What are URs Important?
+## Why are URs Important?
 
 URs are important because:
 
