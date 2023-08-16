@@ -73,7 +73,11 @@ e54d6fd3 NODE
 The third form is the graphical `--mermaid` output, which also
 includes hashes, but it can get very large (and the text can get very
 tiny) for big trees. However, it's excluded from these examples mainly
-beacuse GitHub doesn't support Mermaid usage on GitHub pages.
+because GitHub doesn't support Mermaid usage on GitHub pages.
+
+Envelopes can be more complex with multiple assertions possible for
+every subjects, such as in this example Alice's differing feelings
+toward different people:
 
 ```
 "Alice" [
