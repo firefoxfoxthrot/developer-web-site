@@ -137,6 +137,9 @@ Envelope design:
     times: if two Envelopes contain the same data, they will be
     encoded the same way.
 
+_Please see the [Technical Overview](/envelope/tech/) for more
+specifics on how Envelopes work._
+
 ### Elision Support
 
 * **Elision of All Elements.** Gordian Envelopes innately support
