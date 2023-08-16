@@ -96,7 +96,7 @@ toward different people:
         c0b2b377 pred "likes"
         13b74194 obj "Bob"
 ```
-However the abstract examples in this techinical overview will largely constrain themselves to a simple single-assertion envelope.
+However the abstract examples in this technical overview will largely constrain themselves to a simple single-assertion envelope.
 
 > _See the [Envelope
 Docs](https://github.com/BlockchainCommons/Gordian/tree/master/Envelope#articles)
