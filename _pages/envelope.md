@@ -258,10 +258,10 @@ _See the [Gordian Envelope playlist](https://www.youtube.com/playlist?list=PLCkr
 ### Use Cases:
 
 * [**Overview of Envelope Use Cases**](/envelope/use-cases/)
-* [**Summary of Use Cases**](/envelope/use-cases-summary/)
-* [**Educational Use Cases**](/envelope/use-cases-educational/)
-* [**Wellness Use Cases**](/envelope/use-cases-wellness/)
-* [**Data Distribution Use Cases**](/envelope/use-cases-data/)
-* [**Asset Control Use Cases**](/envelope/use-cases-assets/)
-* [**Software Release Use Cases*8](/envelope/use-cases-software/)
+* [**Summary of Use Cases**](/envelope/use-cases/summary/)
+* [**Educational Use Cases**](/envelope/use-cases/educational/)
+* [**Wellness Use Cases**](/envelope/use-cases/wellness/)
+* [**Data Distribution Use Cases**](/envelope/use-cases/data/)
+* [**Asset Control Use Cases**](/envelope/use-cases/assets/)
+* [**Software Release Use Cases*8](/envelope/use-cases/software/)
 
