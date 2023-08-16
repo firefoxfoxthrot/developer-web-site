@@ -28,7 +28,7 @@ keys, Decentralized Identifiers (DIDs), Verifiable Credentials
 
 This document outlines the most important technical features of
 Gordian Envelopes in abstract Alice and Bob form. See our [Use Case
-Intro](Use-Cases/README.md) for more real-world focused designs.
+Intro](/envelope/use-cases/) for more real-world focused designs.
 
 ## Envelope Structure
 
