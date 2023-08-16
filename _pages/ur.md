@@ -207,7 +207,7 @@ https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-ur
 
 * [**Gordian Seed Tool**](https://github.com/BlockchainCommons/GordianSeedTool-iOS) (iOS)
 * [**seedtool-cli**](https://github.com/BlockchainCommons/seedtool-cli) (CLI)
-* [URDemo](https://github.com/BlockchainCommons/URDemo)
+* [**URDemo**](https://github.com/BlockchainCommons/URDemo)
 
 
 
