@@ -19,7 +19,7 @@ sidebar:
 Bytewords is a method for encoding binary objects as a sequence of
 four-letter English words.
 
-## What is Bytewords Important?
+## Why is Bytewords Important?
 
 Encoding binary strings as human-readable words allows for better
 human
