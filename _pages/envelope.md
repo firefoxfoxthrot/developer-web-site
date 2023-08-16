@@ -235,7 +235,9 @@ _See the [Gordian Envelope playlist](https://www.youtube.com/playlist?list=PLCkr
 
 **Intro:**
 
-* [**A Technical Overview of Envelopes**](https://github.com/BlockchainCommons/Gordian/blob/master/Envelope/Intro-Tech.md)
+* [**A Technical Overview of Envelopes**](/envelope/tech/)
+* [**The Dangers of Digital Credentials in Education**](https://www.blockchaincommons.com/articles/Dangerous-Educational-Credentials/) (blog article)
+* [**Protecting Your Wellness Data with Hashed Elision**](https://www.blockchaincommons.com/articles/Dangerous-Wellness-Data/) (blog article)
 
 **Develope Resources:**
 

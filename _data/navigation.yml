@@ -20,6 +20,29 @@ dataformat:
       url: /envelope/
     - title: "Uniform Resources"
       url: /ur/
+envelope:
+  - title: Gordian Envelope
+    children:
+    - title: "Intro to Envelopes"
+      url: /envelope/
+    - title: "Technical Overview"
+      url: /envelope/tech/
+    - title: "Use Cases Overview"
+      url: /envelope/use-cases/
+    - title: "Use Cases Summary"
+      url: /envelope/use-cases-summary/
+    - title: "Educational Use Cases"
+      url: /envelope/use-cases-educational/
+    - title: "Wellness Use Cases"
+      url: /envelope/use-cases-wellness/
+    - title: "Data Use Cases"
+      url: /envelope/use-cases-data/
+    - title: "Digital Assets Use Cases"
+      url: /envelope/use-cases-assets/
+    - title: "Software Release Use Cases"
+      url: /envelope/use-cases-software/
+    - title: "Return to Data Format"
+      url: /dataformat/
 ur:
   - title: Uniform Resources
     children:
@@ -37,6 +60,8 @@ ur:
       url: /ur/psbts/
     - title: "URs for SSKR"
       url: /ur/sskr/
+    - title: "Return to Data Format"
+      url: /dataformat/
 seedrecovery:
   - title: Seed Recovery
     children:
