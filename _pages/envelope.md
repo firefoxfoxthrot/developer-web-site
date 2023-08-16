@@ -259,9 +259,9 @@ _See the [Gordian Envelope playlist](https://www.youtube.com/playlist?list=PLCkr
 
 * [**Overview of Envelope Use Cases**](/envelope/use-cases/)
 * [**Summary of Use Cases**](/envelope/use-cases/summary/)
-* [**Educational Use Cases**](/envelope/use-cases/educational/)
-* [**Wellness Use Cases**](/envelope/use-cases/wellness/)
-* [**Data Distribution Use Cases**](/envelope/use-cases/data/)
-* [**Asset Control Use Cases**](/envelope/use-cases/assets/)
-* [**Software Release Use Cases*8](/envelope/use-cases/software/)
+* [**Educational Use Cases**](https://github.com/BlockchainCommons/developer-web-site/blob/master/_pages/envelope-usecases-educational.md) (GitHub repo)
+* [**Wellness Use Cases**](https://github.com/BlockchainCommons/developer-web-site/blob/master/_pages/envelope-usecases-wellness.md) (GitHub repo)
+* [**Data Distribution Use Cases**](https://github.com/BlockchainCommons/developer-web-site/blob/master/_pages/envelope-usecases-data.md) (GitHub repo)
+* [**Asset Control Use Cases**](https://github.com/BlockchainCommons/developer-web-site/blob/master/_pages/envelope-usecases-assets.md) (GitHub repo)
+* [**Software Release Use Cases**](https://github.com/BlockchainCommons/developer-web-site/blob/master/_pages/envelope-usecases-software.md) (GitHub repo)
 
