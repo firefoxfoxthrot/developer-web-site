@@ -86,7 +86,7 @@ The following privacy-presevering features are demonstrated in wellness use case
 * People and places alike can be protect through herd privacy of hashing.
 
 See the [Wellness Use
-Cases](/envelope/use-cases/summary/#wellness-use-case)
+Cases](/envelope/use-cases/summary/#wellness-use-cases)
 for illustrated examples of these features and further discussion.
 
 ## Data Distribution Use Cases
