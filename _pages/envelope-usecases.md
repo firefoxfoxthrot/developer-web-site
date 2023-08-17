@@ -33,7 +33,7 @@ are being used in two major Blockchain Commons projects.
     thus the heart of that system.
 
 There are also a broad swath of additional use cases, as outlined
-below. See the [Use Case Summary](/envelope/use-case/summary/) for
+below. See the [Use Case Summary](/envelope/use-cases/summary/) for
 more complete breakdown of each category.
 
 ## Educational & Credential Industry Use Cases
