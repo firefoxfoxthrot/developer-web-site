@@ -30,7 +30,7 @@ envelope:
     - title: "Use Cases Overview"
       url: /envelope/use-cases/
     - title: "Use Cases Summary"
-      url: /envelope/use-cases-summary/
+      url: /envelope/use-cases/summary/
     - title: "Educational Use Cases"
       url: https://github.com/BlockchainCommons/developer-web-site/blob/master/_pages/envelope-usecases-educational.md
     - title: "Wellness Use Cases"
