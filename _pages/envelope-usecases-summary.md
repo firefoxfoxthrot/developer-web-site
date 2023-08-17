@@ -13,7 +13,6 @@ permalink: /envelope/use-cases/summary/
 sidebar:
   nav: envelope
 ---
-# Gordian Envelope Use Cases
 
 The [Gordian Envelope](/envelope/) Smart Document is a powerful new
 method of data storage and transmission that focuses on protecting the
