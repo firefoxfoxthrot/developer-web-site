@@ -14,6 +14,8 @@ toc: true
 toc_label: Lifehash FAQ
 ---
 
+## General Questions
+
 ### Is LifeHash Secure?
 
 LifeHash is not a cryptographic hash. Anecdotally, it proves very
@@ -23,12 +25,11 @@ level, studies would have to be done to prove that its visual hashing
 method were truly random and that visually similar hashes didn't
 dramatically increase the collision rate.
 
-LifeHash is iinstead a human-factor/UX hack: something meant to make
-it easier for us, as humans, to deal with the security of
-cryptographic systems. We know that humans aren't actually any good at
-reading the long numbers that are the actual identifiers for
-cryptographic seeds and keys. LifeHash offers a complementary
-identification method.
+LifeHash is instead a human-factor/UX hack: something meant to make it
+easier for us, as humans, to deal with the security of cryptographic
+systems. We know that humans aren't actually any good at reading the
+long numbers that are the actual identifiers for cryptographic seeds
+and keys. LifeHash offers a complementary identification method.
 
 Practically, that means that LifeHash should always be used
 _alongside_ other identification methods, such as digests. Our

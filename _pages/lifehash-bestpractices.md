@@ -45,19 +45,19 @@ this for you.
 The biggest challenge in using LifeHash is in determining how to
 ensure the LifeHash that's being tested against is valid.
 
-First, we need ways to ensure that a LifeHash wasn't created by a
+First, you need ways to ensure that a LifeHash wasn't created by a
 hacker. If a hacker fakes a bit of data, and then makes a valid
 LifeHash based on that data, then nothing is gained.
 
-Second, we need to be aware that there will be ways to throw CPUs at
+Second, you need to be aware that there will be ways to throw CPUs at
 LifeHashes to produce near-matches, just as is the case with normal
 hashes.
 
 The best solution for these challenges is to consider LifeHashes one
-tool in a larger arsenal. If we make sure we know the identity of
+tool in a larger arsenal. If you make sure you know the identity of
 senders, through closely held devices, certs, or peer-to-peer
-connections; and if we check other data such as the digital hash
-itself; then we can increase our security through the examination of a
+connections; and if you check other data such as the digital hash
+itself; then you can increase our security through the examination of a
 LifeHash as well.
 
 ## Library Usage

@@ -35,8 +35,6 @@ for Blockchain Commons' standard test seeds.
 
 ![](/assets/images/lifehash-128-master.png)
 
-### Cosigner Public Key Lifehash
-
 ## 256-bit Seed
 
 {% include seed-256.md %}
@@ -54,5 +52,3 @@ for Blockchain Commons' standard test seeds.
 * **Hash of Hex Bytes:** `bea6ac5bcee436cdb44631729c861ba98cddbbde212d030cbb7e9572d03cb8cd`
 
 ![](/assets/images/lifehash-256-master.png)
-
-### Cosigner Public Key Lifehash

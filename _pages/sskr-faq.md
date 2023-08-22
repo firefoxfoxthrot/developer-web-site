@@ -39,15 +39,15 @@ different every time you generate them.
 Protecting larger amounts of data is often important.  Most notably, a
 standard BIP-32 HD wallet is typically built with a 32-byte private
 key and its 32-byte chain, which is twice what SSKR can
-protect. However, there are other use cases, such as protecting a seed
-with associated metadata.
+protect. However, there are other use cases requiring more bytes, such
+as protecting a seed with associated metadata.
 
 There are a number of ways this can be accomplished:
 
 1. Create multiple SSKR objects.
 2. Protect a 32-byte symmetric key using SSKR, and then use that key
 to protect the larger data.
-3. Use [Gordian Envelope](https://www.blockchaincommons.com/introduction/Envelope-Intro/).
+3. Use [Gordian Envelope](/envelope).
 
 Gordian Envelope was specifically written to resolve this dilemma.
 
@@ -124,7 +124,7 @@ it from the BIP-39 mnemonics and thus avoid confusion. If something is
 encoded with BIP-39 words, it's likely a SLIP-39 share, while if
 something is encoded with ByteWords, it's likely an SSKR share.
 
-## What do the different parts of an SSKR share mean?
+### What Do the Different Parts of an SSKR Share Mean?
 
 <figure class="half">
   <a href="/assets/images/sskr/export-2.jpg"><img src="/assets/images/sskr/export-2.jpeg"></a>
@@ -143,7 +143,7 @@ the shares in a split, and the next two ("able acid") describe the
 group threshold, count, and index, plus the member threshold, so
 they're the same for all the shares in a group.
 
-There's also checksum at the end ("toys flap solo film"), which is
+There's also a checksum at the end ("toys flap solo film"), which is
 part of the [Uniform Resource](/ur/) specification that is used in
 conjunction with Bytewords: it allows for error detection when
 decoding the UR.
@@ -156,14 +156,13 @@ Note also that the non-repetitive words will change each time you
 regenerate SSKR shares from a secret. This is also expected: there is
 a random factor in SSKR generation.
 
-
 ## SSKR Libraries
 
 ### Why Did We Create New Libraries?
 
 Obviously, with a new specification, we also needed libraries for that
-specification. We created C reference libraries for SSS and SSKR and
-modularizing the contents to allow a developer to pick and choose how
+specification. We created C reference libraries for SSS and SSKR to
+modularize the contents and allow a developer to pick and choose how
 they were put together. 
 
 {% include lib-shamir.md %}
@@ -177,14 +176,14 @@ incorporating fundamental problems, from the lack of round-tripping in
 SLIP-39, to incorrect use of entropy in other implementations. Thus,
 we were happy to offer our own implementation, building on the
 cryptographic expertise of Blockchain Commons members and other
-experts in the field such as Daan Sprenkels.
+experts in the field such as Daan Sprenkels, and then to submit those
+libraries to a [security review](https://github.com/BlockchainCommons/bc-sskr/blob/master/SECURITY-REVIEW.md).
 
 ## SSKR Expansions
 
 ### How Does SSKR Compare to Previous Sharding Standards?
 
 SSKR expands on the capabilities of previous standards, including:
-
 
 1. Compatibility with BIP-39.
 2. Implementation of two-level shares.
@@ -199,20 +198,19 @@ can also implement a two-level hierarchy with multiple groups, each of
 which contain some shares. You can then specify a threshold for both
 groups and shares.
 
-For example, you could create shares for 2 groups: the first group
+For example, you could create shares for two groups: the first group
 might require 2 of 3 shares and the second group might require 3 of 5
 shares. With a group threshold of 2, individual thresholds from both
 groups must be met.
 
 ### What are URs?
 
-URs are [Uniform
-Resources](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-005-ur.md),
-another Blockchain Commons specification. They describe a methodology
-for efficient, self-describing resources, and are easily interoperable
-with Bytewords. We choose them as another output format for SSKR.
+URs are [Uniform Resources](/ur/) another Blockchain Commons
+specification. They describe a methodology for efficient,
+self-describing resources, and are easily interoperable with
+Bytewords. We choose them as another output format for SSKR.
 
-See [A Guide to Using URs for SSKRs](ur-3-sskrs.md) for how Byteword
+See [A Guide to Using URs for SSKRs](/ur/sskr/) for how Byteword
 SSKRs and UR SSKRs are encoded, and how they slightly differ as well
 as the [URs page](/ur/) for more general information.
 

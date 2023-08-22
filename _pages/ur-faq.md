@@ -12,6 +12,8 @@ classes:
 permalink: /ur/faq/
 sidebar:
   nav: ur
+toc: true
+toc_label: UR FAQ  
 ---
 
 ## General Questions
@@ -36,6 +38,8 @@ particularly important when QRs are being used to communicate through
 an airgap, because of UR's support for QRs and particularly for
 Animated QRs.
 
+### Who Supports the Use of Airgaps?
+
 Blockchain Commons' development of airgap specifications is not just
 the product of our work, but also cooperation with other Bitcoin
 wallet companies to create digital formats, specifications, and
@@ -45,15 +49,22 @@ Community](https://github.com/BlockchainCommons/Gordian-Developer-Community/disc
 
 ### What Can Be Encoded in URs?
 
-*Any* data can be encoded as URs as long as it has a CBOR encoding and a user-defined UR type. The [Registry of Uniform Resource types](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md) lists data types that Blockchain Commons specifies, maintains, and promotes. You can also define proprietary [user-defined types](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md#user-defined-types-x-).
+*Any* data can be encoded as URs as long as it has a CBOR encoding and
+a user-defined UR type. The [Registry of Uniform Resource
+types](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md)
+lists data types that Blockchain Commons specifies, maintains, and
+promotes. You can also define proprietary [user-defined
+types](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md#user-defined-types-x-).
 
-To date, the major uses have fallen into three categories:
+To date, the major uses of URs have fallen into three categories:
 
-* **PSBT Signing.** URs can transfer PSBTs as they are being signed (`ur:crypto-psbt`).
-* **Key Transfer.** URs can be encode seeds (`ur:crypto-seed`), HD keys, (`ur:crypto-hdkey`), and SSKR shards (`ur:crypto-sskr`).
+* **PSBT Signing.** URs can transfer PSBTs as they are being signed.
+* **Key Transfer.** URs can be encode seeds and HD keys.
 * **SSKR Shares.** URs can encode shards of a key or seed sharded by SSKR.
  
-When data is being transferred between airgapped apps, it often is done as part of a request (`ur:crypto-request`) / response (`ur:crypto-response`) interaction, as defined in [BCR-2021-001](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2021-001-request.md).
+When data is being transferred between airgapped apps, it is usually
+done with a [Gordian Envelope](/envelope/) and may be part of a
+request-response interaction.
 
 ## Encoding Questions
 
@@ -70,7 +81,7 @@ used in QRs.
 
 Obviously, the most important tool is the [CBOR
 reference](https://tools.ietf.org/html/rfc7049), with our [dCBOR
-specification](https://datatracker.ietf.org/doc/draft-mcnally-deterministic-cbor/)
+profile](https://datatracker.ietf.org/doc/draft-mcnally-deterministic-cbor/)
 trailing close behind.
 
 CBOR has a more human-readable text [diagnostic
@@ -79,15 +90,15 @@ should become familiar with. When you are testing your understanding
 of how CBOR encoding works or debugging, you can use the [CBOR
 Playground](http://cbor.me/) to transform CBOR between hex and
 diagnostic notation, or if you prefer a command-line implementation,
-the [CBOR-cli](https://www.npmjs.com/package/cbor-cli), which can be
-installed with `npm` if you have Node.js installed.
+use the [CBOR-cli](https://www.npmjs.com/package/cbor-cli), which can
+be installed with `npm` if you have Node.js installed.
 
 Specifications for CBOR structures are written in the [Concise Data
-Defintion Language
+Definition Language
 (CDDL)](https://datatracker.ietf.org/doc/html/rfc8610).
 
 The [bytewords
 CLI](https://github.com/BlockchainCommons/bytewords-cli) can also be
-of use, since CBOR is converted to bytewords for text encoding when
+of use, since CBOR is converted to Bytewords for text encoding when
 constructing URs.
 

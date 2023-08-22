@@ -35,8 +35,9 @@ don't want them to think they might be the same thing!
 When possible, use the cleanest, most original data that you can. Use
 the [digest source
 specifications](https://github.com/BlockchainCommons/GordianSeedTool-iOS)
-for seeds, keys, and anything else we specify. Try to use original
-data over constructed data for other representations.
+for seeds, keys, and anything else that has been specified, for
+interoperability. Try to use original data over constructed data for
+other representations.
 
 ### Differentiate Your Hashes When Possible
 
@@ -51,10 +52,8 @@ different things.
 
 ### Be Aware of How You Abbreviate Hashes
 
-We abbreviate our OIB hash to seven characters. Abbreviated to just
+We abbreviate our OIB hash to seven characters. Abbreviating to just
 the first and last characters is another common technique. However, be
 aware of what those characters represent. In some cases (such as
 Bitcoin addresses) a leading character is always the same. Too much of
 that, and your hash isn't meaningful!
-
-

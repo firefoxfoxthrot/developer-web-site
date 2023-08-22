@@ -17,7 +17,7 @@ sidebar:
 LifeHash provides a beautiful visual representation of any digital
 hash. It was designed as an adjunct method for recognizing
 cryptocurrency keys and seeds, supplementing current computer
-algorithms as well as visual methods for examining digital hashes such
+algorithms as well as visual methods for examining digital hashes, such
 as looking at the first and last characters.
 
 LifeHash is particularly useful for airgapped architectures, where
@@ -57,7 +57,9 @@ can later verify that LifeHash still looks the same when they interact
 with the DID, to ensure that no one has changed the contents of their
 address book since its entry.
 
-***Example.*** A web site offers a QR code for sending it Bitcoins and backs that up with a LifeHash. After reading the QR code, the user can check the LifeHash on their own device to make sure it matches.
+***Example.*** A web site offers a QR code for sending it Bitcoins and
+backs that up with a LifeHash. After reading the QR code, the user can
+check the LifeHash on their own device to make sure it matches.
 
 ## LifeHashing Computations
 
