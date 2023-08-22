@@ -101,6 +101,63 @@ Seeing the need for a new specification that roundtripped with BIP-39
 also allowed the possibility for expansion, which permitted us to
 introduce two-level shares as a major new feature.
 
+## SSKR Words
+
+### What are Bytewords?
+
+SSKR shares can be output as
+[Bytewords](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md),
+which is a specification for outputting encoded binary data as English
+words.
+
+Bytewords has several advantages. It's as efficient as hex, the words
+are all a uniform four letters, there are no homophones, and the first
+and last characters of each word differ from other words. Words were
+also specifically chosen to either be concrete or else to have
+valence. All around, the goal was to make ByteWords very easy to
+distinguish.
+
+See [the ByteWords page](/bytewords/) for more information.
+
+BytesWords were purposefully chosen for use with SSKR to differentiate
+it from the BIP-39 mnemonics and thus avoid confusion. If something is
+encoded with BIP-39 words, it's likely a SLIP-39 share, while if
+something is encoded with ByteWords, it's likely an SSKR share.
+
+## What do the different parts of an SSKR share mean?
+
+<figure class="third">
+  <a href="/assets/images/sskr/export-1.jpg"><img src="/assets/images/sskr/export-1.jpeg"></a>
+  <a href="/assets/images/sskr/export-2.jpg"><img src="/assets/images/sskr/export-2.jpeg"></a>
+  <a href="/assets/images/sskr/export-3.jpg"><img src="/assets/images/sskr/export-3.jpeg"></a>  
+</figure>
+
+An SSKR share contains a secret, but there are about a dozen
+additional words that help to define the share.
+
+To start with, note the overlap in words in different
+shares:
+this is expected. The first four words will always be the same as they
+describe the share as SSKR ("tuna acid epic") of a specific length
+("gyro"). The next two ("flap pose") are a fingerprint that match all
+the shares in a split, and the next two ("able acid") describe the
+group threshold, count, and index, plus the member threshold, so
+they're the same for all the shares in a group.
+
+There's also checksum at the end ("toys flap solo film"), which is
+part of the [Uniform Resource](/ur/) specification that is used in
+conjunction with Bytewords: it allows for error detection when
+decoding the UR.
+
+SSKR | length | ID | group & member info | secret share | checksum
+---|---|---|---|---|---
+tuna acid epic | gyro | flap pose | able acid able | even iris... taco wolf | toys flap solo film
+
+Note also that the non-repetitive words will change each time you
+regenerate SSKR shares from a secret. This is also expected: there is
+a random factor in SSKR generation.
+
+
 ## SSKR Libraries
 
 ### Why Did We Create New Libraries?
@@ -132,7 +189,7 @@ SSKR expands on the capabilities of previous standards, including:
 
 1. Compatibility with BIP-39.
 2. Implementation of two-level shares.
-3. Encoding of shares as ByteWords.
+3. Encoding of shares as Bytewords.
 4. Integration with URs.
 
 ### What are Two-Level Shares?
@@ -148,36 +205,15 @@ might require 2 of 3 shares and the second group might require 3 of 5
 shares. With a group threshold of 2, individual thresholds from both
 groups must be met.
 
-### What are ByteWords?
-
-SSKR shares can be output as
-[Bytewords](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md),
-which is a specification for outputting encoded binary data as English
-words.
-
-ByteWords has several advantages. It's as efficient as hex, the words
-are all a uniform four letters, there are no homophones, and the first
-and last characters of each word differ from other words. Words were
-also specifically chosen to either be concrete or else to have
-valence. All around, the goal was to make ByteWords very easy to
-distinguish.
-
-See [the ByteWords page](/bytewords/) for more information.
-
-BytesWords were purposefully chosen for use with SSKR to differentiate
-it from the BIP-39 mnemonics and thus avoid confusion. If something is
-encoded with BIP-39 words, it's likely a SLIP-39 share, while if
-something is encoded with ByteWords, it's likely an SSKR share.
-
 ### What are URs?
 
 URs are [Uniform
 Resources](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-005-ur.md),
 another Blockchain Commons specification. They describe a methodology
 for efficient, self-describing resources, and are easily interoperable
-with ByteWords. We choose them as another output format for SSKR.
+with Bytewords. We choose them as another output format for SSKR.
 
-See [A Guide to Using URs for SSKRs](ur-3-sskrs.md) for how ByteWord
+See [A Guide to Using URs for SSKRs](ur-3-sskrs.md) for how Byteword
 SSKRs and UR SSKRs are encoded, and how they slightly differ as well
 as the [URs page](/ur/) for more general information.
 

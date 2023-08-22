@@ -32,11 +32,12 @@ It's too easy for a user to lose the seed or key that control their
 assets, and thus the assets.
 
 SSKR resolves the Single Point of Failure (SPOF) represented by a seed
-by allowing a backup of the seed to be in a way that doesn't introduce
-a Single Point of Compromise (SPOC) to the system. It does by using
-Shamir's Secret Sharing to shard a secret, with the intent being that
-the shares are then placed in discrete, remote locations. The seed can
-only be recovered.
+by allowing a backup of the seed to be created in a way that doesn't
+introduce a Single Point of Compromise (SPOC) to the system. It does
+by using Shamir's Secret Sharing to shard a secret, with the intent
+being that the shares are then placed in discrete, remote
+locations. The seed can only be recovered if a sufficient threshold of
+shares are then combined.
 
 ## How Does SSKR Work?
 
@@ -56,24 +57,7 @@ The user would take these shares and give one each to three different
 trusted people (or places, such as a safe or bank vault). (Or, this
 could be automated using [CSR](/csr/).)
 
-Note [the overlap in words in different
-shares](https://github.com/BlockchainCommons/crypto-commons/blob/master/Docs/ur-3-sskrs.md#the-difference-between-sskr-bytewords-and-sskr-urs):
-this is expected. The first four words will always be the same as they
-describe the share as SSKR ("tuna acid epic") of a specific length
-("gyro"). The next two ("flap pose") are a fingerprint that match all
-the shares in a split, and the next two ("able acid") describe the
-group threshold, count, and index, plus the member threshold, so
-they're the same for all the shares in a group. There's then a
-checksum at the end ("toys flap solo film"), which is also how
-SeedTool identifies individual shares.
-
-SSKR | length | ID | group & member info | secret share | checksum
----|---|---|---|---|---
-tuna acid epic | gyro | flap pose | able acid able | even iris... taco wolf | toys flap solo film
-
-Note also that these words will change each time you regenerate SSKR
-shares from a secret. This is also expected: there is a random factor
-in SSKR generation.
+_See the [SSKR FAQ](/sskr/faq/) for a more complete explanation of these words._
 
 ### How Does Advanced SSKR Work?
 
