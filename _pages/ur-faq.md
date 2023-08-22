@@ -14,7 +14,9 @@ sidebar:
   nav: ur
 ---
 
-## What is an Airgap?
+## General Questions
+
+### What is an Airgap?
 
 You can't ever be certain that a network or serial interface between
 two devices won't lead to one of those devices corrupting the
@@ -41,7 +43,30 @@ reference apps that support new ways to protect your digital
 assets. This discussion happens primarily in the [Gordian Developer
 Community](https://github.com/BlockchainCommons/Gordian-Developer-Community/discussions).
 
-## What Tools Can I Use to Understand CBOR?
+### What Can Be Encoded in URs?
+
+*Any* data can be encoded as URs as long as it has a CBOR encoding and a user-defined UR type. The [Registry of Uniform Resource types](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md) lists data types that Blockchain Commons specifies, maintains, and promotes. You can also define proprietary [user-defined types](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md#user-defined-types-x-).
+
+To date, the major uses have fallen into three categories:
+
+* **PSBT Signing.** URs can transfer PSBTs as they are being signed (`ur:crypto-psbt`).
+* **Key Transfer.** URs can be encode seeds (`ur:crypto-seed`), HD keys, (`ur:crypto-hdkey`), and SSKR shards (`ur:crypto-sskr`).
+* **SSKR Shares.** URs can encode shards of a key or seed sharded by SSKR.
+ 
+When data is being transferred between airgapped apps, it often is done as part of a request (`ur:crypto-request`) / response (`ur:crypto-response`) interaction, as defined in [BCR-2021-001](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2021-001-request.md).
+
+## Encoding Questions
+
+### Why Not Use Base64?
+
+URs were specifically designed to support more efficient usage in QRs,
+and that's one of their prime advantages over base64. When a UR is
+properly stored as upper-case letters, it can be encoded in a QR using
+the "alphanumeric" encoding mode, while base64 requires "binary"
+encoding mode. base64 thus wastes at least two bits per character when
+used in QRs.
+
+### What Tools Can I Use to Understand CBOR?
 
 Obviously, the most important tool is the [CBOR
 reference](https://tools.ietf.org/html/rfc7049), with our [dCBOR
@@ -66,14 +91,3 @@ CLI](https://github.com/BlockchainCommons/bytewords-cli) can also be
 of use, since CBOR is converted to bytewords for text encoding when
 constructing URs.
 
-## What Can Be Encoded in URs?
-
-*Any* data can be encoded as URs as long as it has a CBOR encoding and a user-defined UR type. The [Registry of Uniform Resource types](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md) lists data types that Blockchain Commons specifies, maintains, and promotes. You can also define proprietary [user-defined types](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md#user-defined-types-x-).
-
-To date, the major uses have fallen into three categories:
-
-* **PSBT Signing.** URs can transfer PSBTs as they are being signed (`ur:crypto-psbt`).
-* **Key Transfer.** URs can be encode seeds (`ur:crypto-seed`), HD keys, (`ur:crypto-hdkey`), and SSKR shards (`ur:crypto-sskr`).
-* **SSKR Shares.** URs can encode shards of a key or seed sharded by SSKR.
- 
-When data is being transferred between airgapped apps, it often is done as part of a request (`ur:crypto-request`) / response (`ur:crypto-response`) interaction, as defined in [BCR-2021-001](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2021-001-request.md).

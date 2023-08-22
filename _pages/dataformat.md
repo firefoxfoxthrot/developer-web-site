@@ -18,21 +18,24 @@ sidebar:
 
 _Data formats are the hidden heroes of technology. They're what allow
 for the accurate usage of data. Blockchain Commons technologies are
-built on a stack of four data formats. Together they allow for
-deterministic, self-identifying storage of data in a
+built on a stack of data formats. Together they allow for
+deterministic, self-identifying transmission of data in a
 privacy-preserving way._
 
 _From the top down, these formats are:_
 
-* [**Envelope**](/envelope/) is a Uniform Resource format that can be
-used to preserve both digital assets and metadata and which can be
+* [**Envelope**](/envelope/) is a CBOR format that can be
+used to transmit both digital assets and metadata and which can be
 selectively elided to allow for the maintenance of privacy.
-* [**Animated QRs**](/animated-qrs/) offer a way to sequence QRs using
-Uniform Resources, allowing for the transmission of larger amounts of data.
-* [**Uniform Resources**](/ur/) is a self-identifying data format that
-ensures that data is interoperable and will not suffer from bitrot if
-it's rediscovered far in the future.
-* [**ByteWords**](/bytewords/) is a methodology for representing data as
-standard words that's utilized in the creation of UR's URIs.
-* [**dCBOR**](/dcbor/) is a deterministic variant of the CBOR standard
-that allows for the hash-based elision used in Envelope.
+* [**Animated QRs**](/animated-qrs/) let you exceed the normal
+capacity limits of QR codes. These sequenced QR codes are formatted
+using the Uniform Resource format.
+* [**Uniform Resources**](/ur/) (URs) are a URI packaging for CBOR that is
+self-identifying to ensure that data is interoperable and can be understood
+in the future, even if current applications are no longer available.
+* [**ByteWords**](/bytewords/) can reepresent any data as a sequence of
+simple words (or in the more compact "minimal" form as a sequence of letters).
+Uniform Resources are built from compact sequences of ByteWords.
+* [**dCBOR**](/dcbor/) is a deterministic variant of the CBOR standard.
+It's used for CBOR contained in URs and generally is required for
+multi-party protocols where distributed consensus is important.

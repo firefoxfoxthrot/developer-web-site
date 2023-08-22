@@ -22,20 +22,22 @@ four-letter English words.
 ## Why is Bytewords Important?
 
 Encoding binary strings as human-readable words allows for better
-human
-interaction. [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)
+human interaction. Blockchain Commons adopted this approach not only
+for improved human interactivity, but also so that CBOR data
+structures could be encoded in a self-describing way, increasing their
+resilience.
+
+[BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)
 and
-[SLIP39](https://github.com/satoshilabs/slips/blob/master/slip-0039.md). Blockchain
-Commons adopted this approached not only for the human interactivity,
-but also so that CBOR data structures could be encoded in a
-self-describing way, increasing their resilience.
+[SLIP39](https://github.com/satoshilabs/slips/blob/master/slip-0039.md)
+offered two existing methods for textual encoding of binary data, but
+were ultimately found insufficient. Bytewords offers advantages over
+existing schemes, including: use of words with a uniform length of
+four letters; ability to minimally encode words with two letters;
+addition of a checksum;and specific selection of "interesting" words
+for improved memory.
 
-However, Bytewords also offers some advantages over existing schemes,
-including: use of words with a uniform length of four letters; ability
-to minimally encode words with two letters; addition of a checksum;and
-specific selection of "interesting" words for improved memory.
-
-Bytewords is used by our [Uniform Resources](/ur/) specification.
+Bytewords is used by the [Uniform Resources](/ur/) specification.
 
 ## How Does Bytewords Work?
 

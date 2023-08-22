@@ -16,27 +16,32 @@ sidebar:
 
 ## Overview
 
-**Animated QRs** are an interoperable specification for transmitting data that allows for the transmission of relatively large amounts of data (compared to standard QRs).
+**Animated QRs** are an interoperable specification for transmitting
+data that allows for the transmission of relatively large amounts of
+data (compared to standard QRs).
 
 ## Why are Animated QRs Important?
 
 Animated QRs were created with the following goals:
 
-* To Allow for the Transmission of Data Across Airgaps.
-* To Support the Conveyance of More Data than Allowed by a Static QR.
-* To Especially Enable PSBT Signing That is Done on an Unconnected Device.
-* To Ensure Interoperability among Many Vendors by the Use of Uniform Resources.
-* To Resolve [The NASCAR Problem](https://indieweb.org/NASCAR_problem) in Wallets.
+* To allow for the transmission of data across airgaps.
+* To support the conveyance of more data than allowed by a static QR.
+* To especially enable PSBT signing that is done on an unconnected device.
+* To ensure interoperability among many vendors by the use of [Uniform Resources](/ur/).
+* To resolve [The NASCAR Problem](https://indieweb.org/NASCAR_problem) in wallets.
+
+See the [UR docs](/ur/) for more information on the foundational data
+format that allows for the creation of animated QRs.
 
 ### Airgap Usage
 
 <img src="https://developer.blockchaincommons.com/assets/images/airgap.png" align="right" width=100px>
 
 QRs came into use in the digital-asset community because they could be
-used in airgap architectures. This allows for the storage of sensitive
-data (such as seeds and keys) in a device not directly connected to
-the internet, such as a hardware wallet or (to a lesser extent) a
-phone. A coordinator that is linked to the internet can then
+utilized in airgap architectures. This allowed for the storage of
+sensitive data (such as seeds and keys) in a device not directly
+connected to the internet, such as a hardware wallet or (to a lesser
+extent) a phone. A coordinator linked to the internet could then
 communicate with the disconnected device by QRs, without any sort of
 direct connection.
 
@@ -50,9 +55,9 @@ _Why Airgaps?_ Airgaps allow users to keep critical data in a location
 that's not connected to the internet, protecting them from most sorts
 of theft and hacking, which tend to rely on internet-connected
 devices. By usings QRs to constrain communication with the airgapped
-device, security is greatly improved, and even if some overflow were
-possible, the requirement for a user to carry data back and forth
-across the airgap would greatly reduce the choice of an exploit. This
+device, security is greatly improved, and even if some overflow attack
+were possible, the requirement for a user to carry data back and forth
+across the airgap would greatly reduce the choices of an exploit. This
 means that even if a device coordinating a transaction were corrupted,
 the keys wouldn't be, and even if a transaction were produced
 incorrectly, a user could see this on their signing device.
@@ -65,20 +70,7 @@ increasingly used to protect digital assets, because PSBTs allow for
 individual key holders to each sign on their own device, at their own
 convenience.
 
-However, URs can do much more than just allow the transmission of
-PSBTs. They were built to allow for the transmission of a [wide
-variety](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md)
-of data types in a way that is both self-describing and
-interoperable. They support the transmission of seeds, keys,
-envelopes, and other data between a wide variety of parties and
-increase the resilience of that valuable data because the
-self-describing tags ensure that it can be recovered by anyone at a
-later time.
-
-See the[UR docs](/ur/) for more information on the foundational data format that allows for the creation of animated QRs.
-
-
-## Size Problems
+### Size Problems
 
 Unfortunately, QRs can only contain limited amounts of
 information. Technically, they can hold up to 7089 numeric characters,
@@ -91,31 +83,31 @@ This proved problematic for PSBTs because they often require the
 transmission of larger amounts of information, particularly as more
 signers were added. Solving this problem required a new type of QR:
 the animated QR, which transmits several QR frames that together
-comprise the entirity of a large set of digital data, such as a PSBT.
+comprise the entirety of a large set of digital data, such as a PSBT.
 
 ### Adoption Problems
 
-Prior to Blockchain Commons' release of URs and Animated QRs, PSBTs
-could not be reliably transmitted using QR codes. As a result of this
-need, Blockchain Commons' Animated QRs have seen [wide
-adoption](/usr/adoption/) in the wallet developer community.
+Prior to Blockchain Commons' release of Animated QRs, PSBTs could not
+be reliably transmitted using QR codes. As a result of this need,
+Blockchain Commons' Animated QRs have seen [wide
+adoption](/ur/adoption/) in the wallet developer community.
 
 The use of an interoperable specification for encoding, fragmenting,
 sequencing, transmitting, recombining, and decoding data is what
 allows Animated QRs to defeat the NASCAR problem. Already, software
-wallets that don't Blockchain Commons' specifications are building up
-huge menus of hardware devices, with different interactions required
-for each. Wallets using the UR standard can instead present a unified
-communication methodology, making interaction with other devices
-effortless.
+wallets that don't use Blockchain Commons' specifications are building
+up huge menus of hardware devices, with different interactions
+required for each. Wallets using the Uniform Resources standard can
+instead present a unified communication methodology, making
+interaction with other devices effortless.
 
 ## How Do Animated QRs Work?
 
 Blockchain Commons' Animated QRs are built atop the [Uniform Resource
 (UR) specification](/ur/) to ensure their interoperability among many
-wallets. URs are fundamentally a self-describing data encoding, but
-they can also be fragmented and sequenced. This allows a much larger
-data set to be broken into smaller segments and later to be
+wallets. URs are fundamentally self-describing URIs that package CBOR
+data and that can also be fragmented and sequenced. This allows a much
+larger data set to be broken into smaller segments and later to be
 recombined, all in a carefully specified way. To create Animated QRs,
 fragments are created that are each small enough to be encoded in a QR
 that will be readable by average consumer devices.
@@ -140,7 +132,6 @@ variety of [UR
 libraries](https://github.com/BlockchainCommons/crypto-commons#bc-ur)
 in additional languages such as Java, Python, and Rust are available
 thanks to our community.
-
 
 ## Animated QR Video
 

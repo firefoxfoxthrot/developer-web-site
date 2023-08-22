@@ -18,7 +18,7 @@ sidebar:
 
 The [Uniform
 Resources](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-005-ur.md)
-specification is a method for encoding structured binary data in
+specification is a method for encoding structured CBOR binary data in
 plain-text strings that are also well-formed URIs. It's usable with
 any binary data, but was developed with Bitcoin and other
 cryptocurrencies in mind.
@@ -50,13 +50,17 @@ and caused confusion. Worse, they've created layer violations by
 mixing encoding and policy. UR is a specification with more clearly
 defined layers that could be expandable, yet still self-identify its
 contents.
-* **They Provide Strong Layering.** Fundamentally, URs are a binary
-encoding with an optional textual encoding built atop that. Anything
-else is optional.
+* **They provide strong layering.** Fundamentally, URs are a textual
+(URI) encoding of a tagged CBOR structure.  Anything else is optional.
 * **They're transport independent.** Though URs offer powerful support
 for certain forms of transport, they're not directly linked to those
 other layers: they can be used uniformly for URIs, QRs, NFCs, or other
 transport methodologies, offering strong interoperability.
+* **They allow easy conversion between binary and text.** URs establish a
+correspondence between a CBOR tag, which is numeric, and a UR type string,
+which is textual. Developers can then move the same CBOR structure back
+and further between binary encoding (with the tag) and text encoding
+(without the tag, but with the type string).
 
 Depending on how URs are used, they can offer even more advantages.
 
@@ -66,11 +70,12 @@ inconsistent usage among developers. When used with QRs, URs resolve
 these interoperability issues by creating a specified method for
 encoding binary data using CBOR and by specifying [how to
 sequence](/animated-qrs/) larger binary encoding (as version 40 QR
-codes max out at 2,953 bytes).
+codes max out at 2,953 bytes), and they do so in a more compact way
+than base64.
 * **They Can Improve Human Factors.** If the [Bytewords](/bytewords/)
 encoding is used with QRs, they become easy to visual and verify,
 thanks to the careful selection of the Bytewords to ensure that
-they're both unique and easy to remember/distinguish.
+they're both unique and easy to remember and distinguish.
 * **They Can Offer Support for Security.** Similarly, URs can offer
 improved security if they are used with a transport mechanism such
 as QR or NFCs, which enable airgaps. Since the transfer of key
@@ -86,18 +91,19 @@ larger PSBTs required by multisigs, thanks to its options for
 
 > :bulb: _URs are used widely in the Gordian reference apps, but
 community members have focused most on UR's sequencing feature to
-create [animated QRs](/animated-qrs) that support PSBTs. URs can do a lot more: they
-can support any airgapped Bitcoin function and more than that, can
-support data encoding and storage for a large number of decentralized
-technologies whether they're airgapped or not._
+create [animated QRs](/animated-qrs) that support PSBTs. URs can do a
+lot more: they can support any airgapped Bitcoin function and more
+than that, can support data encoding and transmission for a large
+number of decentralized technologies whether they're airgapped or
+not._
 
 ## How Does URs Work?
 
 As detailed in the [UR
 specification](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-005-ur.md),
 URs are binary data that is represented with CBOR using a minimal
-canonical representation, converted to [minimal
-bytewords](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md),
+canonical and deterministic representation, converted to [minimal
+bytewords](/bytewords/)
 and prefaced with the UR type.
 
 Thus the process of encoding a UR, which is largely automated by
@@ -107,19 +113,17 @@ Blockchain Commons libraries, is:
 Types](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-006-urtypes.md)
 for how to represent the desired data.
 2. Refer to the [CBOR RFC](https://tools.ietf.org/html/rfc7049) for
-how to encode the data. In particular, be aware of how to [use
-Canonical CBOR](https://tools.ietf.org/html/rfc7049#section-3.9),
-or preferably
-[dCBOR](/dcbor/),
-how
-to [encode major
-types](https://tools.ietf.org/html/rfc7049#section-2.1)
-and how to [encode byte
-strings](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-005-ur.md#canonical-cbor).
+how to encode the data.  In particular, be aware of how to [encode
+major types](https://tools.ietf.org/html/rfc7049#section-2.1) and how
+to [encode byte
+strings](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-005-ur.md#canonical-cbor) canonically.
+Also, refer to [dCBOR](/dcbor/), as all URs must match the dCBOR profile.
    * The CBOR reference is the _best_ place to read about CBOR
      encoding, but be aware that whenever you encode something, you
      will typically preface data with one or more bytes showing data
      type and length; and as required you may also tag data.
+   * Note that you will _not_ be prefixing your overall CBOR with a CBOR tag if
+     you are using UR format.
 3. Convert your complete CBOR binary representation to
 [Bytewords](/bytewords/) using the minimal encoding. This is the first
 and last letters of the Byteword, and will be done automatically if
@@ -130,6 +134,8 @@ request `minimal` encoding
 sequence `ur:type:sequence/`. Again, this will be done automatically
 if you use a Blockchain Commons [UR
 Library](https://github.com/BlockchainCommons/bc-ur).
+5. If you will be placing your UR in a QR code, be sure to shift it to
+ALL CAPS for best efficiency.
 
 For example:
 
@@ -143,11 +149,28 @@ For example:
    * `50` represents a 16-byte byte-string payload.
       * That's major type 2 (for a byte string), which is represented as `010`, plus a payload of 16 bytes, or `10000`, or overall `0b01010000`, which is `0x50`.
    * `59F2293A5BCE7D4DE59E71B4207AC5D2` represents the byte payload.
+   * The CBOR prefix for a `crypto-seed` is not used since this will be used in UR format.
 * **Bytewords:** obey acid good hawk whiz diet fact help taco kiwi gift view noon jugs quiz crux kiln silk tied help yell jade data
    * `obey` (`0xA1`) through `tied` (`0xd2`) represent the CBOR data, while `help yell jade data` are checksums.
 * **Bytewords Minimal:** oyadgdhkwzdtfthptokigtvwnnjsqzcxknsktdhpyljeda
 * **UR:** ur:crypto-seed/oyadgdhkwzdtfthptokigtvwnnjsqzcxknsktdhpyljeda
+* **UR for QR:** UR:CRYPTO-SEED/OYADGDHKWZDTFTHPTOKIGTVWNNJSQZCXKNSKTDHPYLJEDA
 
+Note that simplistic encoding of seeds as `ur:crypto-seed` is largely
+being deprecated in favor of [Gordian Envelope](/envelope/). This
+example is being maintained as a simplest-possible example of a use of
+URs, but a corresponding Envelope would instead look as follows:
+
+* **UR for QR:** UR:ENVELOPE/LPTPCSGDHKWZDTFTHPTOKIGTVWNNJSQZCXKNSKTDOYADCSSPOYBETPCSSECYHNENCYAHOYBDTPCSKPFYHSJPJECXGDKPJPJOJZIHCXFPJSKPHSCXGSJLKOIHOYAATPCSJSGHISINJKCXINJKCXJYISIHCXJTJLJYIHDMOLBWJOSO
+
+```
+Bytes(16) [
+    isA: Seed
+    date: 2021-02-24T09:19:01Z
+    hasName: "Dark Purple Aqua Love"
+    note: "This is the note."
+]
+```
 
 ## Bytewords Videos
 

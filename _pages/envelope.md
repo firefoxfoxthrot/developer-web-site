@@ -19,26 +19,30 @@ sidebar:
 <a href="https://www.youtube.com/watch?v=OcnpYqHn8NQ"><img src="https://img.youtube.com/vi/OcnpYqHn8NQ/mqdefault.jpg" style="float: right; border: 2px solid blue"></a>
 
 Gordian Envelope is a specification for the achitecture of a “smart
-document". It supports the secure, reliable, and deterministic storage
-and transmission of data such as seeds, keys, decentralized
-identifiers, and verifiable credentials in a way that enables privacy
-while preserving structure. Gordian Envelope's privacy features are
-built on a hashed Merkle Tree that provides implicit support for
-cryptography of your choice and explicit support for privacy-related
+document". It uses CBOR to support the secure, reliable, and
+deterministic storage and transmission of data such as seeds, keys,
+decentralized identifiers, and verifiable credentials in a way that
+enables privacy while preserving structure. The format is very simple
+and compact, with minimal overhead, but documents can ultimately be as
+complex as needed. Gordian Envelope's privacy features are built on a
+hashed Merkle Tree that supports cryptography and privacy-related
 methodologies such as [progressive
 trust](https://www.blockchaincommons.com/musings/musings-progressive-trust/)
 and Merkle-based selective disclosure.
 
 Blockchain Commons is currently working with multiple companies on the
-developm ent and deployment of Gordian Envelopes via regular biweekly
+development and deployment of Gordian Envelopes via regular biweekly
 meetings; [contact us](mailto:team@blockchaincommons.com) if you'd
-like to be involved. We are also presenting Envelopes as a prospective
-Informational Draft for the IETF and engaging in discussions with the
-W3C Credentials Community Group.
+like to be involved. Envelope is also on the experimental track as an
+[Informational Draft for the
+IETF](https://blockchaincommons.github.io/WIPs-IETF-draft-envelope/draft-mcnally-envelope.html).
+Further, ongoing discussions are occurring with the W3C Credentials
+Community Group.
 
 ### The Envelope as Metaphor
 
-The name "envelope" was chosen for this smart-document architecture because that provides an excellent metaphor for its capabilities.
+The name "envelope" was chosen for this smart-document architecture
+because that provides an excellent metaphor for its capabilities.
 
 <figure class="half">
   <a href="/assets/images/envelope/envelope-canhold.jpg"><img src="/assets/images/envelope/envelope-canhold.jpg"></a>
@@ -54,7 +58,6 @@ These capabilities include:
     such as how to open or close it.
 * **Envelopes can contain things.** Things can be placed within the
     structure of a Gordian Envelope.
-
 * **Envelopes can contain envelopes.** The Gordian Envelope structure
     is fully recursive: any part of an envelope can actually be
     another envelope.
@@ -92,8 +95,9 @@ structure.
 
 Gordian Envelope was designed with two key goals in mind: to be
 _Structure-Ready_, allowing for the reliable and interopable storage
-of information; and to be _Privacy-Ready_, ensuring that transmission
-of that data can occur in a privacy-protecting manner.
+and transmission of information; and to be _Privacy-Ready_, ensuring
+that transmission of that data can occur in a privacy-protecting
+manner.
 
 * **Structure-Ready.** Gordian Envelope is designed as a Smart
     Document, meant to store information about a subject. More than
@@ -150,7 +154,7 @@ specifics on how Envelopes work._
     compression (removing duplicate information), and encryption
     (enciphering information).
 * **Holder-initiated Redaction.** Elision can be performed by the
-    Holder of a Gordian Envelope, not just the Issuer.
+    holder of a Gordian Envelope, not just the issuer.
 * **Granular Holder Control.** Elision can not only be performed by
     any Holder, but also for any data, allowing each entity to elide
     data as is appropriate for the management of their personal (or
@@ -195,7 +199,7 @@ specifics on how Envelopes work._
 ### Future Looking
 
 * **Data Storage.** The initial inspiration for Gordian Envelopes was
-    for secure data storage.
+    secure data storage.
 * **Credentials & Presentations** The usage of Gordian Envelope
     signing techniques allows for the creation of credentials and the
     ability to present them to different verifiers in different ways.
@@ -210,8 +214,7 @@ specifics on how Envelopes work._
     architecture is cryptography agnostic, allowing it to work with
     everything from older algorithms with silicon support through more
     modern algorithms suited to blockchains and to future zk-proof or
-    quantum-attack resistent cryptographic choices. These choices are
-    made in sets via ciphersuites.
+    quantum-attack resistent cryptographic choices.
 
 ## Envelope Videos
 

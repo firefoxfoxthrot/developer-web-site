@@ -16,19 +16,28 @@ sidebar:
 
 ## Overview
 
-dCBOR is deterministic CBOR, a optional variant of CBOR described in
-[RFC 8949](https://www.rfc-editor.org/rfc/rfc8949.html#name-deterministically-encoded-c).
+dCBOR is deterministic CBOR, an application profile for CBOR described
+in [RFC
+8949](https://www.rfc-editor.org/rfc/rfc8949.html#name-deterministically-encoded-c)
+and expanded in an
+[I-D](https://datatracker.ietf.org/doc/draft-mcnally-deterministic-cbor/).
 
-## What is dCBOR Important?
+## Why is dCBOR Important?
 
-A deterministic version of CBOR is critical when an application
-requires the same data to always be encoded in the same way. This is
-true for [Gordian Envelope](/Envelope/), which uses CBOR to arrange
-data that is identified by hashes. The hashes only remain the same if
-the same data is always encoded in the exact same way, hence the need
-for determinism.
+Determinism ensures that the same data is always encoded in the same
+way. It has strict rules for how data is represented and ensures that
+edge cases are always represented in the same way. For dCBOR, for
+example, this required the reduction of numbers to the shortest
+encoding possible: 10.00, 10.0, and 10 must be the same thing.
 
-Determinism of data storage can also be critical for other use cases.
+Determinism is important for a wide variety of applications that
+require data to remain consistent, usually across multiple
+platforms. This includes data signatures, verifiable software builds,
+consensus algorithms, secure multi-party computation, and zero-knowledge
+proofs. It can also fulfill legal and compliance requirements.
+
+dCBOR doesn't automatically produce determnism, but it _supports_ it,
+as does [Gordian Envelope](/envelope/).
 
 ## How Does dCBOR Work?
 
