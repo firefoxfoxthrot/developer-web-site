@@ -23,10 +23,9 @@ and unique given the input data._
 ## Why is LifeHash Important?
 
 Users need to know what seeds or private keys they are using when
-signing. They also need to know what addresses or private keys they
-are sending assets to. Unfortunately, the actual seed, key, or
-address, which is just a big number isn't very recognizable by the
-human brain.
+signing. They also need to know what addresses they are sending assets
+to. Unfortunately, the actual seed, key, or address, which is just a
+big number, isn't very recognizable by the human brain.
 
 That's where LifeHashes come in: they create a visual representation
 for that seed, key, or address that a human will be able to easily
@@ -38,7 +37,11 @@ will become inherently recognizable to users with repetition.
 
 ## How Does LifeHash Work?
 
-The basic concept is to take a SHA-256 hash of the input data (which can be any data including another hash) and then use the 256-bit digest as a 16x16 pixel "seed" for running the cellular automata known as [Conway’s Game of Life](https://en.wikipedia.org/wiki/Conway's_Game_of_Life).
+The basic concept is to take a SHA-256 hash of the input data (which
+can be any data including another hash) and then use the 256-bit
+digest as a 16x16 pixel "seed" for running the cellular automata known
+as [Conway’s Game of
+Life](https://en.wikipedia.org/wiki/Conway's_Game_of_Life).
 
 After the pattern becomes stable (or begins repeating) the resulting
 history is used to compile a grayscale image of all the states from
@@ -52,8 +55,8 @@ recognizability.
 
 _Please note that LifeHash is not a cryptographic hash. More research
 and analysis would be needed before anything could be said about its
-cryptographic characteristics. Please see the [FAQ](/lifehash/faq/) for
-more information._
+cryptographic characteristics. Please see the [FAQ](/lifehash/faq/)
+for more information._
 
 ## Videos
 

@@ -18,9 +18,9 @@ sidebar:
 
 _Digital assets are controlled by seeds and keys, which tend to be
 big, unrecognizable numbers. Yet users are called upon to recognize
-those numbers, so that they know that the they're using the right
-accounts and sending money to the right accounts. If they can't
-recognize their seeds and keys, then they become exposed to fraud._
+those numbers, so that they know that they're using the right accounts
+and sending money to the right accounts. If they can't recognize their
+seeds and keys, then they become exposed to fraud._
 
 _Since Blockchain Commons is a strong supporter of the self-sovereign
 control of digital assets, where users have complete agency over their
@@ -28,7 +28,6 @@ assets, a solution was needed for this problem. By introducing visual
 hashes of data and organizing them into Object Identity Blocks,
 Blockchain Commons is presenting a new way to help users to identify
 their digital seeds and keys._
-
 
 _Developer Resources are available for the following projects:_
 

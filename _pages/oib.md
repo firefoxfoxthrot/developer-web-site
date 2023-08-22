@@ -35,13 +35,14 @@ name that a user can put together to better identify a digital object.
 
 ## How Does OIB Work?
 
-As discussed in ["BCR-2021-002: Digests for Digital Object"](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2021-002-digest.md#object-identity-block), an OIB
-can consist of up to six elements:
+As discussed in ["BCR-2021-002: Digests for Digital
+Object"](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2021-002-digest.md#object-identity-block),
+an OIB can consist of up to six elements:
 
 ![](/assets/images/oib/example.jpg)
 
 * *LifeHash.* This is a visual hash for the object, providing it with
-site-based identification. Our [LifeHash](/lifehash/) pages provide
+sight-based identification. Our [LifeHash](/lifehash/) pages provide
 more details on their creation and usage.
 * *Icon.* This is an icon for the type of object. We have standard
 icons that we use for seeds, public keys, private keys, and
@@ -56,14 +57,14 @@ digest when shown to users.
 * *Human-Readable Name (optional).* This could be a name created by
 the user, but if a user hasn't yet created a name, we suggest
 auto-assigning one. Gordian SeedTool does so by identifying the color
-of the LifeHash, and then adding on two [ByteWords](/bytewords).
+of the LifeHash, and then adding on two [Bytewords](/bytewords).
 * *Additional Icons.* These can reference object subtypes. In
 particular, for seeds and keys, we suggest including the master
 fingerprint for the seed and its Lifehash, as those can remain
 consistent even when another app doesn't have complete private
 information on a seed. See [LifeHash Creation](/lifehash/creation/)
 for some notes on creating them and
-[LifeHashVectors](/lifehash/vectors/) for some examples of what they
+[LifeHash test vectors](/lifehash/vectors/) for some examples of what they
 look like.
 * *Additional Metadata (optional).* Other information could include
 data on what an asset contains or protects, notes left by the user, or
