@@ -32,9 +32,10 @@ encoding possible: 10.00, 10.0, and 10 must be the same thing.
 
 Determinism is important for a wide variety of applications that
 require data to remain consistent, usually across multiple
-platforms. This includes data signatures, verifiable software builds,
-consensus algorithms, secure multi-party computation, and zero-knowledge
-proofs. It can also fulfill legal and compliance requirements.
+platforms. This includes data signatures, reproducible software
+builds, hashing functions, version control, consensus algorithms,
+secure multi-party computation, and zero-knowledge proofs. It can also
+fulfill legal and compliance requirements.
 
 dCBOR doesn't automatically produce determnism, but it _supports_ it,
 as does [Gordian Envelope](/envelope/).
