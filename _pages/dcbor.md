@@ -16,19 +16,18 @@ sidebar:
 
 ## Overview
 
-dCBOR is deterministic CBOR, an application profile for CBOR described
-in [RFC
-8949](https://www.rfc-editor.org/rfc/rfc8949.html#name-deterministically-encoded-c)
-and expanded in an
-[I-D](https://datatracker.ietf.org/doc/draft-mcnally-deterministic-cbor/).
+dCBOR is deterministic CBOR, a profile for CBOR as specified in [RFC
+8949](https://www.rfc-editor.org/rfc/rfc8949.html#name-deterministically-encoded-c). dCBOR
+itself is specified in [an IETF
+Internet-Draft](https://datatracker.ietf.org/doc/draft-mcnally-deterministic-cbor/).
 
 ## Why is dCBOR Important?
 
 Determinism ensures that the same data is always encoded in the same
 way. It has strict rules for how data is represented and ensures that
 edge cases are always represented in the same way. For dCBOR, for
-example, this required the reduction of numbers to the shortest
-encoding possible: 10.00, 10.0, and 10 must be the same thing.
+example, this required the reduction of numbers to a canonical
+encoding: 10.00, 10.0, and 10 must be the same thing.
 
 Determinism is important for a wide variety of applications that
 require data to remain consistent, usually across multiple
@@ -47,7 +46,11 @@ options up to encoder developers. This results in dCBOR usage that is
 not necessarily consistent across multiple encoders. As a result,
 Blockchain Commons has produced an
 [Internet-Draft](https://datatracker.ietf.org/doc/draft-mcnally-deterministic-cbor/)
-to fully codify dCBOR practices.
+of a dCBOR profile, which narrows the range of what can be considered
+valid dCBOR.
+
+All dCBOR is decodable by generic CBOR encoders, and generic CBOR
+encoders *can* produce valid dCBOR, but not all CBOR is valid dCBOR.
 
 We have also released libraries for dCBOR in Rust and Swift as well as
 a command line application for testing encoding and decoding that all
