@@ -126,8 +126,7 @@ something is encoded with ByteWords, it's likely an SSKR share.
 
 ## What do the different parts of an SSKR share mean?
 
-<figure class="third">
-  <a href="/assets/images/sskr/export-1.jpg"><img src="/assets/images/sskr/export-1.jpeg"></a>
+<figure class="half">
   <a href="/assets/images/sskr/export-2.jpg"><img src="/assets/images/sskr/export-2.jpeg"></a>
   <a href="/assets/images/sskr/export-3.jpg"><img src="/assets/images/sskr/export-3.jpeg"></a>  
 </figure>
