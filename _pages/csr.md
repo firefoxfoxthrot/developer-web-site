@@ -19,18 +19,19 @@ sidebar:
 _CSR allows for the recovery of seeds and other secrets by dividing
 responsibility for recovery up between multiple devices, some (but not
 all) of which will be necessary for recovery. Its baseline recovery
-mechanism uses self-sovereign recovery, while more advanced scenarios
-allow for social key recovery. Backup is meant to be largely
+mechanism uses self-sovereign recovery (controlled entirely by the
+user), while more advanced scenarios allow for social key recovery
+(supported by friends or family). Backup is meant to be largely
 automated, especially in the baseline scenario, while recovery may
 require some user intervention._
 
 _One of the advantages of CSR over traditional social key recovery is
 that you don't have to choose friends or family that you trust. Though
-you can do so, you can also entrust fragments of keys to companies
-running share servers. You don't have to worry about them stealing
-keys, because you're only giving them fragments (shards), but you can
-trust that they'll likely still be around when you need to reconstruct
-your key._
+you can do so in advanced scenarios, you can also entrust fragments of
+keys to companies running share servers. You don't have to worry about
+them stealing keys, because you're only giving them fragments
+(shares), but you can trust that they'll likely still be around when
+you need to reconstruct your key._
 
 _CSR is built using [SSKR](/sskr/) to lock [Envelopes](/envelope/) of
 data and to allow recovery using a variety of Authentication
@@ -42,12 +43,12 @@ CSR focuses on
 [Resilience](https://github.com/BlockchainCommons/Gordian#gordian-principles),
 but it takes the next step beyond [SSKR](/sskr/). Whereas SSKR
 provides a robust way to protect a seed _if_ the user is careful and
-knows what to do, CSR goes beyond that by making it easy for users to
-store their seeds in an automated way.
+knows what to do, CSR makes it easy for users to automate that
+protection.
 
-CSR is also built using [Gordian Envelope](/envelope/), which allows
-for the storage of larger amounts of data, such as SSKR shares with
-metadata.
+Thanks to its integration with [Gordian Envelope](/envelope/), CSR can
+also store larger amounts of data that would be possible with SSKR
+alone, such as additional metadata describing an SSKR share.
 
 ## How Does CSR Work?
 
