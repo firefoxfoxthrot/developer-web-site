@@ -34,7 +34,7 @@ don't want them to think they might be the same thing!
 
 When possible, use the cleanest, most original data that you can. Use
 the [digest source
-specifications](https://github.com/BlockchainCommons/GordianSeedTool-iOS)
+specifications](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2021-002-digest.md#the-digest-source-specification)
 for seeds, keys, and anything else that has been specified, for
 interoperability. Try to use original data over constructed data for
 other representations.
