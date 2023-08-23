@@ -129,7 +129,7 @@ framework that allows for the encoding and decoding of URs in Swift;
 and [URDemo](https://github.com/BlockchainCommons/URDemo), an iOS demo
 that shows how Animated QRs built on URs can be sent and received. A
 variety of [UR
-libraries](https://github.com/BlockchainCommons/crypto-commons#bc-ur)
+libraries](/libraries/#ur-libraries)
 in additional languages such as Java, Python, and Rust are available
 thanks to our community.
 
