@@ -90,7 +90,7 @@ comprise the entirety of a large set of digital data, such as a PSBT.
 Prior to Blockchain Commons' release of Animated QRs, PSBTs could not
 be reliably transmitted using QR codes. As a result of this need,
 Blockchain Commons' Animated QRs have seen [wide
-adoption](/ur/adoption/) in the wallet developer community.
+adoption](/ur/implementations/) in the wallet developer community.
 
 The use of an interoperable specification for encoding, fragmenting,
 sequencing, transmitting, recombining, and decoding data is what
