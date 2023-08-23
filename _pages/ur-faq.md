@@ -7,8 +7,6 @@ header:
   og_image: /assets/images/bc-card.jpg
 title: UR FAQ
 hide_description: true
-classes:
-  - wide
 permalink: /ur/faq/
 sidebar:
   nav: ur
