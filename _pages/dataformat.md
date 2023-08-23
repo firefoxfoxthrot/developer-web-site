@@ -33,9 +33,9 @@ using the Uniform Resource format.
 * [**Uniform Resources**](/ur/) (URs) are a URI packaging for CBOR that is
 self-identifying to ensure that data is interoperable and can be understood
 in the future, even if current applications are no longer available.
-* [**ByteWords**](/bytewords/) can reepresent any data as a sequence of
+* [**Bytewords**](/bytewords/) can represent any data as a sequence of
 simple words (or in the more compact "minimal" form as a sequence of letters).
-Uniform Resources are built from compact sequences of ByteWords.
+Uniform Resources are built from compact sequences of Bytewords.
 * [**dCBOR**](/dcbor/) is a deterministic variant of the CBOR standard.
 It's used for CBOR contained in URs and generally is required for
 multi-party protocols where distributed consensus is important.
