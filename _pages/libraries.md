@@ -11,7 +11,9 @@ classes:
   - wide
 permalink: /libraries/
 ---
-
+{% include lib-crypto.md %}
+{% include lib-bech32.md %}
+{% include lib-bip39.md %}
 {% include lib-bytewords.md %}
 {% include lib-dcbor.md %}
 {% include lib-envelope.md %}
