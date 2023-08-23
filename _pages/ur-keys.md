@@ -448,7 +448,7 @@ Similarly, here's the decoded `xpub`:
 You can incorporate URs into your own code using [bc-ur for
 C++](https://github.com/BlockchainCommons/bc-ur) or through
 [conversions of that library to other languages such as Java and
-Swift](/usr/#libraries).
+Swift](/ur/#libraries).
 
 bc-ur provides access to objects such as `UREncoder`, `URDecoder`, and
 `Bytewords`, which support many of the same functions as described
