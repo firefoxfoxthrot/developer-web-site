@@ -21,7 +21,7 @@ Bitcoin Transactions.
 
 As usual, this will typically be done for you automatically using
 Blockchain Commons'
-[libraries](/usr/#libraries)
+[libraries](/ur/#libraries)
 but what follows is an explanation of how everything works.
 
 ## Why Use URs for PSBTs?
