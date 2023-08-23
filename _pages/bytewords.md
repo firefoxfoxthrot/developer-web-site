@@ -49,7 +49,7 @@ appropriate entry on the Bytewords list, which have been designed to
 be unique.
 
 ["BCR-2020-012:
-Bytewords](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md)
+Bytewords"](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-012-bytewords.md)
 lists the complete set of words and provides examples.
 
 ## Bytewords Videos

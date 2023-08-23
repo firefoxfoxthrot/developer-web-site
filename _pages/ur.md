@@ -114,9 +114,7 @@ Types](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020
 for how to represent the desired data.
 2. Refer to the [CBOR RFC](https://tools.ietf.org/html/rfc7049) for
 how to encode the data.  In particular, be aware of how to [encode
-major types](https://tools.ietf.org/html/rfc7049#section-2.1) and how
-to [encode byte
-strings](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-005-ur.md#canonical-cbor) canonically.
+major types and byte strings](https://tools.ietf.org/html/rfc7049#section-2.1).
 Also, refer to [dCBOR](/dcbor/), as all URs must match the dCBOR profile.
    * The CBOR reference is the _best_ place to read about CBOR
      encoding, but be aware that whenever you encode something, you
