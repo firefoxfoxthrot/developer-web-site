@@ -10,6 +10,8 @@ hide_description: false
 classes:
   - wide
 permalink: /
+sidebar:
+  nav: sites
 ---
 
 Blockchain Commons has produced a number of specifications that are
