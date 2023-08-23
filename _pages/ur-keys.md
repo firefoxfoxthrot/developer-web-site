@@ -456,6 +456,8 @@ here for the command line. They can also be used with other Blockchain
 Commons [Crypto Commons Reference Libraries](/libraries/) which
 support a variety of cryptography functions.
 
+{% include lib-ur.md %}
+
 ## Conclusion
 
 Key material can be transferred using `ur:crypto-seed`,

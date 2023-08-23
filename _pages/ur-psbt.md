@@ -201,13 +201,15 @@ libraries](/ur/#libraries)
 You can incorporate URs into your own code using [bc-ur for
 C++](https://github.com/BlockchainCommons/bc-ur) or through
 [conversions of that library to other languages such as Java and
-Swift](/usr/#libraries).
+Swift](/ur/#libraries).
 
 bc-ur provides access to objects such as `UREncoder`, `URDecoder`, and
 `Bytewords`, which support many of conversions demonstrated here. They
 can also be used with other Blockchain Commons [Reference
 Libraries](/libraries/),
 which support a variety of cryptography functions.
+
+{% include lib-ur.md %}
 
 ## Conclusion
 

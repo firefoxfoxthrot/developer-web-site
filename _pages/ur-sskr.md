@@ -266,8 +266,13 @@ into either Bytewords or URs. It builds on
 [bc-crypto-base](https://github.com/blockchaincommons/bc-crypto-base),
 [bc-shamir](https://github.com/blockchaincommons/bc-shamir), and
 [bc-bytewords](https://github.com/blockchaincommons/bc-bytewords). Translations
-are also available to other languages such as [Java and
-Swift](/libraries/).
+are also available to other languages.
+
+{% include lib-sskr.md %}
+
+{% include lib-shamir.md %}
+
+{% include lib-ur.md %}
 
 ## Conclusion
 
