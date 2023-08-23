@@ -82,6 +82,11 @@ follow the specifications laid out in this Draft.
 
 ## Links
 
+**Intro:**
+
+* [Why CBOR?](https://www.blockchaincommons.com/introduction/Why-CBOR/) (blog article)
+* [dCBOR Goes to IETF](https://www.blockchaincommons.com/specifications/dCBOR-IETF/) (blog article)
+
 **Developer Resources:**
 
 * [**dCBOR IETF I-D**](https://datatracker.ietf.org/doc/draft-mcnally-deterministic-cbor/) (IETF)
@@ -93,6 +98,19 @@ follow the specifications laid out in this Draft.
 
 ## dCBOR Discussions
 
+* [8/23/23: Subnormal Floats and Determinism](https://mailarchive.ietf.org/arch/browse/cbor/?gbt=1&index=cCMYMTnL56XEHr4N28ihvuSiC70)
+* [8/23/23: I-D: draft-bormann-cbor-dcbor-03](https://mailarchive.ietf.org/arch/browse/cbor/?gbt=1&index=ttHEFxoyEt_alghRULGlsGz1aAw)
+* [8/19/23: CBOR profiling for protocol designers](https://mailarchive.ietf.org/arch/browse/cbor/?gbt=1&index=lOwV0RBVb9eiLC1PN9PpgjTwSHs)
+* [8/19/23: A deterministic summary](https://mailarchive.ietf.org/arch/browse/cbor/?gbt=1&index=JfOG5zIHBzeVsXem6l6YgMVuoYs)
+* [8/16/23: dCBOR on cbor.me](https://mailarchive.ietf.org/arch/browse/cbor/?gbt=1&index=B8CWOhNdPjopvV13C8PeKTzOVWo)
+* [8/15/23: Implementing float->int numeric reduction](https://mailarchive.ietf.org/arch/browse/cbor/?gbt=1&index=9s8VA5pfLdfv7Xs3LhwPLhkvI1M)
+* [8/8/23: New Version Notification for draft-mcnally](https://mailarchive.ietf.org/arch/browse/cbor/?gbt=1&index=uqLJuY_o8QWmqzDwyrbOgrPsInc)
+* [8/6/23: Announcement: draft-mcnally-deterministic-cbor-03](https://mailarchive.ietf.org/arch/browse/cbor/?gbt=1&index=AmYT-P4ZCuD2NJuAoflQ1YLCrOY)
+* [8/4/23: I-D: draft-mcnally-deterministic-cbor-02.txt](https://mailarchive.ietf.org/arch/browse/cbor/?gbt=1&index=yW2l8Sj3FkN1Y-mIUPKSEULXm1s)
+* [7/23/23: I-D Action: draft-bormann-cbor-dcbor-00.txt](https://mailarchive.ietf.org/arch/browse/cbor/?gbt=1&index=ytaPD8bIz51osYXYMJyjMh6zOa8)
+* [7/20/23: The rationale behind dCBOR](https://mailarchive.ietf.org/arch/browse/cbor/?gbt=1&index=4PBVtODXMNT2oZboae9BBNiplJk)
+* [7/18/23: FTZ ("flush to zero") and/or DAZ ("denormals are zero") floating point underflow strategies vs. Deterministic Encoding](https://mailarchive.ietf.org/arch/browse/cbor/?gbt=1&index=MBll512W81zsMiEtxYvugDKrVVA)
+* [7/17/23: Two drafts about CBOR Deterministic Encoding](https://mailarchive.ietf.org/arch/browse/cbor/?gbt=1&index=OP7-Vq0cUjaS7qpP831lJkCk5BI)
 * [6/30/23: cbor - Requested session has been scheduled for IETF 117](https://mailarchive.ietf.org/arch/browse/cbor/?gbt=1&index=X4K-UjBZP6wxxZdWgBYEfCp2vH4)
 * [5/31/23: draft-mcnally-deterministic-cbor: rationale for not going with pre-encoded data](https://mailarchive.ietf.org/arch/msg/cbor/X4K-UjBZP6wxxZdWgBYEfCp2vH4/)
 * [5/8/23: Updated Drafts for dCBOR I-D and Gordian Envelope Structured Data Format I-D & IANA Tag Registration](https://mailarchive.ietf.org/arch/msg/cbor/DOUxXB-IMTPtvDeGh13ob-IjJsE/)
