@@ -5,8 +5,8 @@ main:
     url: /seedrecovery/
   - title: "UX Design"
     url: /ux/
-  - title: "About"
-    url: /about/
+  - title: "Libraries"
+    url: /libraries/
 dataformat:
   - title: Data Formats
     children:
