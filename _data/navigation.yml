@@ -26,7 +26,7 @@ dataformat:
     - title: "ByteWords"
       url: /bytewords/
     - title: "dCBOR"
-      url: /dCBOR/
+      url: /dcbor/
     - title: "Envelope"
       url: /envelope/
     - title: "Uniform Resources"
