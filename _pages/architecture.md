@@ -49,7 +49,7 @@ creates a powerful and safe new methodology for financial, data, and
 information operations on the internet. It also creates an ecosystem
 that allows for the inclusion of multiple developers, each producing
 their own applications that are all interoperable thanks to usage of
-Gordian Data Format & Encoding Specifications. This improves the
+Blockchain Commons' interoperable specifications. This improves the
 overall architecture through these competitive designs and ensures
 survivability of the model as a whole.
 
@@ -67,7 +67,7 @@ overall Gordian ecosystem such as price lookups. *Examples:*
 _Please see [Gordian Architecture Roles](/architecture/roles/) for
 examples of what functions can be partitioned as part of the Gordian
 Macro-architecture and [Gordian Arhitecture Apps](/architecture/apps/)
-for reference examples of these roles._
+for reference examples of these roles. Also see the [Gordian Lexicon](/architecture/lexicon/) for a full set of terms._
 
 ### Macro-Architectural Transport
 
@@ -83,14 +83,14 @@ either side might not even be networked. This improves the security of
 the non-networked side of the communication, as it will not be
 vulnerable to network attacks. A service protected by an AirGap
 communicates through the reading of QR Codes or through transmission
-of data on MicroSD cards, NFC tags, or other removable media.
+of data on MicroSD cards, NFC tags, or other removable media. See our [Airgap Overview](/airgap/).
 
 * **TorGap.** A link between services or microservices that connect
 via [Tor](https://www.torproject.org/). Though both services likely
 remain fully networked, they are anonymous to each other. This
 improves privacy and also deters network attacks due to the
 anonymity. See our [Torgap
-Overview](https://github.com/BlockchainCommons/torgap/blob/master/README.md).
+Overview](/torgap/).
 
 ## Supporting Specifications
 
@@ -98,7 +98,7 @@ The Gordian Architecture is supported by a variety of specifications:
 
 * [**Data Format**](/dataformat/) — Uniform Resources, Envelope,
 Bytewords, and other data formats are focused primarily on
-interoperability and independence.
+openness and independence.
 * [**Seed Recovery**](/seedrecovery/) — Helping users to preserve
 their seeds through methodologies like Collaborative Seed Recovery is
 all about improving the resilience of digital assets.
@@ -123,7 +123,7 @@ partitioned as part of the Gordian Macro-architecture.
 
 ## How the Gordian Architecture Supports Gordian Principles
 
-The Gordian architecture supports the four [Gordian
+The Gordian Architecture supports the four [Gordian
 Principles](/principles/) as follows:
 
 * **Independence.** Users can choose which applications to use within an open ecosystem.
@@ -137,11 +137,14 @@ Principles](/principles/) as follows:
 
 * [**Gordian Principles**](/principles/)
 * [**Musings of a Trust Architect**](https://www.blockchaincommons.com/musings/) (Blockchain Commons blog)
+
+**Further Explanations:**
+
 * [**Gordian Architecture FAQ**](/architecture/faq/)
+* [**Gordian Lexicon**](/architecture/lexicon/)
 
 **Architectural Nodes:**
 
-* [**Gordian Lexicon**](/architecture/lexicon/)
 * [**Gordian Architecture Roles**](/architecture/roles/)
 * [**Gordian Architecture Apps**](/architecture/apps/)
 
