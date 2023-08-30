@@ -39,3 +39,9 @@ Uniform Resources are built from compact sequences of Bytewords.
 * [**dCBOR**](/dcbor/) is a deterministic variant of the CBOR standard.
 It's used for CBOR contained in URs and generally is required for
 multi-party protocols where distributed consensus is important.
+
+_We also support a lightweight protocol for connecting transaction
+coordinators with seed vaults and cosigners._
+
+* [**Quick Connect**](/quickconnect/) allows for the private and
+independent linking of a server to a wallet.

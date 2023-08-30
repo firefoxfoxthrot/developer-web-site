@@ -71,6 +71,8 @@ dataformat:
       url: /dcbor/
     - title: "Envelope"
       url: /envelope/
+    - title: "Quick Connect"
+      url: /quickconnect/
     - title: "Uniform Resources"
       url: /ur/
 envelope:
