@@ -7,7 +7,7 @@ main:
     url: /ux/
   - title: "Architecture"
     url: /architecture/
-    - title: "Libraries"
+  - title: "Libraries"
     url: /libraries/
 mainside:
   - title: "Developer Resources"
