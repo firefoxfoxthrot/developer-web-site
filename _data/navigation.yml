@@ -18,6 +18,23 @@ sites:
       url: https://developer.blockchaincommons.com
     - title: "#SmartCustody"
       url: https://www.smartcustody.com
+architecture:
+  - title: Gordian Architecture
+    children:
+    - title: "Gordian Principles"
+      url: /principles/
+    - title: "Architecture FAQ"
+      url: /architecture/faq/
+    - title: "Architecture Lexicon"
+      url: /architecture/lexicon/
+    - title: "Architecture Roles"
+      url: /architecture/roles/
+    - title: "Architecture Apps"
+      url: /architecture/apps/
+    - title: "Airgaps"
+      url: /airgap/
+    - title: "Torgaps"
+      url: /torgap/
 dataformat:
   - title: Data Formats
     children:
