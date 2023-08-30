@@ -149,3 +149,9 @@ Principles](/principles/) as follows:
 
 * [**Airgap**](/airgap/)
 * [**Torgap**](/torgap/)
+
+**Self-Sovereign Identity:**
+
+* [**The Path to Self-Sovereign Identity**](http://www.lifewithalacrity.com/2016/04/the-path-to-self-soverereign-identity.html) (Life with Alacrity blog)
+* [**Self-Sovereign Identity: 5 Years On**](https://www.blockchaincommons.com/musings/SSI-5-Years-On/) (Blockchain Commons blog)
+* [**The Origins of Self-Sovereign Identity**](https://www.blockchaincommons.com/musings/origins-SSI/) (Blockchain Commons blog)
