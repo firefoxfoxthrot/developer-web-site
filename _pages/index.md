@@ -12,6 +12,7 @@ classes:
 permalink: /
 sidebar:
   nav: sites
+  nav: mainside
 ---
 
 Blockchain Commons has produced a number of specifications that are

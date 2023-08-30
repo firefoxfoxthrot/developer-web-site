@@ -5,8 +5,23 @@ main:
     url: /seedrecovery/
   - title: "UX Design"
     url: /ux/
-  - title: "Libraries"
+  - title: "Architecture"
+    url: /architecture/
+    - title: "Libraries"
     url: /libraries/
+mainside:
+  - title: "Developer Resources"
+    children:
+    - title: "Data Format"
+      url: /dataformat/
+    - title: "Seed Recovery"
+      url: /seedrecovery/
+    - title: "UX Design"
+      url: /ux/
+    - title: "Architecture"
+      url: /architecture/
+    - title: "Libraries"
+      url: /libraries/
 sites:
   - title: Blockchain Commons Sites
     children:
