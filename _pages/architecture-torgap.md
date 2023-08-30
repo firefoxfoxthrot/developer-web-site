@@ -38,7 +38,7 @@ participants, reaping various rewards as a result.)
 The following network diagram demonstrates an architecture that mixes
 airgaps and torgaps to produce a well-protected network architecture.
 
-![](/assets/images/appmap.png)
+![](/assets/images/appmap-black.png)
 
 In this example:
 * The remote iOS [Gordian Wallet](https://github.com/blockchainCommons/gordianwallet-ios) app uses a Torgap to communicate with the Mac [Gordian Server](https://github.com/BlockchainCommons/GordianServer-macOS) bitcoin full-node located at home, which confirms Bitcoin transactions.

@@ -20,7 +20,7 @@ Principles](/principles/). They may also be combined into an ecosystem
 that demonstrates the Gordian Marco-Architecture and its theory of
 functional partition:
 
-![](/assets/images/appmap.png)
+![](/assets/images/appmap-black.png)
 
 The Gordian Reference Apps are all linked by airgaps and torgaps, to
 demonstrate how privacy and security can be maximized while still

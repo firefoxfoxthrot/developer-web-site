@@ -64,9 +64,10 @@ Tool](https://github.com/BlockchainCommons/GordianSeedTool-iOS)
 overall Gordian ecosystem such as price lookups. *Examples:*
 [SpotBit](https://github.com/BlockchainCommons/spotbit).
 
-Please see [Gordian Architure Roles](/architecture/roles/) for examples of what
-functions can be partitioned as part of the Gordian
-Macro-architecture.
+_Please see [Gordian Architecture Roles](/architecture/roles/) for
+examples of what functions can be partitioned as part of the Gordian
+Macro-architecture and [Gordian Arhitecture Apps](/architecture/apps/)
+for reference examples of these roles._
 
 ### Macro-Architectural Transport
 
