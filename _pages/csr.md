@@ -40,7 +40,7 @@ methods._
 ## Why is CSR Important?
 
 CSR focuses on
-[Resilience](https://github.com/BlockchainCommons/Gordian#gordian-principles),
+[Resilience](/principles/)
 but it takes the next step beyond [SSKR](/sskr/). Whereas SSKR
 provides a robust way to protect a seed _if_ the user is careful and
 knows what to do, CSR makes it easy for users to automate that

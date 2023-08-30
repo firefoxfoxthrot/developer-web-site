@@ -27,7 +27,7 @@ fiduciaries. If the user ever loses their seed, they can then
 
 One of the biggest challenges in the control of digital assets
 (particularly the self-sovereign control of digital assets) is
-[Resilience](https://github.com/BlockchainCommons/Gordian#gordian-principles).
+[Resilience](/principles/)
 It's too easy for a user to lose the seed or key that control their
 assets, and thus the assets.
 

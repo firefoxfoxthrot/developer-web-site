@@ -19,7 +19,7 @@ toc_label: SSKR FAQ
 ### What Can SSKR Do?
 
 SSKR allows you to protect a 32-byte seed. It's a tool for
-[Resilience](https://github.com/BlockchainCommons/Gordian#gordian-principles),
+[Resilience](/principles/)
 intended to protect a seed from loss.
 
 ### What Are the Caveats to using SSKR?

@@ -451,7 +451,7 @@ graph LR
 
 Nadia's ToneZone now has a data store that is _independent_,
 _private_, _resilient_, and _open_, fulfilling the [Gordian
-Principles](https://github.com/BlockchainCommons/Gordian#gordian-principles). But
+Principles](https://developer.blockchaincommons.com/principles/). But
 the ToneZone does more than that: it also allows Nadia to share her
 data in meaningful ways.
 

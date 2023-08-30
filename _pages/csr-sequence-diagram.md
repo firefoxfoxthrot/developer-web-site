@@ -71,7 +71,7 @@ func retrieveShares(publicKey: PublicKeyBase, receipts: Set<Receipt>) throws -> 
 
 ## II. Data Flow: Establishing & Using Fallbacks
 
-One of the [Gordian Principles](https://github.com/BlockchainCommons/Gordian#gordian-principles) is "resilience". In particular, making it hard for a user to lose their data is a core architectural requirement. For our CSR model, this is done via a fallback. This creates an additional data flow: the user may establish a fallback, and if they do and later lose their keypair, they may use the fallback to reset the keypair. 
+One of the [Gordian Principles](/principles/) is "resilience". In particular, making it hard for a user to lose their data is a core architectural requirement. For our CSR model, this is done via a fallback. This creates an additional data flow: the user may establish a fallback, and if they do and later lose their keypair, they may use the fallback to reset the keypair. 
 
 It's vitally important that a user establish a fallback shortly after storing their initial data, because until they do, their keypair remains a Single Point of Failure (SPOF). Requiring a fallback, though technically optional, should thus be considered a step in the Data Flow immediately after Data Storage.
 

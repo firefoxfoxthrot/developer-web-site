@@ -23,7 +23,7 @@ is certainly an issue, *Failure* is likely a bigger problem for more
 individual digital-asset owners: it's easy to lose a seed or key!_
 
 _Blockchain Commons' *Seed Recovery* projects increase the
-[Resilience](https://github.com/BlockchainCommons/Gordian#gordian-principles)
+[Resilience](/principles/)
 of digital assets through a variety of means, all intended to ensure
 that users retain control of their digital assets._
 
