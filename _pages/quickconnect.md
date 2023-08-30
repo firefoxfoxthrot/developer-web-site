@@ -94,22 +94,3 @@ using self-describing UR format rather than javascript.
 
 If you would like to participate in this discussion, we have it as a
 topic in the [Gordian Developer Community](https://github.com/BlockchainCommons/Gordian-Developer-Community/discussions/33)
-
-
-## Quick Connect 2.0
-
-We'd like to evolve this specification for 2.0 to address at least two new requirements:
-
-* There is a need to be able to offer multiple services from a single server, for instance Bitcoin mainnet, testnet, Lightning, Spotbit, etc. Thus primary goal for a  Quick Connect 2.0 specification is a single QR from a server that can offfer a client a list of all services available to it.
-* A secondary requirement is that some servers may be able to use Web camera APIs to scan QRs from clients, and we'd like a QR with Tor v3 client information in it that can be passed back to the server.
-
-We'd love to have more discussion with other wallet developers about
-any additional requirements for this initial connection between a full
-node and a remote device via tor. This could include a possible TOFU
-two-round auth so that the node can know that the specific remote
-device is the same one that requested it originally. If these QRs
-might get large, we might also want to offer this as an animated QR
-using self-describing UR format rather than javascript.
-
-If you would like to participate in this discussion, we have it as a
-topic in the [Gordian Developer Community](https://github.com/BlockchainCommons/Gordian-Developer-Community/discussions/33).
