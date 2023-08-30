@@ -11,8 +11,7 @@ classes:
   - wide
 permalink: /
 sidebar:
-  nav: sites
-  nav: mainside
+  nav: sites mainside
 ---
 
 Blockchain Commons has produced a number of specifications that are
