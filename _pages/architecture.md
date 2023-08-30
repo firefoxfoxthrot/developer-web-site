@@ -141,8 +141,8 @@ Principles](/principles/) as follows:
 **Architectural Nodes:**
 
 * [**Gordian Lexicon**](/architecture/lexicon/)
-* [**Gordian Architecture Roles](/architecture/roles/)
-* [**Gordian Architecture Apps](/architecture/apps/)
+* [**Gordian Architecture Roles**](/architecture/roles/)
+* [**Gordian Architecture Apps**](/architecture/apps/)
 
 **Architectural Edges:**
 
