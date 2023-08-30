@@ -23,11 +23,11 @@ number of different software projects and hardware products.
 ## Why is Quick Connect Important?
 
 Quick Connect allows for the connection of networked transaction
-coordinators with seed vaults and cosigners. By using an interoperable
-specification, it allows for this connection to occur among products
-created by different manufacturers, creating a modular
-[architecture](/architecture/) that empowers user agency and
-independence.
+coordinators with seed vaults and cosigners (currently only for
+Bitcoin). By using an interoperable specification, it allows for this
+connection to occur among products created by different manufacturers,
+creating a modular [architecture](/architecture/) that empowers user
+agency and independence.
 
 In addition, user privacy is improved through the use of Tor,
 decreasing the possibility of attacks on a user's digital assets.
@@ -73,24 +73,36 @@ offers proof of concept of a light client built to use this protocol.
 
 ## Quick Connect 2.0 Plans
 
-We'd like to evolve this specification for 2.0 to address at least two new requirements:
+Quick Connect was a very early Blockchain Commons specification that has
+not received much attention in years. However, a 2.0 version remains of
+interest to allow for the interoperable discovery and connection of
+a variety of services.
 
-* There is a need to be able to offer multiple services from a single
+A specification for Quick Connect 2.0 would include, at a minimum, the
+following new requirements:
+
+* The ability to discover other services, such as Blockchain Commons'
+own [SpotBit](https://github.com/BlockchainCommons/spotbit) or more
+generically something like "oracle services" or "cosigner services".
+* The possibility of offering multiple services from a single
   server, for instance Bitcoin mainnet, testnet, Lightning, Spotbit,
-  etc. Thus primary goal for a Quick Connect 2.0 specification is a
-  single QR from a server that can offfer a client a list of all
+  etc. This would be encoded
+  single QR from a server that can offer a client a list of all
   services available to it.
-* A secondary requirement is that some servers may be able to use Web
-  camera APIs to scan QRs from clients, and we'd like a QR with Tor v3
-  client information in it that can be passed back to the server.
+* The creation of a QR with Tor v3 client info that can be passed back
+  to the server.
+* The consolidation of this information in a [Gordian Envelope](/envelope/), likely using Envelope's request/response communication methodology, which will also allow for the usage of [Animated QRs](/animated-qrs/) for larger data.
 
 We'd love to have more discussion with other wallet developers about
-any additional requirements for this initial connection between a full
-node and a remote device via tor. This could include a possible TOFU
-two-round auth so that the node can know that the specific remote
-device is the same one that requested it originally. If these QRs
-might get large, we might also want to offer this as an animated QR
-using self-describing UR format rather than javascript.
+any additional requirements for this initial connection between a
+service and a remote device via Tor. We'd especially like to hear from
+[Sponsors](https://github.com/sponsors/BlockchainCommons) who would
+like to prioritize QuickConnect, as that tends to be one of our ways
+we determine what gets attention.
 
 If you would like to participate in this discussion, we have it as a
 topic in the [Gordian Developer Community](https://github.com/BlockchainCommons/Gordian-Developer-Community/discussions/33)
+
+[stuff more than BTC 2.0, more privacy]
+[I OFFER A SPOTBIT, COSIGNER SERVICE, ORACLE SERVICE]
+[wrapped in Gordian Envelope, using Request/Response service]
