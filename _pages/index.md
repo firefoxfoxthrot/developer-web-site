@@ -39,6 +39,7 @@ among different entities.
    * [Bytewords](/bytewords/) — Textual encoding of binary data.
    * [dCBOR](/dcbor/) — Deterministic CBOR.
    * [Envelope](/envelope/) — Encoding of both data and metadata.
+   * [Quick Connect](/quickconnect) — Service detection.
    * [UR](/ur/) — URI packaging of CBOR using Bytewords.
    
 ## Seed Recovery
