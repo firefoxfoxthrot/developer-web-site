@@ -50,15 +50,17 @@ Thanks to its integration with [Gordian Envelope](/envelope/), CSR can
 also store larger amounts of data that would be possible with SSKR
 alone, such as additional metadata describing an SSKR share.
 
+But the most important element of CSR is that **You Decide**. Unlike Ledger Recover or other services, you choose who holds your shares, whether they be corporations with strict KYC requirements (as with Ledger Recover), companies with more privacy-preserving principles, other users who you swap shares with, or your self-sovereign storage of shares on paper, steel, or something else.
+
 ## How Does CSR Work?
 
 CSR is integrated into Wallet and Seed Storage apps. When a user
 chooses to backup a seed, it will automatically shard the seed and
-send it off to designated Share Servers. If a user wishes to assert
+send those shares off to selected Share Servers . When a user wishes to assert
 more agency, they can choose where those shares are stored, or even
 take them offline.
 
-Seed reconstruction requires the user to authentication using
+Seed reconstruction requires the user to authenticate using
 different, predetermined methods with each Share Server. They can
 include everything from passwords and email responses to personal
 identification. Each authentication retrieves a share, and when
