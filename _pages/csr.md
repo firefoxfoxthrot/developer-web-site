@@ -74,6 +74,17 @@ note and name, something not possible with bare SSKR.
 _See the [CSR Architectural Overview](csr-architecture.md) for more
 information._
 
+### What are the Phases of CSR Deployment?
+
+There are three broad phases to CSR deployment.
+
+**Phase 1:** Release of [SSKR](/sskr/) to allow sharding of seeds and [Envelope](/envelope/) to support encoding of metadata. Release of Gordian Server & Gordian Companion to demonstrate the use of a Share Server and a user-facing reference app that can shard a seed and send it off to multiple locales.
+
+**Phase 2:** Work with third parties to support the creation of additional Share Servers in order to create an ecosystem truly supporting user choice, where a user of an application can meaningfully choose where to send the shares of his seed.
+
+**Phase 3:** Expansion of SSKR to support VSS in the Trusted Dealer Key Generation mode, so that a user app can regularly test for the existence of seed shares without creating a danger of compromise by actually reconstructing the seed. Currently it seems most likely this will be accomplished with the recently audited [ZF FROST libraries](https://frost.zfnd.org/index.html).
+
+
 ## Videos
 
 <table width="100%">
