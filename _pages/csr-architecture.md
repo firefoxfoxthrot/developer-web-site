@@ -25,6 +25,7 @@ The key principles of CSR are:
 
 1. To allow for the resilient and secure recovery of data.
 1. To place rational limits on what can be stored.
+1. To give users the choice of how to divide their shares and who to trust them with.
 1. To allow recovery from a variety of sources.
 1. To support a variety of methods for recovery.
    * This by default includes recovery from online services.
@@ -37,10 +38,10 @@ The key principles of CSR are:
    * Authentication can include physical possession.
    * Authentication can include other non-digital processes.
 1. To make the security of the recovery a core goal.
-1. To do all of this in a simple way that hides complex details from the user.
+1. To do all of this in a simple way that can hide complex details from the user, if they don't choose to engage with them.
 1. To do all of this in a standardardized way that allows for shared infrastructure.
 
-## What CSR v1.0 Will Do
+## What CSR Phase One Will Do
 
 ### CSR Secret Storage
 
@@ -159,13 +160,14 @@ Assuming the destruction or loss (but not compromise) of the device holding the 
 7. CSR unlocks symmetric key.
 8. CSR uses symmetric key to unlock first payload in either envelope (they should be identical).
 
-## What CSR v1.0 Will Not Do
+## What CSR Phase One Will Not Do
 
-CSR v1.0 is just the first iteration of the CSR system, let alone the larger, more complex [Collective Key Management (CKM)](/ckm/) system. It needs to be carefully constrained to ensure the ability to release in 2023.
+CSR Phase One is just the first iteration of the CSR system, let alone the larger, more complex [Collective Key Management (CKM)](/ckm/) system. It needs to be carefully constrained to ensure the ability to release in 2023.
 
 It does *not*:
 * Support collaborative key generation.
 * Support collaborative key usage.
+* Support VSS.
 * Protect your key before it's split.
 * Protect your key once it's recovered.
 * Support the usage of multisigs.
