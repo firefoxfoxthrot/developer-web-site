@@ -10,8 +10,6 @@ hide_description: true
 permalink: /csr/faq/
 sidebar:
   nav: csr
-toc: true
-toc_title: FAQs
 ---
 
 ## Privacy
@@ -35,13 +33,13 @@ But, if a user is willing and able to make the choices for where and how his sha
 
 By allowing a user to make those choices (but perhaps guiding them in making those choices), a wallet app ensures that the resilience of sharded secrets are maximized.
 
-## Why are Homogeneous Authentication Methods Problematic?
+### Why are Homogeneous Authentication Methods Problematic?
 
 Share recovery requires authentication: a user in some way proves who they are, and thus receives a stored shared back. Some CSR-like methods have chosen homoegeneity among their share servers' authentication: each server requires the exact same authentication to give up its share.
 
 This can be problematic because it means that if an attacker compromises the one, required authentication method, then they compromise every share, and thus the stored seed. The authentication method becomes a Single Point of Compromise, the very thing that the sharding of a seed was attempting to avoid. Instead, share recovery systems should require (or at least highly suggest, given support for user choice) that each share be stored with a different authentication method and that those authentication methods not be interdependent. For example, a user might have his shares authenticated on his phone, by his email address, and by an in-person recovery, but should ensure that theft of his phone doesn't allow theft of his email address. (Modern biometric protections on mobile devices can ensure this protection, at least in the short term.)
 
-## Why is VSS an Important Expansion beyond Shamir's Secret Sharing?
+### Why is VSS an Important Expansion beyond Shamir's Secret Sharing?
 
 The reconstruction site becomes a Single Point of Compromise whenever seeds are reconstructed. As a result, seeds should be reconstructed as rarely as possible.
 
