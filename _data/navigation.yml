@@ -142,7 +142,7 @@ csr:
     children:
     - title: "Intro to CSR"
       url: /csr/
-    - title "CSR FAQ"
+    - title: "CSR FAQ"
       url: /csr/faq/
     - title: "Architectural Overview"
       url: /csr/architecture/
