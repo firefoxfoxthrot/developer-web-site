@@ -129,6 +129,7 @@ Envelope._
 
 * [Envelope](/envelope/)
 * [SSKR](/sskr/)
+* [Schnorr](https://www.blockchaincommons.com/musings/Schnorr-Intro/) (blog post)
 * [ZF FROST](https://frost.zfnd.org/frost.html) (ZF FROST Docs)
 
 **Next Step Intro:**
