@@ -76,6 +76,7 @@ new technologies making this possible._
 * [Envelope](/envelope/)
 * [SSKR](/sskr/)
 * [CSR](/csr/)
+* [Schnorr](https://www.blockchaincommons.com/musings/Schnorr-Intro/) (blog post)
 * [ZF FROST](https://frost.zfnd.org/frost.html) (ZF FROST Docs)
   
 **Use Cases:**
