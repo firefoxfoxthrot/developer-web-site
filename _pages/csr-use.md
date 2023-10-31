@@ -29,7 +29,7 @@ CKM is considered the next-generation of CSR, following its initial deployment. 
 
 It all starts with a Gordian Envelope, which can literally be life-saving, as the following standalone example demonstrates.
 
-## _Phase 1 Use Cases: Envelope Deployed_
+### _Phase 1 Use Cases: Envelope Deployed_
 
 **Public-Good Use Case #1: Blowing the Whistle (Storage).** Bill has discovered that his employer, Acme Petroleum Company (APC), is dumping wastes into the Gulf of Mexico. He collects proof of this, but is afraid that APC might find that proof, destroy it, and perhaps even make him disappear. So he encrypts the information in a Gordian Envelope using his easily acessible public key. It now can't be decrypted except with his private key, which is only available at his house. As long as he can remove the Gordian Envelope from APC's offices, he'll be able to securely decrypt it at a later time and send the information to the proper authorities. Meanwhile, APC has no way of either decrypting the information or forcing Bill to do so while he's under their power at his work site. _[public-key cryptography.]_
 
@@ -37,11 +37,11 @@ It all starts with a Gordian Envelope, which can literally be life-saving, as th
 
 Even prior to the release of CSR, SSKR and Envelope themselves are quite powerful. This first set of use cases, looking at the creation of data stores for social networks, demonstrates their usage for securing that data in multiple ways.
 
-## _Phase 1 Use Cases: Envelope Deployed_
+### _Phase 1 Use Cases: Envelope Deployed_
 
 **Social-Network Use Case #1: Sharing Facebook (Storage).** Ansel ran a Facebook group for photographers before he decided that he needed to make a break from the corporation. He downloaded the Group and stored it in a Gordian Envelope locked with his public key, so it wouldn't be accessible to other people. However, he also wanted to share the data with his co-admin Annie. He creates a second permit on the data envelope that is locked with Annie's public key. Now either of them can access the data. _[multipermit with multiple public-key cryptography.]_
 
-## _Phase 2 Use Cases: SSKR Deployed_
+### _Phase 2 Use Cases: SSKR Deployed_
 
 **Social-Network Use Case #2: Replacing Facebook (Sharding).** James has come to the conclusion that Facebook is evil because of its amplification of political lies. Thankfully, thanks to the GDPR and CCPA, social-media companies have begun to forced means to download user data. James does so, storing it in an encrypted data store. The data store is encrypted with a symmetric key that is then sharded, with the whole packet of data stored in three places, each containing the encrypted data and one share of the key. James can access his data when he wants to, but it's difficult for others to steal. _[2-of-3 sharding]_
 
@@ -51,7 +51,7 @@ Even prior to the release of CSR, SSKR and Envelope themselves are quite powerfu
 
 Envelopes and SSKR can serve a lot of different industries. The following show how collaboration could be supported through the use of different permissions within a system. 
 
-## _Phase 1 Use Cases: Envelope Deployed_
+### _Phase 1 Use Cases: Envelope Deployed_
 
 **Collaborative Use Case #1: Consecutive Chronicling (Storage).** Jan and Guy are working on the final novel in their 27-book series, and they're worried about its secrets getting out. So Jan, who does the initial drafts, encrypts each chapter in a Gordian Envelope with Guy's public key before sending it to Guy, who can than decrypt it with his private key. _[public-key cryptography]_
 
@@ -59,7 +59,7 @@ Envelopes and SSKR can serve a lot of different industries. The following show h
 
 **Collaborative Use Case #3: The Comic Crew (Storage, Multiple Permit, Multiple Permissions).** Writer-artist Jack is working on _The FORTH World_, a comic book about programming. As he completes his pages, he stores them in a Gordian Envelope that he has full read-write permissions to. He's thus able to update it as he creates new pages. Though he'll be publishing a book down the road, for now he's sharing his work on Patreon: all of his patrons there have read-only access to the Gordian Envelope. They can look at the pages, but they can't update the content. These permissions are managed through two different keys: Jack's own private key and a separate key that he posts to his Patreon for his patrons' read access. _[multipermit with separate write and read permissions based on public-key cryptography and a symmetric key.]_
 
-## _Phase 1 Use Cases: SSKR Deployed_
+### _Phase 1 Use Cases: SSKR Deployed_
 
 **Collaborative Use Case #4: Almost Famous (Sharding).** Stan and John have produced a script for Super-Patriot Man, which they think will totally reinvent super hero movies. To protect it from theft until they're able to sell to a studio, Stan and John have encrypted the script in a Gordian Envelope that is openable with both shares of a sharded key. Jack has a Gordian Envelope containing the encrypted script and one shard and Stan the other. The Gordian Envelope also contains a signed timestamp that can be used to prove the date that they encrypted the script, in case any proof of provenance is  needed — and it often is in the ever-litigious entertainment industry. _[2-of-2 sharding with timestamp.]_
 
