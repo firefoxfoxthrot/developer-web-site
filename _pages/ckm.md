@@ -69,7 +69,7 @@ new technologies making this possible._
 
 **Intro:**
 
-* [Architectural Overview](/csr/architecture/)
+* [Architectural Overview](/ckm/architecture/)
 
 **Use Cases:**
 
