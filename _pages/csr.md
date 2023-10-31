@@ -50,7 +50,7 @@ Thanks to its integration with [Gordian Envelope](/envelope/), CSR can
 also store larger amounts of data that would be possible with SSKR
 alone, such as additional metadata describing an SSKR share.
 
-But the most important element of CSR is that **You Decide**. Unlike Ledger Recover or other services, you choose who holds your shares, whether they be corporations with strict KYC requirements (as with Ledger Recover), companies with more privacy-preserving principles, other users who you swap shares with, or your self-sovereign storage of shares on paper, steel, or something else.
+But the most important element of CSR is that **You Decide**. Unlike Ledger Recover or other services, you choose who holds your shares, whether they be corporations with strict KYC requirements (as with Ledger Recover), companies with more privacy-preserving principles, other users who you swap shares with, or your own self-sovereign storage of shares on paper, steel, or something else.
 
 ## How Does CSR Work?
 
@@ -64,7 +64,7 @@ Seed reconstruction requires the user to authenticate using
 different, predetermined methods with each Share Server. They can
 include everything from passwords and email responses to personal
 identification. Each authentication retrieves a share, and when
-sufficient shares have been restored, the seed is reconstructed.
+sufficient shares have been retrieved, the seed is reconstructed.
 
 The following example depicts the recovery of a seed complete with
 note and name, something not possible with bare SSKR.
@@ -78,12 +78,13 @@ information._
 
 There are three broad phases to CSR deployment.
 
-**Phase 1:** Release of [SSKR](/sskr/) to allow sharding of seeds and [Envelope](/envelope/) to support encoding of metadata. Release of Gordian Server & Gordian Companion to demonstrate the use of a Share Server and a user-facing reference app that can shard a seed and send it off to multiple locales.
+**Phase 1:** Release of [SSKR](/sskr/) to allow sharding of seeds and [Envelope](/envelope/) to support encoding of metadata. Release of Gordian Depository & Gordian Companion to demonstrate the use of a Share Server and a user-facing reference app that can shard a seed and send it off to multiple locales.
 
 **Phase 2:** Work with third parties to support the creation of additional Share Servers in order to create an ecosystem truly supporting user choice, where a user of an application can meaningfully choose where to send the shares of his seed.
 
 **Phase 3:** Expansion of SSKR to support VSS in the Trusted Dealer Key Generation mode, so that a user app can regularly test for the existence of seed shares without creating a danger of compromise by actually reconstructing the seed. Currently it seems most likely this will be accomplished with the recently audited [ZF FROST libraries](https://frost.zfnd.org/index.html).
 
+Phase 4 will then leverage that work with VSS and FROST into a full [CKM](/ckm/) deployment.
 
 ## Videos
 
@@ -123,6 +124,7 @@ Envelope._
 **Intro:**
 
 * [Architectural Overview](/csr/architecture/)
+* [CKM](/ckm/)
 
 **Developer Resources:**
 
