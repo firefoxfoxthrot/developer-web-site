@@ -28,9 +28,9 @@ All of these current methods have flaws.
 * They're all threatened by **Single Points of Failure (SPOFs)** where a key is lost. Personal holdings are particularly vulnerable because an invidual holder might not have the expertise or means to protect their keys, such that [forgetting a PIN for a hardware wallet can lead to the loss of its funds](https://www.wired.com/story/i-forgot-my-pin-an-epic-tale-of-losing-dollar30000-in-bitcoin/). 
 * They're all threatened by **Single Points of Denial (SPODs)**, where centralized servers can refuse to process transactions. This is particularly a concern when working with a third party who could arbitrarily decide to block anything a crypto-owner is doing. Canada tried to exert financial censorship of this type over crypto-wallets associated with the ["Freedom" Convoy](https://www.coindesk.com/policy/2022/02/16/canada-sanctions-34-crypto-wallets-tied-to-trucker-freedom-convoy/).
 
-The solution offered by CKM is that we secure each other. Using Collaborative Key Management, we can spread out the responsibility of protecting the keys underlying digital assets among a variety of parties, each inspired by self-interest, by community spirit, or by a desire to protect the assets themselves. Because no one party ever has access to all the key material, we remove SPOFs, SPOCs, and SPODs, creating a better and safer way to access the digital world.
+The solution offered by CKM is that we secure each other. Using Collaborative Key Management, we can spread out the responsibility of protecting the keys underlying digital assets among a variety of parties, each inspired by self-interest, by community spirit, or by a desire to protect the assets themselves. Because no one party ever has access to all the key material, we remove SPOFs, SPOCs, and SPODs, creating a better and safer way to access the digital world. We also build on the existing improvements in [SSKR](/sskr/), [Gordian Envelope](/envelope/), and [CSR](/csr/), which themselves improved the resilience of digital assets in a variety of ways, as well as newer technologies such as [Schnorr signatures](https://www.blockchaincommons.com/musings/Schnorr-Intro/).
 
-CKM improves upon self-custody methods by better securing against SPOFs, and offers even larger protections compared to third-party custody solutions:
+CKM improves upon self-custody methods by better securing against SPOFs, and offers even larger protections compared to third-party custody solutions. It even offers some incremental improvements on [CSR](/csr/), which is why it's considered Phase 4 of the CSR rollout. The following chart shows improvements from third-party custody to self-custody to CSR to CKM.
 
 | | CKM |  CSR | Self Custody | Third-party Custody |
 | --- | --- | -------- | -------- | -------- |
@@ -42,12 +42,13 @@ For other problems that CKM solves, which go beyond just protecting keys, see **
 
 ## Why Now for CKM?
 
-CKM has been enabled by the incorporation of new cryptography into Bitcoin, in particular the availabilty of Schnorr after the Taproot softfork. For the first time, thanks to some special characteristics of Bitcoin's secp256k1 elliptic curve, we can make use of the special advantages of Schnorr, such as signature aggregation and adapter signatures and support the use of quorum threshold-signature schemes such as FROST to leverage SMPC (Secure Multi Party Computation).
+CKM has been enabled by the incorporation of new cryptography into Bitcoin, in particular the availabilty of Schnorr after the Taproot softfork, and by the rollout of the first [security-tested FROST implementation](https://github.com/ZcashFoundation/frost) by the Zcash Foundation. For the first time, thanks to some special characteristics of Bitcoin's secp256k1 elliptic curve, we can make use of the [special advantages of Schnorr such as signature aggregation and adapter signatures](https://www.blockchaincommons.com/musings/Schnorr-Intro/) and support the use of quorum threshold-signature schemes such as FROST to leverage SMPC (Secure Multi Party Computation).
 
 Each of these new technologies have specific advantages that can be applied to a CKM system:
 * Schnorr allows for smaller multisigs than current technologies, and also improves privacy by not revealing who signed a transaction (nor even if it was a single signature or a multisignature).
 * Taproot fully integrates Schnorr signatures into Bitcoin, improves the privacy of Bitcoin scripts, and allows for more complex scripting.
 * SMPC allows for keys to be collaboratively generated and used such that no individual ever sees the full key.
+* ZF FROST implements the latter through its [Distributed Key Generation](https://frost.zfnd.org/tutorial/dkg.html).
 
 By improving the use of multisigs and of Bitcoin scripts, and by allowing for SMPC to generate and use keys together, we can engage in wide-scale collaboration on the Bitcoin blockchain, which can then be extended to other digital-asset classes. 
 
@@ -101,7 +102,7 @@ By supporting the Gordian Envelope specifications and participating in collabora
 * ***Current Problems:*** Not in crypto market, barriers to entry due to vast numbers of hardware and software solutions.
 * ***Solutions:*** Incorporate specifications desired by crypto market and usable in an interoperable way.
 
-There is a large void in silicon support for the cryptographic market. The first chip manufacturer into that market will be able to quickly multiply its success with this newly opened market. The biggest problem with entering the market is integrating with a large number of different hardware and software solutions. Interoperable specifications such as `crypto-envelope` are the way to do so, without having to craft integrations for each manufacturer. CKM also offers strong future-proofing for any chip manufacturer, ensuring that they will remain very relevant as the crypto-market changes and grows.
+There is a large void in silicon support for the cryptographic market. The first chip manufacturer into that market will be able to quickly multiply its success with this newly opened market. The biggest problem with entering the market is integrating with a large number of different hardware and software solutions. Interoperable specifications such as Gordian Envelope are the way to do so, without having to craft integrations for each manufacturer. CKM also offers strong future-proofing for any chip manufacturer, ensuring that they will remain very relevant as the crypto-market changes and grows.
 
 (We have already begun work with Chip Manufacturers through our [Silicon Salons](https://www.siliconsalon.info/).)
 
@@ -155,7 +156,7 @@ CKM is a new architecture that solves fundamental problems in the current manage
 
 ## Appendix I: Problems & CKM Solution
 
-Obviously, the collaborative generation and usage of keys solves a number of problems with SPOFs and SPOCs. Following are some deeper solutions offered by the system.
+Obviously, the collaborative generation and usage of keys solves a number of problems with SPOFs, SPOCs, and SPODs. Following are some deeper solutions offered by the system.
 
 **Problem #1: All Keys Are Easy to Lose**
 
@@ -163,7 +164,7 @@ Losing a fragile master key is one of the biggest problems with cryptographic st
 
 ___Solution: Improved Resilience for Key Storage___
 
-CKM's `crypto-envelopes` are stored using a `permit` system that allows different keys to be used in different ways to unlock the same data, further improving resilience by creating multiple ways to access the information
+CKM's Gordian Envelopes are stored using a "permit" system that allows different keys to be used in different ways to unlock the same data, further improving resilience by creating multiple ways to access the information
 
 **Problem #2: Ethereum Keys Are Especially Vulnerable**
 
@@ -187,7 +188,7 @@ Current secret-sharing schemes have low upper limits for how much data can be st
 
 ___Solution: Secure Metadata Storage___
 
-CKM's methodology for storing additional data in a `crypto-envelope` allows for the storage of unbounded amounts of secret material, meeting the needs of secure, collaborative, and decentralized secret storage.
+CKM's methodology for storing additional data in a Gordian Envelope allows for the storage of unbounded amounts of secret material, meeting the needs of secure, collaborative, and decentralized secret storage.
 
 **Problem #5: Existing DIDs Are Not Rotatable or Revokable**
 
@@ -210,7 +211,7 @@ The principles of the CKM architecture are all in furtherance of this goal:
    * Collaborative key managers do not have to be people, but can also be organizations, hardware devices, computers, or other entities.
 1. **Forward-Looking Design.**
    * The architecture must be proactively built for security & resilience.
-   * Mature emerging technologies should be used when appropriate.
+   * Mature emerging technologies should be used when appropriate, including [SSKR](/sskr/), [Envelope](/envelope/), and potentially [ZF FROST](https://frost.zfnd.org/index.html)
    * The design should be future-proofed, so that more functionality and new technologies can be integrated without changing the architecture.
 1. **No Gods, No Masters.**
    * There must be no single source of authority in the architecture.
@@ -236,72 +237,81 @@ The CKM architecture is built upon the following major elements:
 
 * **Collaborative Key Generation.** A system for generating keys collaboratively.
 * **Collaborative Key Recovery.** A system for recovering lost keys collaboratively.
-* **Crypto-Envelope.** A data-type that can store secrets such as keys and other data.
+* **Gordian Envelope.** A data-type that can store secrets such as keys and other data.
 * **Permits.** An authentication system that allows multiple methods for opening those envelopes.
+* **Schnorr.** A digital signature system.
 * **Scripting.** A permit-scripting system to support more complex authentication in the future.
 * **SCIDs.** A DID-like identifier integrated with CKMs.
+* **SSKR.** A secret sharding system.
 
-The Crypto-Envelopes and derivative systems are already present in [CSR](/CSR/README.md), but will continue to expand and mature as CSR is completed and development begins on CKM.
+The Gordian Envelopes, SSKR, and derivative systems are already present in [CSR](/csr/), but will continue to expand and mature as CSR is completed and development begins on CKM.
 
 The following offers a broad overview of these architectural points:
 
 **Collaborative Key Generation.** This is the fundamental linchpin of CKM. When keys are collaboratively generated, no one person is responsible for creating the entropy underlying the keys. Further, the key may never exist in its collected form until the instant it is used. [FROST](https://crysp.uwaterloo.ca/software/frost/) and [Torus](https://tor.us/) both demonstrate practical methods for collaborative key generation. In CKM, the core concept is that entities holding secrets will generate a variety of keys as they are required. Ideally, this is managed by an [SMPC system](https://en.wikipedia.org/wiki/Secure_multi-party_computation), such that any key is generated (or regenerated) from secrets held by different machines in the instant it's required. However, reconstruction of keys from shares may be required for legacy CSR systems or in the case of emergencies.
 
-**Collaborative Key Recovery.** A sharding system allows shares of a key to be stored without the full key existing anywhere. Shamir's Secret Sharing is the traditional sharding system, but [Verifiable Secret Sharing (VSS)](https://ieeexplore.ieee.org/document/4568297) improves upon Shamir by allowing the ability to verify that someone holds a share without reconstructing the key. A VSS variation used by FROST will be incorporated as a second option for sharding in [SSKR](https://github.com/BlockchainCommons/bc-sskr) in order to support this functionality. Use of a Collaborative Key Rescovery System is somewhat of a legacy for CKM, but it's a fundamental step between CSR and SKM development.
+**Collaborative Key Recovery.** A sharding system allows shares of a key to be stored without the full key existing anywhere. Shamir's Secret Sharing is the traditional sharding system, but [Verifiable Secret Sharing (VSS)](https://ieeexplore.ieee.org/document/4568297) improves upon Shamir by allowing the ability to verify that someone holds a share without reconstructing the key. 
 
-**Crypto-Envelope.** A second linchpin of the CKM system is the `crypto-envelope` specficiation, which stores data as CBOR and which is potentially encrypted, with the encryption unlockable using a permit system. The `crypto-envelope` will often hold cryptocurrency keys for legacy CSR systems and/or metadata. (Keys for full CKM systems may instead be spontaneously generated or regenerated by the Collaborative Key Generation system.)
+**Gordian Envelope.** A second linchpin of the CKM system is the Gordian Envelope specficiation, which stores data as CBOR and which is potentially encrypted, with the encryption unlockable using a permit system. The Gordian Envelope will often hold cryptocurrency keys for legacy CSR systems and/or metadata. (Keys for full CKM systems may instead be spontaneously generated or regenerated by the Collaborative Key Generation system.)
 
-**Permits.** Crypto-envelopes can be entirely unencrypted, but more often they'll be locked with a combination of symmetric (currently [ChaCha-Poly](https://pycryptodome.readthedocs.io/en/latest/src/cipher/chacha20_poly1305.html)) and asymmetric public & private keys generated by the aforementioned collaborative methods. Theses keys can then be regenerated from an SMPC system, held as shares in multiple copies of the envelope, hinted at by a public keys, or linked (or not) to the envelope in some other manner.
+**Permits.** Gordian Envelopes can be entirely unencrypted, but more often they'll be locked with a combination of symmetric (currently [ChaCha-Poly](https://pycryptodome.readthedocs.io/en/latest/src/cipher/chacha20_poly1305.html)) and asymmetric public & private keys generated by the aforementioned collaborative methods. Theses keys can then be regenerated from an SMPC system, held as shares in multiple copies of the envelope, hinted at by a public keys, or linked (or not) to the envelope in some other manner.
+
+**Schnorr.** A digital signing system [based on finite fields instead of prime numbers](https://www.blockchaincommons.com/musings/Schnorr-Intro/). It has numerous advantages such as adapter signatures, blind signatures, and threshold signatures, which would be integrated into a complete CKM system.
 
 **Scripting.** The permit system is a self-describing authentication system, where a script, potentially with secret information, is used to unlock the envelope. The first iteration will just support standardized scripting methodologies, such as the aforementioned regenerated private key, sharded key, and keypair options. However, future versions could allow for entirely arbitrary scripts.
 
 **SCIDs.** The third major element of the CKM system is the ability to create self-certifying identifiers (SCIDs), which are built off of public keys (and the related scripting information) and which allow the creation of a source of trust for material stored in a `crypto-envelope`. SCIDs are by default offline, but keys appropriate to a blockchain, commitments to a blockchain, and proofs for a blockchain can be derived if needs warrant it. Some ideas are inherited from [KERI](https://keri.one/), which offered an example of some of this functionality, but with some limitations.
 
+**SSKR.** Blockchain Commons' security-tested implementation of Shamir's Secret Sharing. A VSS variation used by FROST will also be incorporated as a second option for sharding in order to support this functionality. Use of a Collaborative Key Rescovery System is somewhat of a legacy for CKM, but it's a fundamental step between CSR and CKM development.
+
+## Appendix IV: Use Case Comparisons
+
+The following examples build from usages of the legacy CSR system to a more comprehensive example that demonstrates the differences possible with CKM.
+
 ### Legacy CSR Architectural Use Cases
 
-_The following use case focus on legacy approaches that are rooted in CSR: keys are usually generated and then stored by traditional means, with additional security offered by CKM._
+_The following use case focus on legacy approaches that are rooted in CSR: keys are usually generated and then stored by traditional means, though additional security could offered by CKM (see below)._
 
-**#1. Digital Union.** Connell has NFTs on Bitmark, Tezos, and Ethereum that he wishes to unite. He brings together their keys in a single `crypto-envelope` which he stores with UCLA and SF-MOMA as key managers. He can now feel confident that he won't lose them even if he loses access to his own copy of the envelope. [encryption.]
+**#1. Digital Union.** Connell has NFTs on Bitmark, Tezos, and Ethereum that he wishes to unite. He brings together their keys in a single Gordian Envelope, which he stores with UCLA and SF-MOMA as key managers. He can now feel confident that he won't lose them even if he loses access to his own copy of the envelope. [encryption.]
 
-**#2. Liability Insurance.** Ned's Nifty NFT Co. holds custody of its customers' NFTs, which means that a single security breach could cause immense loss. Ned reduces his liability by moving all of his customers over to CKM. Though he still holds one `crypto-envelope` for them, it's not enough to cause loss, since another `crypto-envelope` would be required, with his 2 of 3 VSS setup. [2-of-3 sharding.]
+**#2. Liability Insurance.** Ned's Nifty NFT Co. holds custody of its customers' NFTs, which means that a single security breach could cause immense loss. Ned reduces his liability by moving all of his customers over to CSR. Though he still holds one Gordian Envelope for them, it's not enough to cause loss, since another Gordian Envelope would be required, with his 2 of 3 VSS setup. [2-of-3 sharding.]
 
 _Note that though this use case imagines a simple 2-of-3 setup, it is more likely that sophisticated quorums will be used, with a mix of hardware, social, and networked shared keys, to meet the needs of the user._
 
-**#3. Monkey Business.** Bruce has a very expensive Bored Ape NFT. He secures it with a master key spun off of a seed he keeps in a `crypto-envelope`. He keeps other NFTs on other keys generated by that seed, which prevents them from being correlated, which might otherwise make his entire collection, and even his cryptocurrencies, a target. [multiple key generation.]
+**#3. Monkey Business.** Bruce has a very expensive Bored Ape NFT. He secures it with a master key spun off of a seed he keeps in a Gordian Envelope. He keeps other NFTs on other keys generated by that seed, which prevents them from being correlated, which might otherwise make his entire collection, and even his cryptocurrencies, a target. [multiple key generation.]
 
-**#4. Identity Insurance.** Vince has used his SCID as the source of trust for an NFT art business. When Ned's Nifty NFT Co. has a security breach, Vince realizes that either of his other `crypto-envelopes` now represents a SPOC for his system, so resets his use of the CKM system with new keys. In the process, he also needs to rotate his SCID. [key rotation, SCID.]
+**#4. Identity Insurance.** Vince has used his SCID as the source of trust for an NFT art business. When Ned's Nifty NFT Co. has a security breach, Vince realizes that either of his other Gordian Envelopes now represents a SPOC for his system, so resets his use of the CKM system with new keys. In the process, he also needs to rotate his SCID. [key rotation, SCID.]
 
-### Full Architecture Example: Legacy CSR System
+_Also see [CSR Use Cases](/csr/use-cases/) for legacy CSR Use Cases that slowly shade into CKM usage._
 
-_The following offers a more precise example of the extent of a legacy CSR system, where keys are generated outside of the system and then secured by CKM._
+### Full Architecture Example: CSR & CSM Hybrid Use Cases
+
+_The following offers a more precise example of the extent of a legacy CSR system, where keys are generated outside of the system and then secured by CKM. A hybrid system like this would come into use if a user did not want to move his current NFTs (or other digital assets), but wanted to improve their resilience with CKM._
 
 * Bob owns an Ethereum key that holds considerable value, including several NFTs of historic significance.
 * Bob also holds a Tezos key with additional NFTs.
-* Bob places those keys as well as related metadata as the payload of a `crypto-envelope`.
-* Bob collaboratively generates a new key with the aid of Feral File and the MOMA.
-* The private key of the key pair is used to lock the envelope holding Bob's keys and data.
+* Bob places those keys as well as related metadata as the payload of a Gordian Envelope.
+* Bob uses CKM to collaboratively generate a new key with the aid of Feral File and the MOMA.
+* The private key of the key pair is used to lock the Gordian Envelope holding Bob's keys and data.
 * The public key of the key pair is signed by the private key to generate a SCID. 
 * The key is sharded into three parts using VSS, any two of which can reconstruct the envelope's permit key.
-   * For a more modern system, the individual systems would maintain their secrets to regenerate the key whenever was necessary using SMPC .
-* Three `crypto-envelopes` are created, each containing the payload data as well as one of the three VSS shares. They are held by Bob, by Feral File, and by MOMA. 
-* Any two `crypto-envelopes` can be brought together to restore the permit key and thus unlock the payload containing the Ethereum key, the Tezos key, and the metadata. This is done whenever Bob wishes to manipulate his digital assets.
-* If one `crypto-envelope` is lost or stolen, there is no immediate threat to Bob's holdings, dramatically reducing liability for Feral File and MOMA as key holders. However, Bob should obviously rotate his data into a new `crypto-envelope` with a newly generated key if that occurs, destroying all old shares afterward.
+   * For a more modern system, the individual systems would maintain their secrets to regenerate the key whenever was necessary using SMPC.
+* Three Gordian Envelopes are created, each containing the payload data as well as one of the three VSS shares. They are held by Bob, by Feral File, and by MOMA. 
+* Any two Gordian Envelopes can be brought together to restore the permit key and thus unlock the payload containing the Ethereum key, the Tezos key, and the metadata. This is done whenever Bob wishes to manipulate his digital assets.
+* If one Gordian Envelope is lost or stolen, there is no immediate threat to Bob's holdings, dramatically reducing liability for Feral File and MOMA as key holders. However, Bob should obviously rotate his data into a new Gordian Envelope with a newly generated key if that occurs, destroying all old shares afterward.
 * Bob uses his SCID to make verifiable claims that he is the owner of the artwork.
 
-### Full Architecture Example: Full CKM System
+### Full Architecture Example: Full CKM System Use Case
 
 _The following offers a different precise example that is entirely rooted in CKM._
 
 * Bob prepares an address for storing his NFTs by activating a Collaborative Key Generation system.
-* Bob chooses three SMPC Systems to generate his keys: his home system, Feral File, and Nifty NFT. The latter two have an in-kind agreement. Since Bob is working with Feral File, that means he gets the Nifty NFT server for free and knows that Feral File considers them reliable.
+* Bob chooses three SMPC Systems to generate his keys: his home system, Feral File, and Nifty NFT. The latter two have an in-kind agreement. Since Bob is working with Feral File, that means he gets the Nifty NFT Secret Server for free and knows that Feral File considers them reliable.
 * The three servers use their individual secrets to generate a Feral File key. Bob moves his Feral File NFTs there.
-* Bob later decides to move an NFT across Feral FIle's Ethereum Bridge. The three servers again use their individual secrets and this time generate an Ethereum key. Bob then moves one Feral File NFT across the Bridge to that new address.
+* Bob later decides to move an NFT across Feral File's Ethereum Bridge. The three servers again use their individual secrets and this time generate an Ethereum key. Bob then moves one Feral File NFT across the Bridge to that new address.
 * Notably, none of the servers has the full secret underlying the keys. In fact, since all that's happened to date is the transferring of NFTs to addresses, nothing but a public key has even been generated: the private key has never been held by any individual server on the internet, creating powerful proof against compromise.
-* As he grows increasingly confident with the system, Bob generates other keys, for Tezos, for Signal, for the signing of Apple Apps, and for other purposes. 
-* Bob also stores data in `crypto-envelopes`, with the keys again generated by the Collaborative Key Generation system. Bob keeps the only copies of these, but considers going to a value-add NFT service such as Vicki's Vault to ensure they're backed up too. Maybe in the future, depending on what he needs to store.
+* As he grows increasingly confident with the system, Bob generates other keys, for Tezos, for Signal, for the signing of Apple Apps, for SSH, and for other purposes. 
+* Bob also stores data in Gordian Envelopes, with the keys again generated by the Collaborative Key Generation system. Bob keeps the only copies of these, but considers going to a value-add NFT service such as Vicki's Vault to ensure the encrypted data is backed up too. Maybe in the future, depending on what he needs to store.
 * When Bob upgrades his computer, he manages to lose the secret held by his home machine because it was specially protected and so needed to be migrated by hand. (He forgot to do so.) No problem, his keys can be generated by any two of the three servers.
 * With just two key-generating secrets left, Bob is now vulnerable to SPOFs. He thus has his new home computer work with the Feral File and Nifty NFT servers to generate a series of new keys. He then migrates his various assets and services to the new keys he's created.
-
-_Also see [CSR Use Cases](/csr/use-cases/) for legacy CSR Use Cases that slowly shade into CKM usage._
-
 
