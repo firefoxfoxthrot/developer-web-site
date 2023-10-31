@@ -61,3 +61,10 @@ easier for users to recognize their seeds and keys.
   * [LifeHash](/lifehash/) — Visual hashes for digital assets.
   * [Object Identity Block](/oib/) — Data block for asset recognition.
 
+## For More Info
+
+Our Gordian Developer community is actively working with this resources! Join us in Discussions or at our monthly meetings!
+
+* [Gordian Developer Community](https://github.com/BlockchainCommons/Gordian-Developer-Community/discussions)
+   * [Meetings Records](https://github.com/BlockchainCommons/Gordian-Developer-Community/blob/master/meetings/README.md)
+   * [Join Us!](https://www.blockchaincommons.com/subscribe/)
