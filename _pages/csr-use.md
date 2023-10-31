@@ -41,7 +41,7 @@ Even prior to the release of CSR, SSKR and Envelope themselves are quite powerfu
 
 **Social-Network Use Case #1: Sharing Facebook (Storage).** Ansel ran a Facebook group for photographers before he decided that he needed to make a break from the corporation. He downloaded the Group and stored it in a Gordian Envelope locked with his public key, so it wouldn't be accessible to other people. However, he also wanted to share the data with his co-admin Annie. He creates a second permit on the data envelope that is locked with Annie's public key. Now either of them can access the data. _[multipermit with multiple public-key cryptography.]_
 
-### _Phase 2 Use Cases: SSKR Deployed_
+### _Phase 1 Use Cases: SSKR Deployed_
 
 **Social-Network Use Case #2: Replacing Facebook (Sharding).** James has come to the conclusion that Facebook is evil because of its amplification of political lies. Thankfully, thanks to the GDPR and CCPA, social-media companies have begun to forced means to download user data. James does so, storing it in an encrypted data store. The data store is encrypted with a symmetric key that is then sharded, with the whole packet of data stored in three places, each containing the encrypted data and one share of the key. James can access his data when he wants to, but it's difficult for others to steal. _[2-of-3 sharding]_
 
