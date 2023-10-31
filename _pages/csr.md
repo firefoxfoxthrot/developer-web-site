@@ -124,6 +124,14 @@ Envelope._
 **Intro:**
 
 * [Architectural Overview](/csr/architecture/)
+
+**Components Intro:**
+
+* [Envelope](/envelope/)
+* [SSKR](/sskr/)
+
+**Next Step Intro:**
+
 * [CKM](/ckm/)
 
 **Developer Resources:**
