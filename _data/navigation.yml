@@ -135,6 +135,8 @@ ckm:
       url: /ckm/
     - title: "Architectural Overview"
       url: /ckm/architecture/
+    - title: "Use Cases"
+      url: /ckm/use-cases
     - title: "Return to Seed Recovery"
       url: /seedrecovery/
 csr:
