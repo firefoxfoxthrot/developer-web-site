@@ -81,4 +81,5 @@ new technologies making this possible._
   
 **Use Cases:**
 
+* [CKM Comparative Use Cases](/ckm/use-cases)
 * [CSR-Focused Progressive Use Cases](/csr/use-cases/) (CSR Docs)
