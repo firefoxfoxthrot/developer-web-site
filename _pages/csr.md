@@ -60,6 +60,8 @@ send those shares off to selected Share Servers . When a user wishes to assert
 more agency, they can choose where those shares are stored, or even
 take them offline.
 
+The basic storage is down with [Gordian Envelopes](/envelope/), which allow for the storage of digital assets or secrets such as a seed in a secure way. Gordian Envelope's [Attachments](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-006-envelope-attachment.md) can optionally be used, to store this data in a vendor-specific manner.
+
 Seed reconstruction requires the user to authenticate using
 different, predetermined methods with each Share Server. They can
 include everything from passwords and email responses to personal
@@ -128,6 +130,7 @@ Envelope._
 **Components Intro:**
 
 * [Envelope](/envelope/)
+   * [Attachments](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-006-envelope-attachment.md)
 * [SSKR](/sskr/)
 * [Schnorr](https://www.blockchaincommons.com/musings/Schnorr-Intro/) (blog post)
 * [ZF FROST](https://frost.zfnd.org/frost.html) (ZF FROST Docs)
