@@ -17,7 +17,7 @@ sidebar:
 ## Overview
 
 _FROST (Flexible Round-Optimized Schnorr Threshold Signatures) is a threshold signature scheme built on Schnorr signatures that allows for
-"T of N" signers, each of whom hold a share of a private key, to produce a valid signature for the private key (where T is the threshold). Because of its
+"T of N" signers, each of whom hold a share of a private key, to produce a valid signature for that private key. Because of its
 [foundation in Schnorr](https://www.blockchaincommons.com/musings/Schnorr-Intro/), it has several interesting characteristics, such as signature aggregation,
 where a set of signatures look exactly the same as a single signature. Beyond that, FROST improves on the fundamentals
 of Schnorr through improved network efficiency and protection against forgery attacks._
@@ -26,12 +26,12 @@ of Schnorr through improved network efficiency and protection against forgery at
 
 Using a Schnorr-enabled signature scheme allows for [many advantages](https://www.blockchaincommons.com/musings/Schnorr-Intro/) including compactness
 and faster verification as well as the use of signature aggregation, adapter signatures, blind signatures, and threshold signatures. Each of
-these adds vital tools to the toolkit of a signature designer.
+these elements adds vital tools to the toolkit of a signature designer.
 
 Some of the biggest benefits come from the threshold signatures at the heart of FROST, which improve
-the [resilience](/principles/) of digital assets. Traditionally, multisigs or Shamir's Secret Sharing were the ways to create this type of
+the [resilience](/principles/) of digital assets. Traditionally, multisigs or Shamir's Secret Sharing were used to create this type of
 resilience, but they each had limitations. Multisigs could become quite large as more signatures were added, while Shamir's Secret
-Sharing creating vulnerabilities on reconstruction (and also had a history of problematic implementations). FROST resolves size issues
+Sharing created vulnerabilities on reconstruction (and also had a history of problematic implementations). FROST resolves size issues
 with its aggregate signatures (which are always the same size), while the Distributed Key Generation (DKG) methodology creates keys that are _never_ in
 one place!
 
@@ -44,15 +44,15 @@ of FROST are:
 Architect: A Layperson's Intro to Schnorr"](https://www.blockchaincommons.com/musings/Schnorr-Intro/).
 
 **Signature Aggregation.** One of the advantages of Schnorr signatures it that they can easily be added to or subtracted
-from each other as part of its finite field operations, creating signature aggregation, where all signatures are the same size, no matter how
+from each other as part of their finite field operations, creating signature aggregation where all signatures are the same size, no matter how
 many signatures they contain. 
 
 **Distributed Key Generation (DKG).** One of the core features of FROST is Distributed Key Generation: rather than a key being created,
-then broken apart to allow for threshold signing with the shares, the shares are instead each created individually. This means that they key never exists in a single place.
+then broken apart to allow for threshold signing with the shares, the shares are instead each created individually. This means that the full key never exists in a single place.
 
 **Trusted Dealer Generation.** This is the traditional methodology for generating shares, where a key is created then broken apart by
 a "trusted dealer". Some FROST implementations such as [ZF FROST](https://frost.zfnd.org/index.html) also support this methodology, creating
-a bridge between traditional use of Shamir's Secret Sharing and use of DKG in FROST.
+a bridge between traditional use of Shamir's Secret Sharing and the use of DKG in FROST.
 
 **Verifiable Secret Sharing (VSS).** A methodology for verifying the existence of shares without reconstruting a secret. FROST uses a
 VSS protocol invented by Paul Feldmann. 
