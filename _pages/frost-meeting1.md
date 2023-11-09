@@ -40,4 +40,6 @@ For an intro to FROST, see the [FROST page](/frost/) and ["A Layperson's Intro t
 
 For more, also see the [rough summary](/frost/meeting1/summary/) or the [raw transcript](/frost/meeting1/transcript) of the event.
 
+## Key Quotes
+
 
