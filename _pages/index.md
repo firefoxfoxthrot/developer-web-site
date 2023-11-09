@@ -50,6 +50,7 @@ assets: ensuring that you don't lose them.
 * [Seed Recovery Home Page](/seedrecovery/)
    * [Collaborative Key Management](/ckm/) — Future methodology for key generation with Secure Multi Party Computation.
    * [Collaborative Seed Recovery](/csr/) — Sharding keys and metadata using [Gordian Envelopes](/envelope/).
+   * [FROST] — Distributed Key Generation using Schnorr.
    * [SSKR](/sskr/) — Expanded use of Shamir's Secret Sharing.
    
 ## UX Design
