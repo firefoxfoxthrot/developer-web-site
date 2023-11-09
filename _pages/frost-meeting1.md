@@ -81,25 +81,32 @@ _Variety:_ "The IETF draft covers a range of curves."
 {: .notice--info}
 
 _Efficiency:_ "[25519] is a bit less efficient than Ristretto because FROST needs a prime order group and 25519 is not a prime order."
+{: .notice--info}
 
 _Conversion:_ "If you compare Ristretto and SecP, I don't think they are any compatible because they are different groups, right? ... So I don't see how you could do a single DKG for both. But if you talk about Ristretto and 25519, they're kind of related, so maybe there's some way to make it work, but I would need to also think about it."
+{: .notice--info}
 
 ### Trusted Channels
 
 _Privacy:_ "If your system  wants to have secure channels for privacy reasons ... then I guess you would use them. You would run DKG over the secure channel. You would also run signing over the secure channel."
+{: .notice--info}
 
 ### Performance
 
 _Signing:_ "You can use a low power device to generate the shares. And then anyone on any computer anywhere can combine them into the final signature."
+{: .notice--info}
 
 ### Wild Card Uses of FROST
 
 _Nesting:_ "There's an interesting cryptographic piece of this that I don't think has been fully explored, which is the notion of nesting FROST. So for example, if you have a MuSig construction, like in Lightning with a two of two MuSig for lightning channel ... to what extent can you nest FROST inside of one or two of the MuSig keys?
+{: .notice--info}
 
 ### ROAST
 
 _About ROAST:_ "It's supposed to provide robustness so you can guarantee to get a signature and of course you if you implement it wrongly, then it won't work and you won't get a signature in the end."
+{: .notice--info}
 
 ### FROST Quorums
 
 _Creating Accountability:_ "The easiest thing to do would be you publish your FROST signature and then you have some ledger or something where you persist information. ... You publish that and then you could either persist the T individual signature shares or we have this nice multi signature scheme called MuSig."
+{: .notice--info}
