@@ -25,14 +25,7 @@ For an intro to FROST, see the [FROST page](/frost/) and ["A Layperson's Intro t
     <td width="640px">
       <b>Video:</b>
 
-{% include video id="mpCEGUiCwFg" provider="youtube" %}
-
-    </td>
-  </tr>
-  <tr>
-    <td width="640px">
-      <b>Slides:</b>
-
+{% include video id="U9MvNuyCpE4" provider="youtube" %}
 
     </td>
   </tr>
