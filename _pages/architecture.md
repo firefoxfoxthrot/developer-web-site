@@ -27,7 +27,13 @@ _As Above, So Below:_ the Gordian Architecture comes in two parts. At
 the high level, the _Macro-Architecture_ envisions the overall shape
 of digital-asset services, but it depends on a numbers of
 specifications and designs, including [Data Formats](/dataformat/),
-[Seed Recovery systems](/seedrecovery/), and [UX Design](/ux/).
+[Sovereign & Social Recovery systems](/seedrecovery/), and [UX Design](/ux/).
+
+## Open Development
+
+Specifications and libraries that come into widespread, interoperable use ultimately require a system of [Open Development](https://www.blockchaincommons.com/articles/Open-Development/) that goes beyong Open Source to span a larger timeframe (ranging from Strategy to Support) and a larger community (ranging from the Developers themselves through Publishers and Users).
+
+See [Open Development](https://www.blockchaincommons.com/articles/Open-Development/) for more.
 
 ## Macro-Architecture
 
