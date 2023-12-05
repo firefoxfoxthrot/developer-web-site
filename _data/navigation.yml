@@ -1,7 +1,7 @@
 main:
   - title: "Data Format"
     url: /dataformat/
-  - title: "Seed Recovery"
+  - title: "Sovereign & Social Recovery"
     url: /seedrecovery/
   - title: "UX Design"
     url: /ux/
@@ -118,7 +118,7 @@ ur:
     - title: "Return to Data Format"
       url: /dataformat/
 seedrecovery:
-  - title: Seed Recovery
+  - title: "Sovereign & Social Recovery"
     children:
     - title: "SSKR"
       url: /sskr/
