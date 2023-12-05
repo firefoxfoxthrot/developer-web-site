@@ -5,7 +5,7 @@ header:
   overlay_filter: "0.25"
   overlay_image: /assets/images/dev-seed-background.jpg
   og_image: /assets/images/bc-card.jpg
-title: Seed Recovery
+title: Sovereign & Social Recovery
 hide_description: true
 classes:
   - wide
@@ -22,7 +22,7 @@ the seeds and keys that control those assets safe. Though *Compromise*
 is certainly an issue, *Failure* is likely a bigger problem for more
 individual digital-asset owners: it's easy to lose a seed or key!_
 
-_Blockchain Commons' *Seed Recovery* projects increase the
+_Blockchain Commons' *Sovereign & Social Recovery* projects increase the
 [Resilience](/principles/)
 of digital assets through a variety of means, all intended to ensure
 that users retain control of their digital assets._
