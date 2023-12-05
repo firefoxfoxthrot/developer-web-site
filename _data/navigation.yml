@@ -24,7 +24,7 @@ mainside:
     children:
     - title: "Data Format"
       url: /dataformat/
-    - title: "Seed Recovery"
+    - title: "Sovereign & Social Recovery"
       url: /seedrecovery/
     - title: "UX Design"
       url: /ux/
@@ -139,7 +139,7 @@ ckm:
       url: /ckm/architecture/
     - title: "Use Cases"
       url: /ckm/use-cases
-    - title: "Return to Seed Recovery"
+    - title: "Return to Recovery"
       url: /seedrecovery/
 csr:
   - title: CSR
@@ -152,7 +152,7 @@ csr:
       url: /csr/architecture/
     - title: "Use Cases"
       url: /csr/use-cases
-    - title: "Return to Seed Recovery"
+    - title: "Return to Recovery"
       url: /seedrecovery/
 frost:
   - title: FROST
@@ -165,7 +165,7 @@ frost:
       url: /frost/meeting1/summary/
     - title: "Meeting Transcript"
       url: /frost/meeting1/transcript/
-    - title: "Return to Seed Recovery"
+    - title: "Return to Recovery"
       url: /seedrecovery/
 sskr:
   - title: SSKR
@@ -180,7 +180,7 @@ sskr:
       url: /sskr/vectors/
     - title: "Use Case"
       url: /sskr/use-cases/cold/
-    - title: "Return to Seed Recovery"
+    - title: "Return to Recovery"
       url: /seedrecovery/
 ux:
   - title: UX Design
