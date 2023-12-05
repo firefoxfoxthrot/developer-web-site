@@ -48,6 +48,8 @@ architecture:
     children:
     - title: "Gordian Principles"
       url: /principles/
+    - title: "Open Development"
+      url: https://www.blockchaincommons.com/articles/Open-Development/
     - title: "Architecture FAQ"
       url: /architecture/faq/
     - title: "Architecture Lexicon"
