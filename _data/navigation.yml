@@ -210,6 +210,8 @@ lifehash:
       url: /lifehash/use-cases/
     - title: "Return to UX Design"
       url: /ux/
+    - title: "OIBs with LifeHash"
+      url: /oib/
 oib:
   - title: OIB
     children:
@@ -221,3 +223,5 @@ oib:
       url: /oib/vectors/
     - title: "Return to UX Design"
       url: /ux/
+    - title: "LifeHash in OIB"
+      url: /lifehash/
