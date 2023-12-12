@@ -18,7 +18,7 @@ sidebar:
 
 _LifeHash is a method of hash visualization based on Conway's Game of
 Life that creates beautiful icons that are deterministic, yet distinct
-and unique given the input data._
+and unique given the input data. It is part of the [OIB](/oib/)._
 
 ## Why is LifeHash Important?
 
@@ -34,6 +34,8 @@ interoperable standard: a user can see that their digital object has
 successfully transferred from one location to another. LifeHashes can
 also be used to prevent spoofing as an out-of-band confirmation, and
 will become inherently recognizable to users with repetition.
+
+Lifehash can also be a crucial element in an [Object Identity Block (OIB)](/oib/), which uses multiple cues to help a user identify digital data.
 
 ## How Does LifeHash Work?
 
@@ -82,6 +84,10 @@ for more information._
 {% include lib-lifehash.md %}
 
 ## Links
+
+**Intro:**
+
+* [Object Identity Block (OIB)](/oib/)
 
 **Developer Resources:**
 
