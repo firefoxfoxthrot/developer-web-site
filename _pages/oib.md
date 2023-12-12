@@ -91,6 +91,10 @@ anything else.
 
 ## Links
 
+**Intro:**
+
+* [LifeHash](/lifehash/)
+
 **Developer Resources:**
 
 * ["BCR-2021-002: Digests for Digital Objects"](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2021-002-digest.md) (Blockchain Commons Research)
