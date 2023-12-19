@@ -12,6 +12,8 @@ main:
 mainside:
   - title: Developers
     children:
+    - title: "Home"
+      url: /
     - title: "Data Format"
       url: /dataformat/
     - title: "Sovereign & Social Recovery"
