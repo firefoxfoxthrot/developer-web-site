@@ -27,6 +27,8 @@ mainside:
 architecture:
   - title: Gordian Architecture
     children:
+    - title: "Home"
+      url: /
     - title: "Gordian Principles"
       url: /principles/
     - title: "Open Development"
@@ -46,6 +48,8 @@ architecture:
 dataformat:
   - title: Data Formats
     children:
+    - title: "Home"
+      url: /
     - title: "Animated QRs"
       url: /animated-qrs/
     - title: "ByteWords"
@@ -103,6 +107,8 @@ ur:
 seedrecovery:
   - title: "Sovereign & Social Recovery"
     children:
+    - title: "Home"
+      url: /
     - title: "SSKR"
       url: /sskr/
     - title: "Collaborative Seed Recovery"
@@ -168,6 +174,8 @@ sskr:
 ux:
   - title: UX Design
     children:
+    - title: "Home"
+      url: /
     - title: "LifeHash"
       url: /lifehash/
     - title: "Object Identity Block"
