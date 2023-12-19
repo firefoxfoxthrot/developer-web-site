@@ -9,7 +9,7 @@ title: Blockchain Commons Libraries
 hide_description: false
 classes:
   - wide
-permalink: /libraries
+permalink: /libraries/
 sidebar:
   nav: mainside
 ---
