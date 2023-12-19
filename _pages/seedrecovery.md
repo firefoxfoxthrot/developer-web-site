@@ -12,6 +12,7 @@ classes:
 permalink: /seedrecovery/
 sidebar:
   nav: seedrecovery
+  nav: mainside
 ---
 
 ## Overview
