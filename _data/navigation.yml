@@ -1,26 +1,16 @@
 main:
-  - title: "Data Format"
-    url: /dataformat/
-  - title: "Sovereign & Social Recovery"
-    url: /seedrecovery/
-  - title: "UX Design"
-    url: /ux/
-  - title: "Architecture"
-    url: /architecture/
-  - title: "Libraries"
-    url: /libraries/
+  - title: "Main Site"
+    url: https://www.blockchaincommons.com
+  - title: "Developers"
+    url: https://developer.blockchaincommons.com
+  - title: "Advocacy"
+    url: https://advocacy.blockchaincommons.com
+  - title: "Smart Custody"
+    url: https://www.smartcustody.com
+  - title: "Sponsors"
+    url: https://www.blockchaincommons.com/sponsors/
 mainside:
-  - title: Blockchain Commons Sites
-    children:
-    - title: "Main Site"
-      url: https://www.blockchaincommons.com
-    - title: "Advocacy"
-      url: https://advocacy.blockchaincommons.com
-    - title: "Developers"
-      url: https://developer.blockchaincommons.com
-    - title: "#SmartCustody"
-      url: https://www.smartcustody.com
-  - title: "Developer Resources"
+  - title: Developers
     children:
     - title: "Data Format"
       url: /dataformat/
@@ -32,17 +22,6 @@ mainside:
       url: /architecture/
     - title: "Libraries"
       url: /libraries/
-sites:
-  - title: Blockchain Commons Sites
-    children:
-    - title: "Main Site"
-      url: https://www.blockchaincommons.com
-    - title: "Advocacy"
-      url: https://advocacy.blockchaincommons.com
-    - title: "Developers"
-      url: https://developer.blockchaincommons.com
-    - title: "#SmartCustody"
-      url: https://www.smartcustody.com
 architecture:
   - title: Gordian Architecture
     children:
