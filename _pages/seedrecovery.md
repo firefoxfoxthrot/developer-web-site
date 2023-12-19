@@ -11,7 +11,8 @@ classes:
   - wide
 permalink: /seedrecovery/
 sidebar:
-  nav: seedrecovery mainside
+  nav: seedrecovery
+  nav: mainside
 ---
 
 ## Overview
