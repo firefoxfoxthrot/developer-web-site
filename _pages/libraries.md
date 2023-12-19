@@ -10,6 +10,8 @@ hide_description: false
 classes:
   - wide
 permalink: /libraries
+sidebar:
+  nav: mainside
 ---
 {% include lib-crypto.md %}
 {% include lib-bech32.md %}
