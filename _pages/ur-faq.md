@@ -108,6 +108,6 @@ A Multipart UR (MUR) is a UR that has been broken into multiple parts and sequen
 ```
 ur:seed/1-3/lpadaxcsencylobemohsgmoyadhdeynteelblrcygldwvarflojtcywyjydmylgdsa
 ```
-### How Do MURs Related to Animated QRs?
+### How Do MURs Relate to Animated QRs?
 
-MURs are primarily intended for usage in Animated QRs, since QR codes have a low limit on how much data they can contain. But, you don't want to just keep repeating the same sequence of QRs because if you miss a single element in the sequence you have to repeat every single one. Instead, Blockchain Commons uses fountain codes, which allows for more efficient reading of the animated QRs. How to do so is described in the [Multipart UR (MUR) Implementation Guide](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2024-001-multipart-ur.md).
+MURs are primarily intended for usage in Animated QRs, since QR codes have a low limit on how much data they can contain. But, you don't want to just keep repeating the same sequence of QRs when you're displaying an Animated QR because if the recipient misses a single element in the sequence you have to repeat every single one. Instead, Blockchain Commons uses fountain codes, which allow for more efficient reading of the animated QRs. How to do so is described in the [Multipart UR (MUR) Implementation Guide](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2024-001-multipart-ur.md).
