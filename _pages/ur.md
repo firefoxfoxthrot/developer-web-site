@@ -71,7 +71,7 @@ these interoperability issues by creating a specified method for
 encoding binary data using CBOR and by specifying [how to
 sequence](/animated-qrs/) larger binary encoding (as version 40 QR
 codes max out at 2,953 bytes), and they do so in a more compact way
-than base64.
+than base64. See the [Multipart UR (MUR) Implementation Guide](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2024-001-multipart-ur.md) for more on multipart sequencing.
 * **They Can Improve Human Factors.** If the [Bytewords](/bytewords/)
 encoding is used with QRs, they become easy to visual and verify,
 thanks to the careful selection of the Bytewords to ensure that
@@ -207,6 +207,7 @@ Bytes(16) [
 **Intro:**
 
 * [List of UR Implementations](/ur/implementations/)
+* [**Multipart UR (MUR) Implementation Guide**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2024-001-multipart-ur.md)
 
 **Developer Resources:**
 
