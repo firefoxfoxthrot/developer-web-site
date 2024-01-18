@@ -141,9 +141,9 @@ that shows how Animated QRs built on URs can be sent and received.
 
     </td>
     <td width="640px">
-      <b>MVA & Ciphers:</b>
+      <b>Multipart UR Implementation Guide:</b>
 
-{% include video id="S0deyIHXukk" provider="youtube" %}
+{% include video id="z9fmgCqMZvw" provider="youtube" %}
 
     </td>    
   </tr>
