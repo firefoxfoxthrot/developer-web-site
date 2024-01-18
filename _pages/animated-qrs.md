@@ -123,19 +123,31 @@ codes). This rateless encoding method allows for the receipt of an
 animated QR to begin at any frame and for the transmission to overcome
 issues with missing frames.
 
-This process is detailed in our references:
+Our [**Multipart UR (MUR) Implementation Guide**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2024-001-multipart-ur.md) described how to implement the fountain codes underlying Animated QRs.
+This process is also detailed in our references:
 [URKit](https://github.com/BlockchainCommons/URKit), a reference
 framework that allows for the encoding and decoding of URs in Swift;
 and [URDemo](https://github.com/BlockchainCommons/URDemo), an iOS demo
-that shows how Animated QRs built on URs can be sent and received. A
-variety of [UR
-libraries](/libraries/#ur-libraries)
-in additional languages such as Java, Python, and Rust are available
-thanks to our community.
+that shows how Animated QRs built on URs can be sent and received.
 
 ## Animated QR Video
 
+<table width="100%">
+  <tr>
+    <td width="640px">
+      <b>Animated QRs Overview:</b>
+
 {% include video id="HsFF5HPKQIk" provider="youtube" %}
+
+    </td>
+    <td width="640px">
+      <b>MVA & Ciphers:</b>
+
+{% include video id="S0deyIHXukk" provider="youtube" %}
+
+    </td>    
+  </tr>
+</table>  
 
 ## Libraries
 
@@ -146,6 +158,7 @@ thanks to our community.
 **Intro:**
 
 * [**UR Overview**](/ur/)
+* [**Multipart UR (MUR) Implementation Guide**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2024-001-multipart-ur.md)
 
 **Developer Resources:**
 
