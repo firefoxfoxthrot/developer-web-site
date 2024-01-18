@@ -100,3 +100,14 @@ CLI](https://github.com/BlockchainCommons/bytewords-cli) can also be
 of use, since CBOR is converted to Bytewords for text encoding when
 constructing URs.
 
+## Multipart URs
+
+### What is a Multipart UR (MUR)?
+
+A Multipart UR (MUR) is a UR that has been broken into multiple parts and sequenced. Each one includes a sequence number and a sequence length, as described in the [UR specification](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-005-ur.md#ur-encoding). For example:
+```
+ur:seed/1-3/lpadaxcsencylobemohsgmoyadhdeynteelblrcygldwvarflojtcywyjydmylgdsa
+```
+### How Do MURs Related to Animated QRs?
+
+MURs are primarily intended for usage in Animated QRs, since QR codes have a low limit on how much data they can contain. But, you don't want to just keep repeating the same sequence of QRs because if you miss a single element in the sequence you have to repeat every single one. Instead, Blockchain Commons uses fountain codes, which allows for more efficient reading of the animated QRs. How to do so is described in the [Multipart UR (MUR) Implementation Guide](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2024-001-multipart-ur.md).
