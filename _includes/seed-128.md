@@ -9,8 +9,8 @@ The example uses Blockchain Commons' default 128-bit seed, YINMN BLUE.
 * **Gordian Envelope:** See QR code, above
 
 ```
-* **Segwit UR Output Descriptor:** ur:output-descriptor/oeadisktjojeisdefzdydtaolytantjloxaxhdclaxvlcprfttldjobkredtlnhsidwybaeyjtswyandlgjnehtkdsidbkqzsrkphyfhsaaahdcxhnfgnepefxgdytryckticelyotsstoknfntavevaskiddmolsarntykbrybtjpksamtantjooeadlncsghykaeykaeykaocyhngrmuwzaycyzssajpsndifmkohy
-* **Segwit Text Output Descriptor:** wpkh([604b93f2/84'/0'/0']xpub6DVfq9VduocgjGeR69Nyr8CCi9w5gywnU7wXMYGswpHjffjcbLYNzz6G6555VDcSZLDwZPzJHJQabVWWgkpvYntpunL3UjHGrkCJ6VndbQf)#ncwysjuk
+Segwit UR Output Descriptor: ur:output-descriptor/oeadisktjojeisdefzdydtaolytantjloxaxhdclaxvlcprfttldjobkredtlnhsidwybaeyjtswyandlgjnehtkdsidbkqzsrkphyfhsaaahdcxhnfgnepefxgdytryckticelyotsstoknfntavevaskiddmolsarntykbrybtjpksamtantjooeadlncsghykaeykaeykaocyhngrmuwzaycyzssajpsndifmkohy
+Segwit Text Output Descriptor: wpkh([604b93f2/84'/0'/0']xpub6DVfq9VduocgjGeR69Nyr8CCi9w5gywnU7wXMYGswpHjffjcbLYNzz6G6555VDcSZLDwZPzJHJQabVWWgkpvYntpunL3UjHGrkCJ6VndbQf)#ncwysjuk
 ```
 
 :warning: _Do not use this seed to hold real monies; they could
