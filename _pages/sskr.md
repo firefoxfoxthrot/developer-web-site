@@ -133,6 +133,7 @@ creating a more complex procedure.
 
 * [Gordian SeedTool](https://github.com/BlockchainCommons/GordianSeedTool-iOS) (app implementation)
 * [SeedTool CLI](https://github.com/BlockchainCommons/bc-seedtool-cli) (CLI implementation)
+* [Ledger Seed Tool App](https://github.com/aido/app-seed-tool) (app implementation by [Aido](https://github.com/aido))
 
 **Use Cases:**
 * [Cold Storage](/sskr/use-cases/cold/)
