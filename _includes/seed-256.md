@@ -7,7 +7,9 @@ The example uses Blockchain Commons' default 256-bit seed, KHAKI.
 * **BIP-39 Words:** toe priority custom gauge jacket theme arrest bargain gloom wide ill fit eagle prepare capable fish limb cigar reform other priority speak rough imitate
 * **ByteWords:** vial mild high twin duty fuel jugs rust apex cats mild idea lamb gyro scar play vibe gray guru soap kiln ruby lazy silk cook tent girl love pose obey pose brew exit gray king iced
 * **Gordian Envelope:** See QR code, above
-
+* **Segwit UR Output Descriptor:** ur:output-descriptor/oeadisktjojeisdefzdydtaolytantjloxaxhdclaodsjnasrfrtytvdcfvawyluladinygrgyjeesoekibtwdoecllafehgdezmpfrlfdaahdcxzttyeeetzmskiorkdntlwfrehytlhypajosrvthfcfplyklyjztdqzmemwgdotwlamtantjooeadlncsghykaeykaeykaocyuehdglzcaycyhdoytolntdkezsfw
+* **Segwit Text Output Descriptor:** wpkh([de584efd/84'/0'/0']xpub6CJZ4hvDg49xgXpHh1h5MsKuxnpnu5m1shocnzueZUry1nrRjbAJhBPaDoByGSXKVyXJYdydRtiGps63oNP43hzbxHU9ey5mH3Cm6NNvSSo)#hxn88s0v
+ 
 :warning: _Do not use this seed to hold real monies; they could
 disappear immediately!_
 {% endcapture%}
