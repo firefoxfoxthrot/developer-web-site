@@ -22,8 +22,33 @@ Request and response are crucial for enabling interoperability and thus interact
 
 **Example Seed Vault (SV) ⇔ Network Coordinator (NC) Interactions**
 
+* **NC Request:** Specific Seed
+   * **SV Response:** Specific Seed
+* **NC Request:** Specific Key
+   * **SV Reponse:** Specific Key
+* **NC Request:** Key-Derivation Path
+   * **SV Response:** Specific Key
+* **NC Request:** Unsigned PSBT
+   * **SV Response:** Signed PSBT
+
+**Example Seed Vault (SV) ⇔ Share Server (SS) Interactions**
+
+* **SV Request:** Share with Receipt
+  * **SS Response:** Specific Share
+* **SV Request:** Shares
+  * **SS Response:** All Shares
+ 
+A request/response system is crucial because of the complexity of many of these digital task. A user may not be able to find a specific seed or even moreso to generate a key along an appropriate derivation path without guidance. A request/response system minimizes both errors and user frustration.
+
+It becomes even more important as tasks are combined together for more complex projects. The [multisig self-sovereign scenario](https://github.com/BlockchainCommons/SmartCustody/blob/master/Docs/Scenario-Multisig.md) is one such example. It demonstrates how to safely secure digital assets using keys on two closely held devices. However, it ultimately proved too complex for more users. A system built on requests and responses that told users what to do as part of an interactive process would be more likely to be successful.
+
 ## Example Seed
 
 ## The Foundation of Request & Response: Expressions
 
 ## Wrapping Up Request & Response: GSTP
+
+## 
+
+- user involvement
+- OIB
