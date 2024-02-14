@@ -79,3 +79,10 @@ A function to retrieve a seed looks as follows:
 
 - user involvement
 - OIB
+
+- UX should support helping users should confirm separate things, separately. For instance, Confirm lifehash and check digits correct is one decision, continue to return request is a second. Especially important when the “choices” are divergent.
+
+Mental model of “is this what you expected” is different than “is this what you want to take the risk of doing”
+
+Thus don’t conflate the decision.
+
