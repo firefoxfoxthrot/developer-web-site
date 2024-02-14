@@ -75,7 +75,7 @@ A function to retrieve a seed looks as follows:
 
 ## Wrapping Up Request & Response: GSTP
 
-## 
+## Best Practices for Request & Response
 
 - user involvement
 - OIB
