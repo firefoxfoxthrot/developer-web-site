@@ -48,6 +48,31 @@ It becomes even more important as tasks are combined together for more complex p
 
 ## The Foundation of Request & Response: Expressions
 
+Requests and responses are built atop an Envelope functionality called [Expressions](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-012-envelope-expression.md). Expressions are assentially functions. They take the following form:
+
+```
+«function» [
+    ❰parameter❱: argument
+    ❰parameter❱: argument
+    ...
+]
+```
+The function is the subject and then assertions each define a parameter and argument for that function.
+
+A function to retrieve a seed looks as follows:
+```
+100 [
+        200: Digest(ffa11a8b)
+]
+```
+
+
+```
+«getSeed» [
+        ❰seedDigest❱: Digest(ffa11a8b)
+]
+```
+
 ## Wrapping Up Request & Response: GSTP
 
 ## 
