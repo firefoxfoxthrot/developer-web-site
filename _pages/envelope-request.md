@@ -44,6 +44,8 @@ It becomes even more important as tasks are combined together for more complex p
 
 ## Example Seed
 
+{% include seed-128.md %}
+
 ## The Foundation of Request & Response: Expressions
 
 ## Wrapping Up Request & Response: GSTP
