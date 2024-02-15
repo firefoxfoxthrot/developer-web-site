@@ -5,7 +5,7 @@ header:
   overlay_filter: "0.25"
   overlay_image: /assets/images/dev-data-background.jpg
   og_image: /assets/images/bc-card.jpg
-title: Envelope Request and Response
+title: "Envelope Request & Response"
 hide_description: true
 classes:
   - wide
@@ -130,9 +130,11 @@ In order to identify a request function as a request requires wrapping it with a
 
 (Note that the overall GSTP protocol includes encryption & signature steps, which are certainly best practices for requests and responses, but not required. The following describes only the request and reponses envelopes, which are enclosed in GSTP communications and which can be standalone in other uses of `request` and `response`.)
 
-A Gordian Request has a `request` tagged subject (CBOR tag #40004) containing a `ur:arid` (CBOR tag 40012), or an ["Apparently Random Identifier"](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2022-002-arid.md).
+1. Generate an ["Apparently Random Identifier"](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2022-002-arid.md).
+2. Tag it as `ur:arid` (CBOR tag #40012).
+3. Tag that as `request` (CBOR tag #40004).
 
-The `envelope-cli` will display it as follows:
+`envelope-cli` will display a Request subject as follows:
 ```
 request(ARID(7b33b86e))
 ```
@@ -140,7 +142,7 @@ The actual CBOR looks like this:
 ```
 40004(40012(
      h'7b33b86e604e3cb5ef9d1675d59c70b6ea7d1f625d062e4d14c4310f2e616cd9'
-   ))
+))
 ```
 It then contains the functional request in an assertion called `body` (known value #100). This is what identifies its subenvelope as a function call. Other assertions may contain a `note` about the request (known value #4) or other info.
 
@@ -219,9 +221,62 @@ Going in the other direction, here's what the CBOR looks like (with explanations
 
 ]
 ```
+### Responses to GSTP Requests
 
+To respond to a GSTP request:
 
-## Requests & Responses Vectors
+1. Use the _same_ ARID as the subject.
+2. Tag it as `ur:arid` (CBOR tag #40012).
+3. Tag that as `request` (CBOR tag #40004).
+4. Create an object that's an assertion with a 'result' subject (Known Value #101) and then insert the envelope that's the response the functional request as the object.
+
+The response to the above request thus look as follows:
+
+```
+response(ARID(7b33b86e)) [
+    101: Bytes(16) [
+        1: 200
+        11: "Dark Purple Peck Vial"
+        507: output-descriptor(Map)
+    ]
+]
+```
+
+Or:
+```
+response(ARID(7b33b86e)) [
+    'result': Bytes(16) [
+        'isA': 'Seed'
+        'hasName': "Dark Purple Peck Vial"
+        'outputDescriptor': output-descriptor(Map)
+    ]
+]
+```
+
+### Putting It Together
+
+Here's the complete `request` and `response`
+
+```
+request(ARID(7b33b86e)) [
+    'body': «getSeed» [
+        ❰seedDigest❱: Digest(ffa11a8b)
+    ]
+    'note': "Alias quam ullam qui reprehenderit ad quibusdam in hic occaecati aut ut voluptas dicta eligendi nobis. Molestiae neque voluptatibus et dolor qui quas?"
+]
+```
+
+```
+response(ARID(7b33b86e)) [
+    'result': Bytes(16) [
+        'isA': 'Seed'
+        'hasName': "Dark Purple Peck Vial"
+        'outputDescriptor': output-descriptor(Map)
+    ]
+]
+```
+
+Complete test vectors can be found at [Envelope Request & Response Test Vectors]
 
 ## Best Practices for Request & Response
 
