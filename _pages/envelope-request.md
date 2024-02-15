@@ -9,7 +9,7 @@ title: "Envelope Request & Response"
 hide_description: true
 classes:
   - wide
-permalink: /envelope/request-response/
+permalink: /envelope/request/
 sidebar:
   nav: envelope
 ---
@@ -296,19 +296,18 @@ response(ARID(7b33b86e)) [
 ]
 ```
 
-Complete test vectors can be found at [Envelope Request & Response Test Vectors]
+Complete test vectors can be found at [Envelope Request & Response Test Vectors](vectors).
 
 ## Best Practices for Request & Response
 
-- user involvement
-- OIB
+The follow best practices apply to the use of Request & Response:
 
-- UX should support helping users should confirm separate things, separately. For instance, Confirm lifehash and check digits correct is one decision, continue to return request is a second. Especially important when the “choices” are divergent.
+**Require User Intervention.** Never respond to a request without user intervention. A user should always be given specific, meanintful, and accessible information on what a request is, alongside any warnings or any suggestions on why they might or might not want to do something. A response should only occur after a user has agreed to the request.
 
-Mental model of “is this what you expected” is different than “is this what you want to take the risk of doing”
+**Separate Out Separate Decisions.** Try to assess which elements of intervention require different cognitive processes and separate them out. For example, if a user is signing a PSBT to send money to a certain address, there might be three cognitive steps: (1) confirm the receipt address [recognition]; (2) confirm the funding address [recognition]; (3) confirm the transaction [assessment of danger/consider of fraud]. These separate decisions don't each have to have a confirm button, but they should each be clearly distinct, perhaps in different sections on a single page, perhaps on different pages (and obviously you want some explicit confirmation by the time you're done).
 
-Thus don’t conflate the decision.
+**Include OIBs or Other Accessible Information for Digital Assets.** Digital assets are usually identified by long identifiers that aren't intuitive to human brains. To improve the accessibility of information and to aid a user in making a meaningful decision, include an [oib](/oib/) ideally with a [Lifehash](/lifehash/), Blockie, or other visual identifier. Be sure to include everything that will help them intuitively identify their asset.
 
-Each switch of mental model needs to be care. It it for some reason requires five separate mental models to make a decision (god forbid) than you really need 5 choices.
+**2FA Any Confirmation.** If you have two-factor authentication built into your application, most request/response decisions should be put within your 2FA perimeter. That means that your user should have to do their final authentication (usually a password, a thumbprint, or a faceprint) before they can finalize their authentication. Perhaps they do it automatically whenever they open up the app, but if not, be sure they have to by the time they make a decision.
 
-
+**Put Confirmations after All Details.** Be sure that any confirmation button is placed after all relevant information. You can't force a user to read that information, but you can do you best to put it in front of them and so encourage them to read through it before making a decision. If a decision is particularly important (or dangerous), you might want to have a user do something extra, like 2FA an extra time, type "I AGREE", or something similar.
