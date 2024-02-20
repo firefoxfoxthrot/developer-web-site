@@ -14,17 +14,17 @@ sidebar:
   nav: envelope
 ---
 
-Gordian Envelope includes request and response functionality: one user can issue an Envelope requesting certain information or certain actions and then another user can respond to that request with the data.
+[Gordian Envelope](/envelope/) includes request and response functionality: one user can issue an Envelope requesting certain information or certain actions and then another user can respond to that request with the data.
 
 ## The Purpose of Request & Response
 
-Request and response are crucial for enabling interoperability and thus interactions between different members of the digital asset ecosystem. Our two largest use cases are seed vaults talking to transaction coordinators (for example if Gordian Seed Tool wants to talk to Sparrow) and seed vaults talking to share servers (for example if Gordian Seed Tool wants to talk to Gordian Depo).
+Request and response are crucial for enabling interoperability and thus interactions between different members of the digital asset ecosystem. The two largest use cases for Request and Response are currently: seed vaults talking to transaction coordinators (for example if Gordian Seed Tool wants to talk to Sparrow); and seed vaults talking to share servers (for example if Gordian Seed Tool wants to talk to Gordian Depo).
 
 **Example Seed Vault (SV) ⇔ Network Coordinator (NC) Interactions**
 
 * **NC Request:** Seed Digest
    * **SV Response:** Specific Seed
-* **NC Request:** Specific Key
+* **NC Request:** Key Identifier
    * **SV Reponse:** Specific Key
 * **NC Request:** Key-Derivation Path
    * **SV Response:** Specific Key
@@ -38,9 +38,9 @@ Request and response are crucial for enabling interoperability and thus interact
 * **SV Request:** Shares
   * **SS Response:** All Shares
  
-A request/response system is crucial because of the complexity of many of these digital task. A user may not be able to find a specific seed or even moreso to generate a key along an appropriate derivation path without guidance. A request/response system minimizes both errors and user frustration.
+A Request/Response system is crucial because of the complexity of many of these digital tasks. A user may not be able to find a specific seed or (even more) to generate a key along an appropriate derivation path without guidance. A Request/Response system minimizes errors and user frustration alike.
 
-It becomes even more important as tasks are combined together for more complex projects. The [multisig self-sovereign scenario](https://github.com/BlockchainCommons/SmartCustody/blob/master/Docs/Scenario-Multisig.md) is one such example. It demonstrates how to safely secure digital assets using keys on two closely held devices. However, it ultimately proved too complex for more users. A system built on requests and responses that told users what to do as part of an interactive process would be more likely to be successful.
+A Request/Response system becomes even more important as tasks are combined together for more complex projects. The [multisig self-sovereign scenario](https://github.com/BlockchainCommons/SmartCustody/blob/master/Docs/Scenario-Multisig.md) is one such example. It demonstrates how to safely secure digital assets using keys on two closely held devices. However, it is too complex for more users. A system built on Requests and Responses that told users what to do as part of an interactive process would be more likely to be successful.
 
 ## Example Seed
 
@@ -48,7 +48,7 @@ It becomes even more important as tasks are combined together for more complex p
 
 ## The Foundation of Request & Response: Expressions
 
-Requests and responses are built atop an Envelope functionality called [Expressions](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-012-envelope-expression.md). Expressions are assentially functions. They take the following form:
+Requests and Responses are built atop an Envelope functionality called [Expressions](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-012-envelope-expression.md). Expressions are essentially functions. They take the following form:
 
 ```
 «function» [
@@ -57,7 +57,7 @@ Requests and responses are built atop an Envelope functionality called [Expressi
     ...
 ]
 ```
-The function is the subject and then assertions each define a parameter and argument for that function.
+The function is the Envelope subject. Envelope assertions then each define a parameter and argument for that function.
 
 A function to retrieve a seed looks as follows:
 ```
@@ -66,9 +66,9 @@ A function to retrieve a seed looks as follows:
 ]
 ```
 
-The numbers refer to specific functions and specific parameters. They are defined in [Format.swift](https://github.com/BlockchainCommons/BCSwiftEnvelope/blob/master/Sources/Envelope/Base/Format.swift) in the [Envelope base code](https://github.com/BlockchainCommons/BCSwiftEnvelope/tree/master/Sources/Envelope/Base). The function call is tagged with CBOR tag #40006, which defines it as a `ur:function` and the parameter is defined with CBOR tag #40007, which defines it as a `ur:function`. That's what the "«»" and "❰❱" represent.
+The numbers refer to specific functions and specific parameters. They are essentially "known values" for Envelope Expressions. These values are defined in [Format.swift](https://github.com/BlockchainCommons/BCSwiftEnvelope/blob/master/Sources/Envelope/Base/Format.swift) in the [Envelope base code](https://github.com/BlockchainCommons/BCSwiftEnvelope/tree/master/Sources/Envelope/Base). The function call is tagged with CBOR tag #40006, which defines it as a `ur:function` and the parameter is defined with CBOR tag #40007, which defines it as a `ur:parameter`. This is represented in `envelope-cli` (and in the examples here) with "«»" for `ur:function` and "❰❱" for `ur:parameter`.
 
-The functions are as follows:
+The `ur:function` values are as follows:
 
 | # | Function |
 |---|----------|
@@ -77,7 +77,7 @@ The functions are as follows:
 | 102 | signPSBT |
 | 103 | getOutputDescriptor |
 
-The parameters are as follows:
+The `ur:parameter` values are as follows:
 
 | # | Parameter |
 |----|----------|
@@ -90,21 +90,28 @@ The parameters are as follows:
 | 206 | name |
 | 207 | challenge |
 
-These are essentially "known values" for functions and their parameters, meaning that we maintain the values internally at Blockchain Commons. 
-
 The above function to retrieve a seed thus parses as follows:
-
 ```
 «getSeed» [
         ❰seedDigest❱: Digest(ffa11a8b)
 ]
 ```
 
-In other words, please send me a seed that matches the digest `ffa11a8b...`
+In other words, that's a Request to send a seed that matches the digest `ffa11a8b...`
 
 ### Responses to Function Requests
 
-Though functions are used to generate requests, the response is just a standard Envelope. Here's an example of a response to the `«getSeed»` function for `ffa11a8b`.
+Though Requests contain functions (Expressions), Responses are just standard Envelopes. Here's an example of a Response to the `«getSeed»` function for `ffa11a8b`.
+
+```
+Bytes(16) [
+        1: 200
+        11: "Dark Purple Peck Vial"
+        507: output-descriptor(Map)
+]
+```
+
+The subject is the seed, while the three assertions describe the seed. The subjects of those assertions are actually [known values](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-002-known-value.md). They can be read as follows:
 
 ```
 Bytes(16) [
@@ -114,15 +121,7 @@ Bytes(16) [
 ]
 ```
 
-The subject is the seed, while the three assertions describe the seed. If you look at the CBOR, you'd seed that the subjects of those assertions are actually [known values](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-002-known-value.md). The actual CBOR looks more like this:
-```
-Bytes(16) [
-        1: 200
-        11: "Dark Purple Peck Vial"
-        507: output-descriptor(Map)
-]
-```
-The output descriptor also has a map structure as described in [BCR-2023-010](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-010-output-descriptor.md).
+The output descriptor contains a map structure as described in [BCR-2023-010](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-010-output-descriptor.md).
 
 ## Wrapping Up Request & Response: GSTP
 
