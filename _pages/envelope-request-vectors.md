@@ -47,6 +47,10 @@ request(ARID(7b33b86e)) [
 
 ### Seed Response
 
+**QR:**
+
+![](/assets/images/envelope/response-seed.png)
+
 **UR:**
 ```
 ur:envelope/lftpcstansfetansgshdcxkgeorojthnglfnrewsntcmkptlnsjorpwdkictidhlamdmgtbbssehbsdmhsjztaoycsihlrtpcsgdhkwzdtfthptokigtvwnnjsqzcxknsktdoyadcsspoycfadzttpcstantjyoeadisktjojeisdefzdydtaolytantjloxaxhdclaxvlcprfttldjobkredtlnhsidwybaeyjtswyandlgjnehtkdsidbkqzsrkphyfhsaaahdcxhnfgnepefxgdytryckticelyotsstoknfntavevaskiddmolsarntykbrybtjpksamtantjooeadlncsghykaeykaeykaocyhngrmuwzaycyzssajpsnoybdtpcskpfyhsjpjecxgdkpjpjojzihcxgdihiajecxhfinhsjzfzrdrsko
