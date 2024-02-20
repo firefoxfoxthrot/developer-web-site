@@ -295,7 +295,7 @@ response(ARID(7b33b86e)) [
 ]
 ```
 
-Complete test vectors can be found at [Envelope Request & Response Test Vectors](vectors).
+Complete test vectors can be found at [Envelope Request & Response Test Vectors](./vectors/).
 
 ## Best Practices for Request & Response
 
