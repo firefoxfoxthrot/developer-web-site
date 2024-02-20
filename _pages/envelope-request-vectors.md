@@ -83,6 +83,39 @@ response(ARID(7b33b86e)) [
 
 ## Key Request
 
+**QR:**
+
+![](/assets/images/envelope/request-key.png)
+
+**UR:**
+```
+ur:envelope/lstpcstansfytansgshdcxtsmhasueckldzmlnnncagasbtyaxaxteolcekkrkderolufstabsbwskayayktpfoycsielftpcstansfgcsihoytpcstansflcssotpcstantjootadlocsdyykaeykaeykaoykaocyhngrmuwzaxaaoyaatpcsksjkgykpjliecxhsjkjoihjpjthsjykpjpcxjpihjokpieinhsjtiehsihcxhsjtinjnincxihjkjycxjtjljkjyjpkpjnfhcxgykpincxinjzjzjlcxjtjljtcxidjzhsjtieinjyininjkcxkojljzkpjojyhsjkcxjpihjpkpjncxhsjzinjskpiniecxjskpinhscxihjycxiekpiainjnkpjkcxjnjlieindmjouozskn
+```
+
+**Envelope:**
+```
+request(ARID(d79009de)) [
+    'body': «getKey» [
+        ❰derivationPath❱: keypath(Map)
+    ]
+    'note': "Quod aspernatur repudiandae animi est nostrum? Qui illo non blanditiis voluptas rerum aliquid quia et ducimus modi."
+]
+```
+
+**CBOR:**
+```
+[24(40004(40012(h'd79009de1e89ff869e1d49cbd40303d3a61c79bb28b88b3dd90f13c5080877b0'))),
+ {100: [24(40006(101)),
+        {24(40007(201)): 24(40304({1: [48, true, 0, true, 0, true, 2, true],
+                                   2: 1615565810, 3: 4}))}]},
+ {4: 24("Quod aspernatur repudiandae animi est nostrum? Qui illo non blanditiis voluptas rerum aliquid quia et ducimus modi.")}]
+
+```
+
+### Key Response
+
+
+
 ### Key Derivation Request
 
 ## PSBT
