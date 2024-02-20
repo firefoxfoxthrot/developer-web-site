@@ -16,6 +16,9 @@ sidebar:
 
 [Gordian Envelope](/envelope/) includes request and response functionality: one user can issue an Envelope requesting certain information or certain actions and then another user can respond to that request with the data.
 
+[wrapped expressions]
+[add icon in research]
+
 ## The Purpose of Request & Response
 
 Request and response are crucial for enabling interoperability and thus interactions between different members of the digital asset ecosystem. The two largest use cases for Request and Response are currently: seed vaults talking to transaction coordinators (for example if Gordian Seed Tool wants to talk to Sparrow); and seed vaults talking to share servers (for example if Gordian Seed Tool wants to talk to Gordian Depo).
@@ -70,12 +73,12 @@ The numbers refer to specific functions and specific parameters. They are essent
 
 The `ur:function` values are as follows:
 
-| # | Function |
-|---|----------|
-| 100 | getSeed |
-| 101 | getKey |
-| 102 | signPSBT |
-| 103 | getOutputDescriptor |
+| # | Function | Expected Response |
+|---|----------|-----------------|
+| 100 | getSeed | isA: Seed (200) |
+| 101 | getKey | isA: |
+| 102 | signPSBT | isA: PSBT (506) |
+| 103 | getOutputDescriptor | isA: OutputDescriptor (507) |
 
 The `ur:parameter` values are as follows:
 
@@ -101,7 +104,9 @@ In other words, that's a Request to send a seed that matches the digest `ffa11a8
 
 ### Responses to Function Requests
 
-Though Requests contain functions (Expressions), Responses are just standard Envelopes. Here's an example of a Response to the `«getSeed»` function for `ffa11a8b`.
+Though Requests contain functions (Expressions), Responses are just standard Envelopes. A response MUST contain the requested object as the subject of an Envelope and that subject MUST contain at least one assertion of the form 'isA: [object type]'. It MAY contain other assertions.
+
+Here's an example of a Response to the `«getSeed»` function for `ffa11a8b`.
 
 ```
 Bytes(16) [
@@ -121,7 +126,7 @@ Bytes(16) [
 ]
 ```
 
-The output descriptor contains a map structure as described in [BCR-2023-010](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-010-output-descriptor.md).
+The `isA` assertion is the required one. The others are optional. The output descriptor contains a map structure as described in [BCR-2023-010](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-010-output-descriptor.md).
 
 ## Wrapping Up Request & Response: GSTP
 
