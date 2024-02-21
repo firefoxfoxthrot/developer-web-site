@@ -73,7 +73,7 @@ The `ur:function` values are as follows:
 | # | Function | Expected Response |
 |---|----------|-----------------|
 | 100 | getSeed | isA: Seed (200) |
-| 101 | getKey | isA: PrivateKey (201) / PublicKey (202) / MasterKey (203) / BIP32Key (500) |
+| 101 | getKey | isA: PrivateKey (201) AND/OR<br>isA: PublicKey (202) AND/OR<br>isA MasterKey (203) AND/OR<br>isA BIP32Key (500) |
 | 102 | signPSBT | isA: PSBT (506) |
 | 103 | getOutputDescriptor | isA: OutputDescriptor (507) |
 
