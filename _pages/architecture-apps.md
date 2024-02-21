@@ -64,7 +64,7 @@ of secure seed generation:_
 
 A cryptographic seed manager for your iOS device. Allows the
 maintenance of seeds in a closely held device and the easy use of
-those seeds through `crypto-requests` for either specific keys or for
+those seeds through [Envelope Requests](/envelope/request/) for either specific keys or for
 the signature of PSBTs. This is our most developed app, and the one
 that best displays a variety of ways to achieve the Gordian
 Principles.
