@@ -91,7 +91,7 @@ generically something like "oracle services" or "cosigner services".
   services available to it.
 * The creation of a QR with Tor v3 client info that can be passed back
   to the server.
-* The consolidation of this information in a [Gordian Envelope](/envelope/), likely using Envelope's request/response communication methodology, which will also allow for the usage of [Animated QRs](/animated-qrs/) for larger data.
+* The consolidation of this information in a [Gordian Envelope](/envelope/), likely using Envelope's [request/response communication methodology](/envelope/request/), which will also allow for the usage of [Animated QRs](/animated-qrs/) for larger data.
 
 We'd love to have more discussion with other wallet developers about
 any additional requirements for this initial connection between a
