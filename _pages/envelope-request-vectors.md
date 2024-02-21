@@ -20,6 +20,8 @@ sidebar:
 
 ## Seed Request
 
+_Request for a specific seed._
+
 **QR:**
 
 ![](/assets/images/envelope/request-seed.png)
@@ -83,6 +85,8 @@ response(ARID(7b33b86e)) [
 
 ## Key Request
 
+_Request for a specific Cosigner Private Key._
+
 **QR:**
 
 ![](/assets/images/envelope/request-key.png)
@@ -107,7 +111,8 @@ request(ARID(d79009de)) [
 [24(40004(40012(h'd79009de1e89ff869e1d49cbd40303d3a61c79bb28b88b3dd90f13c5080877b0'))),
  {100: [24(40006(101)),
         {24(40007(201)): 24(40304({1: [48, true, 0, true, 0, true, 2, true],
-                                   2: 1615565810, 3: 4}))}]},
+                                   2: 1615565810,
+                                   3: 4}))}]},
  {4: 24("Quod aspernatur repudiandae animi est nostrum? Qui illo non blanditiis voluptas rerum aliquid quia et ducimus modi.")}]
 
 ```
@@ -155,6 +160,43 @@ response(ARID(d79009de)) [
         {1: 201}]}]
 ```
 
-### Key Derivation Request
+## Key Derivation Request
+
+_Request for any Cosigner Public Key._
+
+**QR:**
+
+![](/assets/images/envelope/request-path.png)
+
+**UR:**
+```
+ur:envelope/lstpcstansfytansgshdcxmeleiycsuefgvlctmoprkiaomwwzptflvtotrfrszsayosgrktykzmbayavlmurloycsielstpcstansfgcsihoytpcstansflcssgtpcswkoytpcstansflcssotpcstantjooeadlocsdyykaeykaeykaoykaxaaoyaatpcsksmogthsinjljpihjkcxjkjljzkpjyhscxkoihjzinjycxiykpioinhsjycxihjycxiniecxjkihjskpincxinjojkkpjncxjskpjliecxjtjljkjyjpkpjncxjliaiahsihiahsjyincxihkoihjtinihjydmcxfgkpiohscxiejljzjljpkpjncxiajljtjkihjskphsjykpjpcxhsieinjoinjkiaincxkpjzjzhsjncxjkihjskpincxjnjljzihjkjyinhsjkcxjskpinhscxiykpioinhsjyfhuefrwnqd
+```
+
+**Envelope:**
+
+```
+request(ARID(918a6618)) [
+    'body': «getKey» [
+        ❰derivationPath❱: keypath(Map)
+        ❰isPrivate❱: false
+    ]
+    'note': "Maiores soluta velit fugiat et id sequi ipsum quod nostrum occaecati eveniet. Fuga dolorum consequatur adipisci ullam sequi molestias quia fugiat?"
+]
+```
+
+**CBOR:**
+```
+[24(40004(40012(h'918a6618de46e31f92b27d0294f2a947e0a3bcbffa08a74b77f5ff0ef8e393b7'))),
+ {100: [24(40006(101)),
+        {24(40007(202)): 24(false)},
+        {24(40007(201)): 24(40304({1: [48, true, 0, true, 0, true, 2, true],
+                                   3: 4}))}]},
+ {4: 24("Maiores soluta velit fugiat et id sequi ipsum quod nostrum occaecati eveniet. Fuga dolorum consequatur adipisci ullam sequi molestias quia fugiat?")}]
+
+```
+
 
 ## PSBT
+
+## Output Descriptor
