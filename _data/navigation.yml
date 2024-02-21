@@ -69,6 +69,8 @@ envelope:
       url: /envelope/
     - title: "Technical Overview"
       url: /envelope/tech/
+    - title: "Request & Response"
+      url: /envelope/request/
     - title: "Use Cases Overview"
       url: /envelope/use-cases/
     - title: "Use Cases Summary"
