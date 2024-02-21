@@ -106,7 +106,8 @@ manner.
     hierarchical structures to labeled property graphs, semantic
     triples, and other forms of structured graphs. Though its
     fundamental structure is a tree, it can even be used to create
-    DAGs through references between Envelopes. Envelope is built upon
+    DAGs through references between Envelopes. Besides protecting at-rest data, Envelope can also enable communication with its [Request & Response](/envelope/request/) system.
+    Envelope is built upon
     [dCBOR](/dcbor/) which ensures that its content is always
     deterministic, which is vital to maintain the consistency of its
     hashes.
@@ -179,6 +180,11 @@ specifics on how Envelopes work._
 * **Non-Correlation.** Encrypted Gordian Envelope data can optionally
     be made less correlatable with the addition of salt.
 
+### Communication Support
+
+* **Expressions.** Envelope elements can be recognized as functions and parameters, allowing for the encoding and evaluation of expressions.
+* **Requests/Responses.** Expressions can be wrapped up in [Requests](/envelope/request/), allowing for the communication between two entities. Responses can be sent in reply to Requests.
+
 ### Authentication Support
 
 * **Symmetric Key Permits.** Gordian Envelopes can be locked
@@ -245,19 +251,29 @@ _See the [Gordian Envelope playlist](https://www.youtube.com/playlist?list=PLCkr
 * [**The Dangers of Digital Credentials in Education**](https://www.blockchaincommons.com/articles/Dangerous-Educational-Credentials/) (blog article)
 * [**Protecting Your Wellness Data with Hashed Elision**](https://www.blockchaincommons.com/articles/Dangerous-Wellness-Data/) (blog article)
 
-**Develope Resources:**
+**Developer Resources:**
 
 * [**Envelope Technical Documents**](https://github.com/BlockchainCommons/Gordian/tree/master/Envelope#articles) (GitHub repo)
 * [**IETF Draft: The Envelope Structured Data Format**](https://blockchaincommons.github.io/WIPs-IETF-draft-envelope/draft-mcnally-envelope.html) (Editor's Draft)
-* [**Envelope Request & Response**](https://developer.blockchaincommons.com/envelope/request/)
-* [**Envelope Request & Response Test Vectors**](https://developer.blockchaincommons.com/envelope/request/vectors/)
-* [**CLI Usage Overview Transcript**](https://github.com/BlockchainCommons/envelope-cli-swift/blob/master/Transcripts/1-OVERVIEW-TRANSCRIPT.md) (GitHub repo)
 * [**dCBOR: Deterministic CBOR**](/dcbor/)
 
-**Develope Reference Apps:**
+**Developer Extension Resources:**
+
+* [**Attachment**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-006-envelope-attachment.md)
+* [**Compression**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-005-envelope-compression.md)
+* [**Cryptographic Seeds**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-009-envelope-seed.md)
+* [**Cryptography**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-013-envelope-crypto.md)
+* [**Expressions**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-012-envelope-expression.md)
+* [**Known Values**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-003-envelope-known-value.md) (GitHub repo)
+* [**Request & Response**](https://developer.blockchaincommons.com/envelope/request/)
+   * [**Request & Response Test Vectors**](https://developer.blockchaincommons.com/envelope/request/vectors/)
+* [**Symmetric Encryption**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-004-envelope-symmetric-encryption.md) (GitHub repo)
+
+**Developer Reference Apps:**
 
 * [**Envelope-CLI**](https://github.com/BlockchainCommons/envelope-cli-swift) (CLI implementation)
   * [**Envelope-CLI Docs**](https://github.com/BlockchainCommons/envelope-cli-swift/tree/master/Docs)
+* [**CLI Usage Overview Transcript**](https://github.com/BlockchainCommons/envelope-cli-swift/blob/master/Transcripts/1-OVERVIEW-TRANSCRIPT.md) (GitHub repo)
 
   
 ### Use Cases:
