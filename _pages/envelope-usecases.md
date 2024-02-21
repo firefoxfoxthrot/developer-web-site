@@ -11,7 +11,7 @@ classes:
   - wide
 permalink: /envelope/use-cases/
 sidebar:
-  nav: envelope
+  nav: envelopeuse
 ---
 
 
