@@ -73,7 +73,7 @@ envelope:
       url: /envelope/request/
     - title: "Use Cases Overview"
       url: /envelope/use-cases/
-    - title: "Use Cases Summary"
+    - title: "Use Cases Listing"
       url: /envelope/use-cases/summary/
     - title: "Return to Data Format"
       url: /dataformat/
