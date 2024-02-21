@@ -18,7 +18,7 @@ sidebar:
 
 ## Implementation Guide for Requests & Responses
 
-Please see the [complete Implementation Guide](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2024-004-request.md) in our Blockchain Commons Research depo for the specifications of using Requests & Responses in Gordian Envelopes.
+Please see the [complete Implementation Guide](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2024-004-request.md) in our Blockchain Commons Research depo for the specifications of using Requests & Responses in Gordian Envelopes. 
 
 ## Best Practices for Request & Response
 
@@ -39,3 +39,4 @@ The follow best practices apply to the use of Request & Response:
 * [**Gordian Envelope**](/envelope/)
 * [**Request & Response Implementation Guide**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2024-004-request.md)
 * [**Request & Reponse Test Vectors**](./vectors)
+* [**Gordian Sealed Transaction Protocol**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-014-gstp.md) (GitHub repo)
