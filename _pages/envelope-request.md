@@ -11,7 +11,7 @@ classes:
   - wide
 permalink: /envelope/request/
 sidebar:
-  nav: envelope
+  nav: envelopereq
 ---
 
 [Gordian Envelope](/envelope/) includes request and response functionality: one user can issue an Envelope requesting certain information or certain actions and then another user can respond to that request with the data. These functions are important for enabling interoperability and automating complex or error-prone usage of digital assets.
