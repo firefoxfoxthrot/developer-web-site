@@ -78,16 +78,20 @@ envelope:
     - title: "Return to Data Format"
       url: /dataformat/
 envelopereq:
-    - title: "Request & Response"
+  - title: "Request & Response"
+    children:
+    - title: "Intro to Request & Response"
       url: /envelope/request/
     - title: "Test Vectors"
       url: /envelope/request/vectors/
     - title: "Return to Envelope"
       url: /envelope/
 envelopeuse:
+  - title: "Use Cases"
+    children:
     - title: "Use Cases Overview"
       url: /envelope/use-cases/
-    - title: "Use Cases Summary"
+    - title: "Use Cases Listing"
       url: /envelope/use-cases/summary/
     - title: "Educational Use Cases"
       url: https://github.com/BlockchainCommons/developer-web-site/blob/master/_pages/envelope-usecases-educational.md
