@@ -33,3 +33,9 @@ The follow best practices apply to the use of Request & Response:
 **2FA Any Confirmation.** If you have two-factor authentication built into your application, most Request/Response decisions should be put within your 2FA perimeter. That means that your user should have to do their final authentication (usually a password, a thumbprint, or a faceprint) before they can finalize any Response. Perhaps they do it automatically whenever they open up the app, but if not, be sure they have to by the time they make a decision.
 
 **Put Confirmations after All Details.** Be sure that any confirmation button is placed after all relevant information. You can't force a user to read that information, but you can do you best to put it in front of them and so encourage them to read through it before making a decision. If a decision is particularly important (or dangerous), you might want to have a user do something extra, like 2FA an extra time, type "I AGREE", or something similar.
+
+## Request & Response Links
+
+* [**Envelopes**](/envelopes/)
+* [**Request & Response Implemntation Guide**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2024-004-request.md)
+* [**Request & Reponse Test Vectors**](./vectors)
