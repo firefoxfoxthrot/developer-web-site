@@ -16,9 +16,6 @@ sidebar:
 
 [Gordian Envelope](/envelope/) includes request and response functionality: one user can issue an Envelope requesting certain information or certain actions and then another user can respond to that request with the data.
 
-[wrapped expressions]
-[add icon in research]
-
 ## The Purpose of Request & Response
 
 Request and response are crucial for enabling interoperability and thus interactions between different members of the digital asset ecosystem. The two largest use cases for Request and Response are currently: seed vaults talking to transaction coordinators (for example if Gordian Seed Tool wants to talk to Sparrow); and seed vaults talking to share servers (for example if Gordian Seed Tool wants to talk to Gordian Depo).
@@ -76,7 +73,7 @@ The `ur:function` values are as follows:
 | # | Function | Expected Response |
 |---|----------|-----------------|
 | 100 | getSeed | isA: Seed (200) |
-| 101 | getKey | isA: |
+| 101 | getKey | isA: | isA: PrivateKey (201);<br>isA:PublicKey (202);<br>isA: MasterKey (203); and/or<br>isA: BIP32Key (500)
 | 102 | signPSBT | isA: PSBT (506) |
 | 103 | getOutputDescriptor | isA: OutputDescriptor (507) |
 
