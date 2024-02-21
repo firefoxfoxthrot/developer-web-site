@@ -11,7 +11,7 @@ classes:
   - wide
 permalink: /envelope/use-cases/software/
 sidebar:
-  nav: envelope
+  nav: envelopeuse
 ---
 ## Gordian Envelope Use Cases: Software & AI Industry
 
