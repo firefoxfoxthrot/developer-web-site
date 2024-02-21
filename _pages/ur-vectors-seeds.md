@@ -180,7 +180,7 @@ oxadgdhkwzdtfthptokigtvwnnjsqzcxknsktdaosecyidbbwnnnaxjyhkinjtjnjtcxfwjzkpihcxfp
 ```
 ur:crypto-seed/oxadgdhkwzdtfthptokigtvwnnjsqzcxknsktdaosecyidbbwnnnaxjyhkinjtjnjtcxfwjzkpihcxfpiainiecxfekshsjnaaksdighisinjkcxinjkcxjlkpjpcxjkjyhsjtiehsjpiecxeheyetdpidinjycxjyihjkjycxjkihihiedmksjpaate
 ```
-5. Encode the `crypto-request` as a QR.
+5. Encode the `ur:crypto-seed` as a QR.
 ```
 echo "ur:crypto-seed/oxadgdhkwzdtfthptokigtvwnnjsqzcxknsktdaosecyidbbwnnnaxjyhkinjtjnjtcxfwjzkpihcxfpiainiecxfekshsjnaaksdighisinjkcxinjkcxjlkpjpcxjkjyhsjtiehsjpiecxeheyetdpidinjycxjyihjkjycxjkihihiedmksjpaate" | qrencode -o ~/vector-seed-yinmn-note.png
 ```
