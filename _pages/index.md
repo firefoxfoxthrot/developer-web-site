@@ -40,6 +40,7 @@ among different entities.
    * [dCBOR](/dcbor/) — Deterministic CBOR.
    * [Envelope](/envelope/) — Encoding of both data and metadata.
    * [Quick Connect](/quickconnect) — Service detection.
+   * [Request & Response](/envelope/request/) — Envelope communication.
    * [UR](/ur/) — URI packaging of CBOR using Bytewords.
    
 ## Seed Recovery
