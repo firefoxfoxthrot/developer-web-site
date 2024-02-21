@@ -11,7 +11,7 @@ classes:
   - wide
 permalink: /envelope/use-cases/data/
 sidebar:
-  nav: envelope
+  nav: envelopeuse
 ---
 
 Gordian Envelopes can be used to support [a wide variety of data-distribution use cases](README.md#other-data-distribution-use-cases), covering everything from agriculture and supply chain to healthcare and telecommunication. They are the most useful when there is data that should be used in different ways by different people who have different permissions, different needs, and/or different regulations. 
