@@ -75,6 +75,20 @@ envelope:
       url: /envelope/use-cases/
     - title: "Use Cases Summary"
       url: /envelope/use-cases/summary/
+    - title: "Return to Data Format"
+      url: /dataformat/
+envelopereq:
+    - title: "Request & Response"
+      url: /envelope/request/
+    - title: "Test Vectors"
+      url: /envelope/request/vectors/
+    - title: "Return to Envelope"
+      url: /envelope/
+envelopeuse:
+    - title: "Use Cases Overview"
+      url: /envelope/use-cases/
+    - title: "Use Cases Summary"
+      url: /envelope/use-cases/summary/
     - title: "Educational Use Cases"
       url: https://github.com/BlockchainCommons/developer-web-site/blob/master/_pages/envelope-usecases-educational.md
     - title: "Wellness Use Cases"
@@ -85,8 +99,8 @@ envelope:
       url: https://github.com/BlockchainCommons/developer-web-site/blob/master/_pages/envelope-usecases-assets.md
     - title: "Software Release Use Cases"
       url: https://github.com/BlockchainCommons/developer-web-site/blob/master/_pages/envelope-usecases-software.md
-    - title: "Return to Data Format"
-      url: /dataformat/
+    - title: "Return to Envelope"
+      url: /envelope/
 ur:
   - title: Uniform Resources
     children:
