@@ -11,7 +11,7 @@ classes:
   - wide
 permalink: /envelope/use-cases/wellness/
 sidebar:
-  nav: envelope
+  nav: envelopeuse
 ---
 
 The Wellness industry includes fitness, sleep and activity,
