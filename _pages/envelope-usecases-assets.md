@@ -11,7 +11,7 @@ classes:
   - wide
 permalink: /envelope/use-cases/assets/
 sidebar:
-  nav: envelope
+  nav: envelopeuse
 ---
 
 In the financial industry, Gordian Envelopes can be used to encode and transmit sensitive financial information while preserving their complex data structures and ensuring privacy. This can include personally controlled (self-sovereign) assets such as seeds and keys as well as corporate assets such as contracts, transaction records, and audit reports. Gordian Envelopes offer protection for these assets not just through their ability to encrypt data, but also through their ability to elide or externally reference only certain parts of the Envelope. This can support both fair competition and cooperation in the financial industry through the use of [progressive trust](https://www.blockchaincommons.com/musings/musings-progressive-trust/) and selective disclosure. 
