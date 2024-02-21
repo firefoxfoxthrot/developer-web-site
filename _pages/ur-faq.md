@@ -62,7 +62,7 @@ To date, the major uses of URs have fallen into three categories:
  
 When data is being transferred between airgapped apps, it is usually
 done with a [Gordian Envelope](/envelope/) and may be part of a
-request-response interaction.
+[request-response interaction](/envelope/request/).
 
 ## Encoding Questions
 
