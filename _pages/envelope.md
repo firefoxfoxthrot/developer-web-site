@@ -249,6 +249,8 @@ _See the [Gordian Envelope playlist](https://www.youtube.com/playlist?list=PLCkr
 
 * [**Envelope Technical Documents**](https://github.com/BlockchainCommons/Gordian/tree/master/Envelope#articles) (GitHub repo)
 * [**IETF Draft: The Envelope Structured Data Format**](https://blockchaincommons.github.io/WIPs-IETF-draft-envelope/draft-mcnally-envelope.html) (Editor's Draft)
+* [**Envelope Request & Response**](https://developer.blockchaincommons.com/envelope/request/)
+* [**Envelope Request & Response Test Vectors**](https://developer.blockchaincommons.com/envelope/request/vectors/)
 * [**CLI Usage Overview Transcript**](https://github.com/BlockchainCommons/envelope-cli-swift/blob/master/Transcripts/1-OVERVIEW-TRANSCRIPT.md) (GitHub repo)
 * [**dCBOR: Deterministic CBOR**](/dcbor/)
 
