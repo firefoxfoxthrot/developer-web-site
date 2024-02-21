@@ -114,7 +114,46 @@ request(ARID(d79009de)) [
 
 ### Key Response
 
+**QR:**
 
+![](/assets/images/envelope/response-key.png)
+
+**UR:**
+```
+ur:envelope/lftpcstansfetansgshdcxtsmhasueckldzmlnnncagasbtyaxaxteolcekkrkderolufstabsbwskayayktpfoycsihlotpcshdclaevytktyhkfthkglbyzehflpenbsfxbkvlvyghtsondrzeskswvoclemaswtzodlhnoycfaddwlfcfaddpoycfadmhcfadmeoycfadyktpcshdcxlejtimcnrlbtdemdoereyaqzprkpndbdgwfzflqdbzkohgzobycxcnvabaosbglfoycfadyttpcscynewncnlboyadcfadwkoycfadyltpcstantjootadlocsdyykaeykaeykaoykaocyhngrmuwzaxaaoybdtpcskscxfdfygrihkkcxiyjpjljncxfyhsjpjecxgdkpjpjojzihcxgdihiajecxhfinhsjzoyadcssorhwsbbse
+```
+
+**Envelope:**
+```
+response(ARID(d79009de)) [
+    'result': Bytes(33) [
+        'isA': 'BIP32Key'
+        'isA': 'PrivateKey'
+        'asset': 'BTC' [
+            'network': 'MainNet'
+        ]
+        'chainCode': Bytes(32)
+        'hasName': "HDKey from Dark Purple Peck Vial"
+        'parent': keypath(Map)
+        'parentFingerprint': 2683380607
+    ]
+]
+```
+**CBOR:**
+```
+[24(40005(40012(h'd79009de1e89ff869e1d49cbd40303d3a61c79bb28b88b3dd90f13c5080877b0'))),
+ {101: [24(h'00e1cfd4593a594e11fe5685360f430ae3e154d7a52afec5c6e2213709f0fb2f60'),
+        {300: [301,
+               {400: 401}]},
+        {501: 24(h'8a6e6a23b70d2895a2b5f8b4b2759b0b4f4047b3157657fb112023e60ea71282')},
+        {505: 24(2683380607)},
+        {1: 500},
+        {503: 24(40304({1: [48, true, 0, true, 0, true, 2, true],
+                        2: 1615565810,
+                        3: 4}))},
+        {11: 24("HDKey from Dark Purple Peck Vial")},
+        {1: 201}]}]
+```
 
 ### Key Derivation Request
 
