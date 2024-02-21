@@ -37,5 +37,5 @@ The follow best practices apply to the use of Request & Response:
 ## Request & Response Links
 
 * [**Envelopes**](/envelopes/)
-* [**Request & Response Implemntation Guide**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2024-004-request.md)
+* [**Request & Response Implementation Guide**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2024-004-request.md)
 * [**Request & Reponse Test Vectors**](./vectors)
