@@ -27,6 +27,7 @@ _From the top down, these formats are:_
 * [**Envelope**](/envelope/) is a CBOR format that can be
 used to transmit both digital assets and metadata and which can be
 selectively elided to allow for the maintenance of privacy.
+   * [**Request & Response**](/envelope/request/) is a functionality built into Envelope that allows for interoperability and communication.
 * [**Animated QRs**](/animated-qrs/) let you exceed the normal
 capacity limits of QR codes. These sequenced QR codes are formatted
 using the Uniform Resource format.
