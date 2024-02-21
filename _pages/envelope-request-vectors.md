@@ -11,7 +11,7 @@ classes:
   - wide
 permalink: /envelope/request/vectors/
 sidebar:
-  nav: envelope
+  nav: envelopereq
 ---
 
 ## Base Seed
