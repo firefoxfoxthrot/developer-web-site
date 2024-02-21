@@ -11,7 +11,7 @@ classes:
   - wide
 permalink: /envelope/use-cases/summary/
 sidebar:
-  nav: envelope
+  nav: envelopeuse
 ---
 
 The [Gordian Envelope](/envelope/) Smart Document is a powerful new
