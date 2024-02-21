@@ -21,7 +21,7 @@ structured, privacy preserving way. By what does that mean?
 To start with, Gordian Envelopes are a foundational architecture that
 are being used in two major Blockchain Commons projects.
 
-* **Request & Response.** Requests and responses are specified ways to
+* **Request & Response.** [Requests and responses](/envelope/request/) are specified ways to
     ask for and send information needed for self-sovereign operations,
     including when transmitting across an Airgap. Our second
     generation of requests and responses encodes those communications
