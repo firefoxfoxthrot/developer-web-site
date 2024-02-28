@@ -36,7 +36,16 @@ The follow best practices apply to the use of Request & Response:
 
 ## Request & Response Links
 
+**Envelope Intro:**
+
 * [**Gordian Envelope**](/envelope/)
+
+**Developer Resources:**
+
 * [**Request & Response Implementation Guide**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2024-004-request.md)
 * [**Request & Reponse Test Vectors**](./vectors)
 * [**Gordian Sealed Transaction Protocol**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-014-gstp.md) (GitHub repo)
+
+**Use Cases:**
+
+* [**Improving Multisigs with Request/Response**](https://github.com/BlockchainCommons/SmartCustody/blob/master/Docs/Scenario-Multisig-RR.md)
