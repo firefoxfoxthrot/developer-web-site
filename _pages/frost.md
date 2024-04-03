@@ -35,6 +35,16 @@ Sharing created vulnerabilities on reconstruction (and also had a history of pro
 with its aggregate signatures (which are always the same size), while the Distributed Key Generation (DKG) methodology creates keys that are _never_ in
 one place!
 
+### How is FROST Better than Extant Technologies?
+
+* **Advantages over Bitcoin Multisigs.** 
+   * **Better privacy:** on-chain footprint is always a single key and a single signature, regardless of configuration
+   * **Lower fees:** redeem scripts are much smaller than script-based multisig
+   * **Off-chain resharing:** repair, refresh, enroll, disenroll, and modify the threshold without moving funds, incurring fees, or exposing private information
+* **Advantages over Shamir Secret Sharing.**
+   * No trusted dealer
+   * No secret reconstruction
+
 ## How Does FROST Work?
 
 FROST is fully described in [a paper](https://eprint.iacr.org/2020/852.pdf) by Chelsea Komlo and Ian Goldberg. Some of the fundamental elements
@@ -60,6 +70,14 @@ VSS protocol invented by Paul Feldmann.
 ## Videos
 
 <table width="100%">
+  <tr>
+    <td width="640px">
+      <b>FROST/Gordian Overview:</b>
+
+{% include video id="uCM8dDql6oo" provider="youtube" %}
+
+    </td>
+  </tr>
   <tr>
     <td width="640px">
       <b>FROST Round Table I:</b>
