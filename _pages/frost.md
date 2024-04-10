@@ -94,7 +94,7 @@ VSS protocol invented by Paul Feldmann.
 
 * [Understanding FROST](https://frost.zfnd.org/frost.html) (ZF FROST Book)
 * [A Layperson's Intro to Schnorr](https://www.blockchaincommons.com/musings/Schnorr-Intro/) (Blockchain Commons Blog)
-* [Paper by Chelsea Komlo and Ian Goldberg](https://eprint.iacr.org/2020/852.pdf)
+* [Paper by Chelsea Komlo and Ian Goldberg](https://eprint.iacr.org/2020/852.pdf) (Cryptology ePrint Archive)
 
 **Developer Resources:**
 
