@@ -605,5 +605,9 @@ cases the examples here were drawn from those docs.
 
 Also see the [Envelope Use Cases](/envelope/use-cases/) for many more pragmatic examples of Envelopes in use (with diagrams).
 
+## Futher Links
+
+* [Envelope Internet-Draft](https://datatracker.ietf.org/doc/draft-mcnally-envelope/) (IETF)
+{% include links-envelope-extensions.md %}
 
 
