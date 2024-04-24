@@ -119,6 +119,13 @@ structure.
 
 _See the [Gordian Envelope playlist](https://www.youtube.com/playlist?list=PLCkrqxOY1FbooYwJ7ZhpJ_QQk8Az1aCnG) for more._
 
+
+## Libraries
+
+{% include lib-envelope.md %}
+
+{% include lib-dcbor.md %}
+
 ## Envelope Links
 
 **Intro:**
@@ -126,6 +133,7 @@ _See the [Gordian Envelope playlist](https://www.youtube.com/playlist?list=PLCkr
 * [**Executive Summary**](/envelope/summary/)
 * [**Technical Overview**](/envelope/tech/)
 * [**Feature List**](/envelope/features/)
+* [**IETF Problem Statement: Deterministic Hashed Data Elision**](https://datatracker.ietf.org/doc/draft-appelcline-hashed-elision/) (IETF)
 
 **Industry Intros:**
 
@@ -156,9 +164,10 @@ _See the [Gordian Envelope playlist](https://www.youtube.com/playlist?list=PLCkr
 
 **Developer Reference Apps:**
 
-* [**Envelope-CLI**](https://github.com/BlockchainCommons/envelope-cli-swift) (CLI implementation)
-  * [**Envelope-CLI Docs**](https://github.com/BlockchainCommons/envelope-cli-swift/tree/master/Docs)
-* [**CLI Usage Overview Transcript**](https://github.com/BlockchainCommons/envelope-cli-swift/blob/master/Transcripts/1-OVERVIEW-TRANSCRIPT.md) (GitHub repo)
+* [**bc-envelope-cli-rust**](https://github.com/BlockchainCommons/bc-envelope-cli-rust)
+* [**envelope-cli-swift**](https://github.com/BlockchainCommons/envelope-cli-swift) (CLI implementation)
+  * [**envelope-cli-swift Docs**](https://github.com/BlockchainCommons/envelope-cli-swift/tree/master/Docs)
+  * [**envelope-cli-swift Usage Overview Transcript**](https://github.com/BlockchainCommons/envelope-cli-swift/blob/master/Transcripts/1-OVERVIEW-TRANSCRIPT.md) (GitHub repo)
   
 ### Use Cases:
 
