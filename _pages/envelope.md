@@ -148,19 +148,7 @@ _See the [Gordian Envelope playlist](https://www.youtube.com/playlist?list=PLCkr
 
 **Developer Extension Resources:**
 
-* [**BCR-2023-006: Attachment**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-006-envelope-attachment.md) (GitHub repo)
-* [**BCR-2023-005: Compression**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-005-envelope-compression.md) (GitHub repo)
-* [**BCR-2023-009: Cryptographic Seeds**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-009-envelope-seed.md) (GitHub repo)
-* [**BCR-2023-013: Cryptography**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-013-envelope-crypto.md) (GitHub repo)
-* [**BCR-2023-012: Expressions**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-012-envelope-expression.md) (GitHub repo)
-* [**BCR-2024-006: Graphs**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2024-006-envelope-graph.md) (GitHub repo)
-* [**BCR-2023-003: Known Values**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-003-envelope-known-value.md) (GitHub repo)
-* [**BCR-2023-003: Known Values**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-003-envelope-known-value.md) (GitHub repo)
-* [**BCR-2024-004: Transport Protocol**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2024-004-request.md) (GitHub repo)
-   * [**Request & Response**](https://developer.blockchaincommons.com/envelope/request/)
-   * [**Request & Response Test Vectors**](https://developer.blockchaincommons.com/envelope/request/vectors/)
-* [**BCR-2023-014: Sealed Transport Protocol**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-014-gstp.md) (GitHub repo)
-* [**BCR-2023-004: Symmetric Encryption**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-004-envelope-symmetric-encryption.md) (GitHub repo)
+{% include links-envelope-extensions.md %}
 
 **Developer Reference Apps:**
 
