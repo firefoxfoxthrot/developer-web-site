@@ -16,7 +16,7 @@ sidebar:
 
 ## Overview
 
-_**Latest News:** Added [Multisig Custody use case for Request & Response](https://github.com/BlockchainCommons/SmartCustody/blob/master/Docs/Scenario-Multisig-RR.md) (2/28/24). Published [Envelope Request & Response Implementation Guide](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2024-004-request.md) (2/20/24). Released [IETF Envelope I-D v6](https://datatracker.ietf.org/doc/draft-mcnally-envelope/) (2/18/24)._
+_**Latest News:** Added [Executive Summary](/envelope/summary/) and [Feature List](/envelope/features/) pages (4/24/24).  Released [IETF Envelope I-D v7](https://datatracker.ietf.org/doc/draft-mcnally-envelope/) (3/31/24). Added [Multisig Custody use case for Request & Response](https://github.com/BlockchainCommons/SmartCustody/blob/master/Docs/Scenario-Multisig-RR.md) (2/28/24). Published [Envelope Request & Response Implementation Guide](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2024-004-request.md) (2/20/24)._
 {: .notice--success}
 
 <a href="https://www.youtube.com/watch?v=OcnpYqHn8NQ"><img src="https://img.youtube.com/vi/OcnpYqHn8NQ/mqdefault.jpg" style="float: right; border: 2px solid blue"></a>
