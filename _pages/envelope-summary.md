@@ -15,9 +15,7 @@ sidebar:
 ---
 
 {% capture abstract %}
-## Abstract
-
-The Gordian Envelope, developed by Blockchain Commons, is a sophisticated smart document architecture that secures private data and enhances its management using hashed data elision. This privacy-centric feature enables provable data redaction without compromising the data's integrity or authenticity. This allows users to manage data exposure incrementally as trust develops over time. Its privacy-first features align closely with global data protection laws that advocate for data minimization and the protection of individual privacy.
+**Abstract:** The Gordian Envelope, developed by Blockchain Commons, is a sophisticated smart document architecture that secures private data and enhances its management using hashed data elision. This privacy-centric feature enables provable data redaction without compromising the data's integrity or authenticity. This allows users to manage data exposure incrementally as trust develops over time. Its privacy-first features align closely with global data protection laws that advocate for data minimization and the protection of individual privacy.
 
 The recursive structure of Gordian Envelope allows any Envelope to reference and encapsulate other Envelopes, thereby enabling complex data hierarchies. By design, this creates support for a variety of structured data formats. Deterministic CBOR (dCBOR) then ensures consistent data encoding across multiple languages and platforms, maintaining data uniformity in distributed systems and constrained computing environments. This consistency is essential to ensure reliable data verification and authentication and to support decentralized applications, addressing common challenges in data interchange and storage.
 
