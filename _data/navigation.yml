@@ -67,8 +67,12 @@ envelope:
     children:
     - title: "Intro to Envelopes"
       url: /envelope/
+    - title: "Executive Summary"
+      url: /envelope/summary/
     - title: "Technical Overview"
       url: /envelope/tech/
+    - title: "Feature List"
+      url: /envelope/features/
     - title: "Request & Response"
       url: /envelope/request/
     - title: "Use Cases Overview"
