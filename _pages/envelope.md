@@ -123,7 +123,12 @@ _See the [Gordian Envelope playlist](https://www.youtube.com/playlist?list=PLCkr
 
 **Intro:**
 
-* [**A Technical Overview of Envelopes**](/envelope/tech/)
+* [**Executive Summary**](/envelope/summary/)
+* [**Technical Overview**](/envelope/tech/)
+* [**Feature List**](/envelope/features/)
+
+**Industry Intros:**
+
 * [**The Dangers of Digital Credentials in Education**](https://www.blockchaincommons.com/articles/Dangerous-Educational-Credentials/) (blog article)
 * [**Protecting Your Wellness Data with Hashed Elision**](https://www.blockchaincommons.com/articles/Dangerous-Wellness-Data/) (blog article)
 
@@ -135,22 +140,25 @@ _See the [Gordian Envelope playlist](https://www.youtube.com/playlist?list=PLCkr
 
 **Developer Extension Resources:**
 
-* [**Attachment**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-006-envelope-attachment.md)
-* [**Compression**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-005-envelope-compression.md)
-* [**Cryptographic Seeds**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-009-envelope-seed.md)
-* [**Cryptography**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-013-envelope-crypto.md)
-* [**Expressions**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-012-envelope-expression.md)
-* [**Known Values**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-003-envelope-known-value.md) (GitHub repo)
-* [**Request & Response**](https://developer.blockchaincommons.com/envelope/request/)
+* [**BCR-2023-006: Attachment**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-006-envelope-attachment.md) (GitHub repo)
+* [**BCR-2023-005: Compression**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-005-envelope-compression.md) (GitHub repo)
+* [**BCR-2023-009: Cryptographic Seeds**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-009-envelope-seed.md) (GitHub repo)
+* [**BCR-2023-013: Cryptography**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-013-envelope-crypto.md) (GitHub repo)
+* [**BCR-2023-012: Expressions**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-012-envelope-expression.md) (GitHub repo)
+* [**BCR-2024-006: Graphs**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2024-006-envelope-graph.md) (GitHub repo)
+* [**BCR-2023-003: Known Values**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-003-envelope-known-value.md) (GitHub repo)
+* [**BCR-2023-003: Known Values**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-003-envelope-known-value.md) (GitHub repo)
+* [**BCR-2024-004: Transport Protocol**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2024-004-request.md) (GitHub repo)
+   * [**Request & Response**](https://developer.blockchaincommons.com/envelope/request/)
    * [**Request & Response Test Vectors**](https://developer.blockchaincommons.com/envelope/request/vectors/)
-* [**Symmetric Encryption**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-004-envelope-symmetric-encryption.md) (GitHub repo)
+* [**BCR-2023-014: Sealed Transport Protocol**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-014-gstp.md) (GitHub repo)
+* [**BCR-2023-004: Symmetric Encryption**](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-004-envelope-symmetric-encryption.md) (GitHub repo)
 
 **Developer Reference Apps:**
 
 * [**Envelope-CLI**](https://github.com/BlockchainCommons/envelope-cli-swift) (CLI implementation)
   * [**Envelope-CLI Docs**](https://github.com/BlockchainCommons/envelope-cli-swift/tree/master/Docs)
 * [**CLI Usage Overview Transcript**](https://github.com/BlockchainCommons/envelope-cli-swift/blob/master/Transcripts/1-OVERVIEW-TRANSCRIPT.md) (GitHub repo)
-
   
 ### Use Cases:
 
