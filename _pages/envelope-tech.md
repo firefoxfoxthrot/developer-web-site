@@ -607,7 +607,7 @@ Also see the [Envelope Use Cases](/envelope/use-cases/) for many more pragmatic 
 
 ## Futher Links
 
-* [Envelope Internet-Draft](https://datatracker.ietf.org/doc/draft-mcnally-envelope/) (IETF)
+* [**Envelope Internet-Draft**](https://datatracker.ietf.org/doc/draft-mcnally-envelope/) (IETF)
 {% include links-envelope-extensions.md %}
 
 
