@@ -14,6 +14,7 @@ sidebar:
   nav: envelope
 ---
 
+{% capture abstract %}
 ## Abstract
 
 The Gordian Envelope, developed by Blockchain Commons, is a sophisticated smart document architecture that secures private data and enhances its management using hashed data elision. This privacy-centric feature enables provable data redaction without compromising the data's integrity or authenticity. This allows users to manage data exposure incrementally as trust develops over time. Its privacy-first features align closely with global data protection laws that advocate for data minimization and the protection of individual privacy.
@@ -23,6 +24,9 @@ The recursive structure of Gordian Envelope supports the inclusion of envelopes 
 Gordian Envelope is built to support industries where data security and privacy are critical. In the healthcare & wellness industries, it is used to share sensitive patient data in compliance with HIPAA and to collect public health data while simultaneously protecting participants through herd privacy. At financial institutions, it enables secure transactions while supporting regulatory requirements such as dual control. In educational institutions, it maintains the integrity and verifiability of digital credentials even when a holder elides some of the data for privacy purposes. Additionally, digital wallet developers deploy Gordian Envelope to enhance the security and privacy of their apps, ensuring the robust protection of users' digital identities and assets.
 
 Blockchain Commons supports Gordian Envelope with all the specifications, reference libraries, documentation, and other tools necessary for developers to effectively integrate and deploy Gordian Envelope solutions. It also promotes a robust and collaborative developer community, built around monthly meetings, live Signal chats, and GitHub Discussions that enhances the architecture's adoption and demonstrates its practical deployment and relevance in today's digital landscape.
+{% endcapture%}
+
+<div class="notice--info">{{ abstract | markdownify }}</div>
 
 ## Executive Summary
 
