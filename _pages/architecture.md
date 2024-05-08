@@ -127,6 +127,10 @@ complete list of apps past and present.  Please see [Gordian Architure
 Roles](/architecture/roles/) for examples of what functions can be
 partitioned as part of the Gordian Macro-architecture.
 
+## Design Patterns
+
+Any architecture is built on design patterns: building blocks that solve common problems in specific ways. Design patterns are a part of the Blockchain Commons design philosophy. We've currently outlined one set of design patterns, on [Authentication & Authorization](/architecture/patterns/arch) and in particular how they create security through homogeneity.
+
 ## How the Gordian Architecture Supports Gordian Principles
 
 The Gordian Architecture supports the four [Gordian
