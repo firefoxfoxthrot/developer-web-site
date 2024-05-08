@@ -5,7 +5,7 @@ header:
   overlay_filter: "0.25"
   overlay_image: /assets/images/dev-arch-background.jpg
   og_image: /assets/images/bc-card.jpg
-title: Authentication: A Heterogeneity Design Pattern
+title: Authentication, A Heterogeneity Design Pattern
 hide_description: true
 classes:
   - wide
