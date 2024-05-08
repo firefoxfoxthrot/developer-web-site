@@ -45,6 +45,8 @@ architecture:
       url: /airgap/
     - title: "Torgaps"
       url: /torgap/
+    - title: "Auth Design Patterns"
+      url: /architecture/patterns/auth/
 dataformat:
   - title: Data Formats
     children:
