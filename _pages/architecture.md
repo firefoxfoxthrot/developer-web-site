@@ -165,7 +165,7 @@ Principles](/principles/) as follows:
 
 **Design Patterns:**
 
-* [**Authentication & Authorization](/architecture/patterns/auth/)
+* [**Authentication & Authorization**](/architecture/patterns/auth/)
 
 **Self-Sovereign Identity:**
 
