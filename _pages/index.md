@@ -63,6 +63,17 @@ easier for users to recognize their seeds and keys.
   * [LifeHash](/lifehash/) — Visual hashes for digital assets.
   * [Object Identity Block](/oib/) — Data block for asset recognition.
 
+## Architecture
+
+All of this is built on a carefully designed architecture.
+
+* [Architecture Home Page](/architecture/)
+   * [Gordian Principles](https://developer.blockchaincommons.com/principles/) — Principles behind the architecture.
+   * [Gordian Lexicon](https://developer.blockchaincommons.com/architecture/lexicon/) — Architectural elements.
+     * [Architectural Roles](https://developer.blockchaincommons.com/architecture/roles/) & [Architectural Apps](https://developer.blockchaincommons.com/architecture/apps/) —  Architectural nodes.
+     * [Airgaps](https://developer.blockchaincommons.com/airgap/) & [Torgaps](https://developer.blockchaincommons.com/torgap/) — Architectural edges.
+   * [Design Patterns](https://developer.blockchaincommons.com/architecture/patterns/auth/) — Architectural building blocks.
+
 ## For More Info
 
 Our Gordian Developer community is actively working with this resources! Join us in Discussions or at our monthly meetings!
