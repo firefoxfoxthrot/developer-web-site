@@ -14,6 +14,9 @@ sidebar:
   nav: mainside
 ---
 
+_**Latest News:** Added [Achitectural Design Patterns & Auth Patterns](/architecture/patterns/auth) pages (5/8/24). Added [Envelope Executive Summary](/envelope/summary/) and [Feature List](/envelope/features/) pages (4/24/24)._
+{: .notice--info}
+
 Blockchain Commons has produced a number of specifications that are
 intended to support interoperability among wallet developers and other
 digital-asset holders as well as resilience, privacy, and
