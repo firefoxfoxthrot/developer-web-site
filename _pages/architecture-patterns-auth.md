@@ -18,7 +18,7 @@ Any architecture requires the building blocks of design patterns. A house isn't 
 
 _This document is intended to reveal a bit about how Blockchain Commons thinks about architectural design and thus how it constructs its scenarios and other studies. However, it's just a tiny corner of the overall security design space. To be specific, it's focused on the intersection of Authentication, Authorization, and hetergeneous design. Many other categories of patterns are relevant in the security space and could complement this work._
 
-## An Overview of Hetergenity
+# An Overview of Hetergenity
 
 _Heterogeneity_ is a security design pattern that says: 
 
@@ -28,7 +28,7 @@ It might also be called _partitioning_. It encompasses both _variety_ (when thin
 
 This document looks at the heterogeneity pattern through a single lens: Authentication. It not only examines specific Authentication patterns that support heterogeneity (especially [Multifactor Authentication](#multifactor-authentication), [Multichannel Authentication](#multichannel-authentication), and [Threshold Authentication](#threshold-authentication)) but it expands that into a complete look at the design patterns underlying Authentication and Authorization, to create a larger blueprint for how to make these systems secure.
 
-### An Overview of Authentication & Authorization
+## An Overview of Authentication & Authorization
 
 Authentication and Authorization are both included in this document in part because they're often confused with each other. It's not just that they're very similar words, but also that their concepts are tightly intertwined.
 
@@ -45,7 +45,7 @@ _Who has the right to Authorization?_ Is it the person originally granted it? Is
 
 These are some of the questions that must be considered, even when picking and using design patterns from this document.
 
-## Picking Your Design Patterns
+# Picking Your Design Patterns
 
 Choosing design patterns is an art, not a science. Each design pattern lays out specific _problems_ that you might face and _solutions_ to resolve those problems, but you must ultimately decide which problems are important enough to require solutions (and whether the solutions are worth their trouble or not).
 
@@ -93,11 +93,11 @@ Specific patterns are:
 | Authorization | [Authorization](#authorization) | what you can do |
 | Authorization | [Authorization Levels](#authorization-levels) | progressively authorize
 
-## Core Authentication Patterns
+# Core Authentication Patterns
 
 _The Core Authentication patterns define the fundamental design of an Authentication system._
 
-### Authentication
+## Authentication
 
 > **Problems:**
 >
