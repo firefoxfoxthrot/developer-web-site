@@ -26,7 +26,7 @@ _Heterogeneity_ is a security design pattern that says:
 
 It might also be called _partitioning_. It encompasses both _variety_ (when things vary because they're different) and _separation_ (when things vary because they're apart). This pattern has been used across a wide number of architectural designs from Blockchain Commons. It's helpful because it removes honeypots and single points of compromise, reduces the danger of zero-day attacks, and otherwise improves the security of whatever you're protecting.
 
-This document looks at the heterogeneity pattern through a single lens: Authentication. It not only examines specific Authentication patterns that support heterogeneity (especially [Multifactor Authentication](#Multifactor-Authentication), [Multichannel Authentication](#Multichannel-Authentication), and [Threshold Authentication](#Threshold-Authentication)) but it expands that into a complete look at the design patterns underlying Authentication and Authorization, to create a larger blueprint for how to make these systems secure.
+This document looks at the heterogeneity pattern through a single lens: Authentication. It not only examines specific Authentication patterns that support heterogeneity (especially [Multifactor Authentication](#multifactor-authentication), [Multichannel Authentication](#multichannel-authentication), and [Threshold Authentication](#threshold-authentication)) but it expands that into a complete look at the design patterns underlying Authentication and Authorization, to create a larger blueprint for how to make these systems secure.
 
 ### An Overview of Authentication & Authorization
 
@@ -37,7 +37,7 @@ Our definitions of the terms are essentially as follows:
 * **Authentication.** Prove access to a specific identity, group, or service.
 * **Authorization.** Be granted specific capabilities or permissions.
 
-Typically, an Authentication grants a specific level of Authorization, which is a pattern called the [Authorization-Authentication Link](#Authentication-Link). However, there's a lot more complexity than is apparent either in these definitions or their interconnections.
+Typically, an Authentication grants a specific level of Authorization, which is a pattern called the [Authorization-Authentication Link](#authentication-link). However, there's a lot more complexity than is apparent either in these definitions or their interconnections.
 
 _What does Authentication really prove?_ Only that a user holds the proof of Authentication. That might be a pretty tight connection to a person when it's biometrics (maybe!), but less so when Authentication depends on a secret or token.
 
@@ -57,41 +57,41 @@ Two things in particular must be considered:
 
 Patterns are organized into the following groups:
 
-* [**Core.**](#Core-Authentication-Patterns) The fundamental patterns of Authentication.
-* [**Heterogeneity.**](#Authentication-Heregogeneity-Patterns) Improving Authentication through variation.
-* [**Method.**](#Authentication-Method-Patterns) How Authentication is done.
-* [**Protection.**](#Authentication-Protection-Patterns) Improving the security of Authentication.
-* [**Storage.**](#Authentication-Storage-Patterns) When/how Authentication validation is stored.
-* [**Subject.**](#Authentication-Subject-Patterns) Who/what is being Authenticated.
-* [**Authorization.**](#Authorization-Patterns) The linked system of Authorization.
+* [**Core.**](#core-authentication-patterns) The fundamental patterns of Authentication.
+* [**Heterogeneity.**](#authentication-heterogeneity-patterns) Improving Authentication through variation.
+* [**Method.**](#authentication-method-patterns) How Authentication is done.
+* [**Protection.**](#authentication-protection-patterns) Improving the security of Authentication.
+* [**Storage.**](#authentication-storage-patterns) When/how Authentication validation is stored.
+* [**Subject.**](#authentication-subject-patterns) Who/what is being Authenticated.
+* [**Authorization.**](#authorization-patterns) The linked system of Authorization.
 
 
 Specific patterns are:
 
 | Category | Pattern | Summary |
 |-----------|-----------|---------|
-| Core | [Authentication](#Authentication) | prove who you are
-| Core | [Authentication Levels](#Authentication-Levels) | progressively authenticate | 
-| Core | [Authentication Proof](#Authentication-Proof) | prove authentication |
-| Heterogeneity | [Multifactor Authentication](#Multifactor-Authentication) | multiply authenticate |
-| Heterogeneity | [Multichannel Authentication](#Multichannel-Authentication) | separately authenticate |
-| Heterogeneity | [Threshold Authentication](#Threshold-Authentication) | m of n authenticate
-| Method | [Biometric Authentication](#Biometric-Authentication) | auth physically |
-| Method | [Control Authentication](#Control-Authentication) | auth second-hand
-| Method | [Secret Authentication](#Secret-Authentication) | auth with password
-| Method | [Token Authentication](#Token-Authentication) | auth with device
-| Protection | [Authentication Delay](#Authentication-Delay) | slowly authenticate |
-| Protection | [In-Channel Warning](#In-Channel-Warning) | warn in app |
-| Protection | [Out-of-Channel Warning](#Out-of-Channel-Warning) | warn out of app |
-| Protection | [Usage Analysis](#Usage-Analysis) | verify auth |
-| Storage | [Hashed Authentication Storage](#Hashed-Authentication-Storage) | store hashes |
-| Storage | [Local Authentication Storage](#Hashed-Authentication-Storage) | store locally |
-| Subject | [Anonymous Validation](#Anonymous-Validation) | no identity |
-| Subject | [Identity Validation](#Identity-Validation) | real identity |
-| Subject | [Pseudonymous Validation](#Pseudonymous-Validation) | pseudo identity |
-| Authorization | [Authorization-Authentication Link](#Authorization-Authentication-Link) | who can do what |
-| Authorization | [Authorization](#Authorization) | what you can do |
-| Authorization | [Authorization Levels](#Authorization-Levels) | progressively authorize
+| Core | [Authentication](#authentication) | prove who you are
+| Core | [Authentication Levels](#authentication-levels) | progressively authenticate | 
+| Core | [Authentication Proof](#authentication-proof) | prove authentication |
+| Heterogeneity | [Multifactor Authentication](#multifactor-authentication) | multiply authenticate |
+| Heterogeneity | [Multichannel Authentication](#multichannel-authentication) | separately authenticate |
+| Heterogeneity | [Threshold Authentication](#threshold-authentication) | m of n authenticate
+| Method | [Biometric Authentication](#biometric-authentication) | auth physically |
+| Method | [Control Authentication](#control-authentication) | auth second-hand
+| Method | [Secret Authentication](#secret-authentication) | auth with password
+| Method | [Token Authentication](#token-authentication) | auth with device
+| Protection | [Authentication Delay](#authentication-delay) | slowly authenticate |
+| Protection | [In-Channel Warning](#in-channel-warning) | warn in app |
+| Protection | [Out-of-Channel Warning](#out-of-channel-warning) | warn out of app |
+| Protection | [Usage Analysis](#usage-analysis) | verify auth |
+| Storage | [Hashed Authentication Storage](#hashed-authentication-storage) | store hashes |
+| Storage | [Local Authentication Storage](#local-authentication-storage) | store locally |
+| Subject | [Anonymous Validation](#anonymous-validation) | no identity |
+| Subject | [Identity Validation](#identity-validation) | real identity |
+| Subject | [Pseudonymous Validation](#pseudonymous-validation) | pseudo identity |
+| Authorization | [Authorization-Authentication Link](#authorization-authentication-link) | who can do what |
+| Authorization | [Authorization](#authorization) | what you can do |
+| Authorization | [Authorization Levels](#authorization-levels) | progressively authorize
 
 ## Core Authentication Patterns
 
