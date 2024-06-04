@@ -74,6 +74,8 @@ a bridge between traditional use of Shamir's Secret Sharing and the use of DKG i
 **Verifiable Secret Sharing (VSS).** A methodology for verifying the existence of shares without reconstruting a secret. FROST uses a
 VSS protocol invented by Paul Feldmann. 
 
+**Emerging Features.** At our first [FROST Meeting for Developers & Implementers](https://www.youtube.com/watch?v=uCM8dDql6oo&t=2762s), Jesse Posner talked about some of the emerging features of FROST. This included being able to proactively refresh or repair secret shares or even change the threshold up or down, all _without changing the underlying secret_. This is the sort of content that we hope to share at future Implementer Round Tables, to ensure that all FROST implementers have the opportunity to use FROST to its fullest capability.
+
 ## Videos
 
 <table width="100%">
@@ -106,6 +108,7 @@ VSS protocol invented by Paul Feldmann.
 **Developer Resources:**
 
 * [FROST Implementer's Round Table I](/frost/meeting1/)
+* [Frost Developer's Meeting](/frost/developers1/)
 
 **Developer Reference Libraries:**
 
