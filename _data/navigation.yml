@@ -174,12 +174,10 @@ frost:
     children:
     - title: "Intro to FROST"
       url: /frost/
-    - title: "Meeting Overview"
+    - title: "Implementers Round Table I"
       url: /frost/meeting1/
-    - title: "Meeting Summary"
+    - title: "Developers Meeting I"
       url: /frost/meeting1/summary/
-    - title: "Meeting Transcript"
-      url: /frost/meeting1/transcript/
     - title: "Return to Recovery"
       url: /seedrecovery/
 sskr:
