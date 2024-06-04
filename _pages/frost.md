@@ -108,7 +108,7 @@ VSS protocol invented by Paul Feldmann.
 **Developer Resources:**
 
 * [FROST Implementer's Round Table I](/frost/meeting1/)
-* [Frost Developer's Meeting](/frost/developers1/)
+* [FROST Developer's Meeting](/frost/developers1/)
 
 **Developer Reference Libraries:**
 
