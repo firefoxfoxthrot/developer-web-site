@@ -9,7 +9,7 @@ title: Blockchain Commons 128-Bit Example Seed
 hide_description: false
 classes:
   - wide
-permalink: /
+permalink: /seed-128/
 sidebar:
   nav: mainside
 ---
