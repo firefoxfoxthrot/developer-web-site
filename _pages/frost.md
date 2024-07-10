@@ -101,7 +101,7 @@ VSS protocol invented by Paul Feldmann.
 
 Blockchain Commons' 2024 work on FROST has been sponsored by the [Human Rights Foundation](https://hrf.org/).
 
-![](https://hrf.org/)
+![https://www.blockchaincommons.com/images/sponsors/hrf-white.png](https://hrf.org/)
 
 ## Links
 
