@@ -28,7 +28,7 @@ decentralized identifiers, and verifiable credentials in a way that
 enables privacy while preserving structure. The format is very simple
 and compact, with minimal overhead, but documents can ultimately be as
 complex as needed. Gordian Envelope's privacy features are built on a
-hashed Merkle Tree that supports cryptography and privacy-related
+Merkle-like Tree that supports cryptography and privacy-related
 methodologies such as [progressive
 trust](https://www.blockchaincommons.com/musings/musings-progressive-trust/)
 and Merkle-based selective disclosure.
@@ -36,7 +36,7 @@ and Merkle-based selective disclosure.
 Blockchain Commons is currently working with multiple companies on the
 development and deployment of Gordian Envelopes via regular biweekly
 meetings; [contact us](mailto:team@blockchaincommons.com) if you'd
-like to be involved. Envelope is also on the experimental track as an
+like to be involved or just [subscribe to our announcement-only list for the Gordian Developers meetings](https://www.blockchaincommons.com/subscribe/). Envelope is also on the experimental track as an
 [Informational Draft for the
 IETF](https://blockchaincommons.github.io/WIPs-IETF-draft-envelope/draft-mcnally-envelope.html).
 Further, ongoing discussions are occurring with the W3C Credentials
