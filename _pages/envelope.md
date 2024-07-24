@@ -26,7 +26,7 @@ document". It builds on the binary format of the [IETF CBOR standard](https://cb
 deterministic storage and transmission of data such as seeds, keys,
 decentralized identifiers, and verifiable credentials in a way that
 enables privacy while preserving structure. The format is very simple
-and compact, with minimal overhead, but documents can ultimately be as
+and compact, with minimal overhead, but thanks to its recursive design, documents can ultimately be as
 complex as needed. Gordian Envelope's privacy features are built on a
 Merkle-like Tree that supports cryptography and privacy-related
 methodologies such as [progressive
