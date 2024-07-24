@@ -34,7 +34,8 @@ _Hashed data elision is the core of Gordian Envelope._
 * **Granular Holder Control.** Elision can not only be performed by any Holder, but also for any data, allowing each entity to elide data as is appropriate for the management of their personal (or business) risk.
 * **Progressive Trust.** The elision mechanics in Gordian Envelopes allow for [progressive trust](https://www.blockchaincommons.com/musings/musings-progressive-trust/), where increasing amounts of data are revealed over time. It can even be optionally combined with encryption to escrow data to later be revealed.
 * **Consistent Hashing.** Even when elided (or compressed or encrypted), hashes for those parts of the Gordian Envelope remain the same.
-* **Signing.** Embedded and detached signatures enhance data security and remain valid even when data is elided signatures occur across data hashes, not the underlying data.
+* **Signing.** Embedded and detached signatures enhance data security and remain valid even when data is elided, as signatures occur across the data hashes, not the underlying data.
+* **SSH Signing.** Gordian Envelope is very flexible. Though Schnorr has been advanced as its main Signing extension, other signing options are possible. To support software-release use cases, the [Envelope-CLI Reference App](https://github.com/BlockchainCommons/bc-envelope-cli-rust) now also supports [SSH signing](https://github.com/BlockchainCommons/bc-envelope-cli-rust/blob/master/docs/Signing.md).
 
 ## Privacy Support
 
@@ -45,7 +46,7 @@ _The fundamental methodology of hashed data elision dramatically improves privac
 * **Herd Privacy.** Proofs of inclusion allow for herd privacy where all members of a class can share data such as a VC or DID without revealing individual information.
 * **Non-Correlation.** Encrypted Gordian Envelope data can optionally be made less correlatable with the addition of salt or through zero-knowledge proofs.
 
-## Encryption Support
+## Encryption & Signing Support
 
 _The expanded spec of Gordian Envelope supported through Blockchain Commons' [Research papers](https://github.com/BlockchainCommons/research/?tab=readme-ov-file#contents) provides support for optional encryption as well._
 
@@ -70,7 +71,7 @@ _With Blockchain Commons' expanded specs, data can be dynamic and support dynami
 
 * **Expressions.** Envelope elements can be recognized as functions and parameters, allowing for the implementation of application-specific logic within Envelopes, facilitating responsive and adaptive data interactions.
 * **Requests/Responses.** Expressions can be wrapped up in [Requests](/envelope/request/), allowing for the communication between two entities. Responses can then be sent in reply to Requests.
-* **Sealed Transactions.**  Requests and responses can be built into sealed transaction protocols to support encrypted and authenticated communications across insecure channels, such as QR codes and NFC, ensuring secure data exchanges even in vulnerable environments.
+* **Sealed Transactions (GSTP).**  Requests and responses can be built up into the [Gordian Sealed Transaction Protocol](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2023-014-gstp.md) to support encrypted and authenticated communications across insecure channels such as QR codes and NFC, ensuring secure data exchanges even in vulnerable environments.
 
 ### Data Management Support
 
