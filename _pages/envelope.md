@@ -22,7 +22,7 @@ _**Latest News:** Added [Executive Summary](/envelope/summary/) and [Feature Lis
 <a href="https://www.youtube.com/watch?v=OcnpYqHn8NQ"><img src="https://img.youtube.com/vi/OcnpYqHn8NQ/mqdefault.jpg" style="float: right; border: 2px solid blue"></a>
 
 Gordian Envelope is a specification for the achitecture of a “smart
-document". It uses CBOR to support the secure, reliable, and
+document". It builds on the binary format of the [IETF CBOR standard](https://cbor.io/) to support the secure, reliable, and
 deterministic storage and transmission of data such as seeds, keys,
 decentralized identifiers, and verifiable credentials in a way that
 enables privacy while preserving structure. The format is very simple
