@@ -21,8 +21,8 @@ useful, and how they're used.
 > Gordian Envelope is a specification for the achitecture of a “smart
 document". It supports the storage, backup, encryption,
 authentication, and transmission of data, with natively supported
-cryptography and explicit support for Merkle-based selective
-disclosure. It's designed to protect digital assets including seeds,
+cryptography and explicit support for selective
+disclosure using hashed data elision. It's designed to protect digital assets including seeds,
 keys, Decentralized Identifiers (DIDs), Verifiable Credentials
 (VCs), and Verifiable Presentations (VPs).
 
@@ -277,25 +277,21 @@ Docs](https://github.com/BlockchainCommons/envelope-cli-swift/blob/master/Docs/2
 
 The `--tree` examples in this introduction all include the first four
 bytes of a hash digest for each node. This is a standard feature of
-Gordian Envelope: its nested triples form a structured Merkle Tree.
+Gordian Envelope: its nested triples are stored as a Merkle-like Tree.
 
-We use the phrase "structured Merkle Tree" because the structure is
-not quite the same as a pure Merkle Tree:
+We use the phrase "Merkle-like Tree" because the structure is
+not quite the same as a classic Merkle Tree:
 
-In a pure Merkle Tree, leaves are ordered sequence of objects (such as
-Bitcoin Transactions) that carry semantic content, with intenal nodes
-then being hashes of their child nodes. In Gordian Envelopes, each
-element in the tree instead has a digest made from its semantic
-content and the content of its children.
+* A classic [Merkle Tree](https://en.wikipedia.org/wiki/Merkle_tree) hashes data blocks to form its leafs, then its inner nodes contain hashes of the sums of those leaf hashes.
+* Gordian Envelope's Merkle-like Tree instead is generated as needed.
+   * Its leafs typically contain data.
+   * Hashes are generated for leafs only when the data is elided (currently, elision can be due to encryption, compression, or purposeful redaction of information).
+   * Otherwise, hashes are generated when a Tree is deserialized and placed in memory.
+   * During deserialization, inner nodes are also generated, with their hashes built appropriately from the hashes of the leafs (which may have been previously generated due to elision or generated now during deserialization).
 
-In other words, every point in a Gordian Envelope that carries a
-digest *also* carries semantic content, while in a Merkle tree, *only*
-the leaves carry semantic content.
+In other words, Gordian Envelope's Merkle-like Tree can be mapped to a Merkle Tree through the hashing of all of its leafs, but this is done in a dynamic fashion: only as needed. This allows it to enjoy the advantages of a classic Merkle Tree, but with limited overhead: you only pay for you use, as you only generate hashes that are required.
 
-Hashes can be used to prove the contents of an Envelope and its
-sub-envelopes without necessarily revealing the contents. This becomes
-important for the last two major capabilities of Gordian Envelopes:
-elision and encryption.
+As for the advantages of a Merkle-like tree? The dynamically generated hashes ensure the consistency and verifiability of the underlying data even when it is elided or encrypted (or compressed), which are additional major features of Gordian Envelope.
 
 ## Eliding Envelopes
 
