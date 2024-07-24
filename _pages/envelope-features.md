@@ -28,13 +28,13 @@ _Gordian Envelope is built on the following structural fundamentals._
 
 _Hashed data elision is the core of Gordian Envelope._
 
-* **Elision of All Elements.** Gordian Envelopes innately support elision as a best practice, allowing removal of any part of its data, including subjects, predicates, and objects. This is done without losing data integrity while still supporting auditability and verifiability. The technique aligns with data minimization principles and is critical for protecting individual privacy and human rights and maintaining compliance with global data protection regulations.
+* **Provable Elision.** Gordian Envelopes innately support elision as a best practice, allowing removal of any part of its data, including subjects, predicates, and objects. This is done while maintaining provability because a hash of data that acts as a cryptographic commitment is created whenever elision occurs, supporting auditability and verifiability. The technique aligns with data minimization principles and is critical for protecting individual privacy and human rights and maintaining compliance with global data protection regulations.
 * **Redaction, Compression, and Encryption.** Elision can be used for a variety of purposes including redaction (removing information) and optionally compression (removing duplicate information) and encryption (enciphering information).
 * **Holder-initiated Redaction.** Elision can be performed by the holder of a Gordian Envelope, not just the issuer, providing users with the autonomy to manage their data exposure based on personal or business risk.
 * **Granular Holder Control.** Elision can not only be performed by any Holder, but also for any data, allowing each entity to elide data as is appropriate for the management of their personal (or business) risk.
 * **Progressive Trust.** The elision mechanics in Gordian Envelopes allow for [progressive trust](https://www.blockchaincommons.com/musings/musings-progressive-trust/), where increasing amounts of data are revealed over time. It can even be optionally combined with encryption to escrow data to later be revealed.
 * **Consistent Hashing.** Even when elided (or compressed or encrypted), hashes for those parts of the Gordian Envelope remain the same.
-* **Signing.** Embedded and detached signatures enhance data security and remain valid even when data is elided because the hashes in the Merkle Tree are signed, not the underlying data.
+* **Signing.** Embedded and detached signatures enhance data security and remain valid even when data is elided signatures occur across data hashes, not the underlying data.
 
 ## Privacy Support
 
