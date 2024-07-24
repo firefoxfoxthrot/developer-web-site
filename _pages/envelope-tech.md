@@ -286,7 +286,7 @@ not quite the same as a classic Merkle Tree:
 * Gordian Envelope's Merkle-like Tree instead is generated as needed.
    * Its leaves typically contain data.
    * Hashes are generated for leaves primarily when the data is elided (currently, elision can be due to encryption, compression, or purposeful redaction of information), creating a cryptographic commitment for the original data that has been removed or transformed.
-   * Hashes are also ephemerally calculated (but not stored) when a signature occurs, as signatures occur across root hashes, not across the underlying data.
+   * A hash of an Envelope's subject is also ephemerally calculated (but not stored) when a signature occurs, as signature occurs across the hash, not the underlying data.
    * Otherwise, hashes are generated when a Tree is deserialized and placed in memory.
    * During deserialization, inner nodes are also generated, with their hashes built appropriately from the hashes of the leaves (which may have been previously generated due to elision or generated now during deserialization).
 
