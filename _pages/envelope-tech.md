@@ -282,14 +282,15 @@ Gordian Envelope: its nested triples are stored as a Merkle-like Tree.
 We use the phrase "Merkle-like Tree" because the structure is
 not quite the same as a classic Merkle Tree:
 
-* A classic [Merkle Tree](https://en.wikipedia.org/wiki/Merkle_tree) hashes data blocks to form its leafs, then its inner nodes contain hashes of the sums of those leaf hashes.
+* A classic [Merkle Tree](https://en.wikipedia.org/wiki/Merkle_tree) hashes data blocks to form its leaves, then its inner nodes contain hashes of the sums of those leaf hashes.
 * Gordian Envelope's Merkle-like Tree instead is generated as needed.
-   * Its leafs typically contain data.
-   * Hashes are generated for leafs only when the data is elided (currently, elision can be due to encryption, compression, or purposeful redaction of information).
+   * Its leaves typically contain data.
+   * Hashes are generated for leaves primarily when the data is elided (currently, elision can be due to encryption, compression, or purposeful redaction of information), creating a cryptographic commitment for the original data that has been removed or transformed.
+   * Hashes are also transiently calculated (but not stored) when a signature occurs, as signatures occur across root hashes, not across the underlying data.
    * Otherwise, hashes are generated when a Tree is deserialized and placed in memory.
-   * During deserialization, inner nodes are also generated, with their hashes built appropriately from the hashes of the leafs (which may have been previously generated due to elision or generated now during deserialization).
+   * During deserialization, inner nodes are also generated, with their hashes built appropriately from the hashes of the leaves (which may have been previously generated due to elision or generated now during deserialization).
 
-In other words, Gordian Envelope's Merkle-like Tree can be mapped to a Merkle Tree through the hashing of all of its leafs, but this is done in a dynamic fashion: only as needed. This allows it to enjoy the advantages of a classic Merkle Tree, but with limited overhead: you only pay for you use, as you only generate hashes that are required.
+In other words, Gordian Envelope's Merkle-like Tree can be mapped to a Merkle Tree through the hashing of all of its leaves, but this is done in a dynamic fashion: only as needed. This allows it to enjoy the advantages of a classic Merkle Tree, but with limited overhead: you only pay for you use, as you only generate hashes that are required.
 
 As for the advantages of a Merkle-like tree? The dynamically generated hashes ensure the consistency and verifiability of the underlying data even when it is elided or encrypted (or compressed), which are additional major features of Gordian Envelope.
 
