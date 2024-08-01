@@ -14,4 +14,4 @@ sidebar:
   nav: mainside
 ---
 
-{% include stack-storage.md %}
+{% include stack-csr.md %}
