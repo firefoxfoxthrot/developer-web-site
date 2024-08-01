@@ -10,20 +10,23 @@ main:
   - title: "Sponsors"
     url: https://www.blockchaincommons.com/sponsors/
 mainside:
-  - title: Developers
-    children:
-    - title: "Home"
+  - title: Main Pages
+    - title: "Developer Home"
       url: /
-    - title: "Data Format"
-      url: /dataformat/
-    - title: "Sovereign & Social Recovery"
-      url: /seedrecovery/
-    - title: "UX Design"
-      url: /ux/
     - title: "Architecture"
       url: /architecture/
-    - title: "Libraries"
-      url: /libraries/
+  - title: Gordian Stack
+    children:
+    - title: "CSR Layer (Storage)"
+      url: /csr/overview/
+    - title: "Seed Layer (Secrets)"
+      url: /seed/overview/
+    - title: "Envelope Layer (Data)"
+      url: /envelope/overview/
+    - title: "UR Layer (Text Encoding)"
+      url: /ur/overview/
+    - title: "CBOR Layer (Binary Encoding)"
+      url: /cbor/overview/
 architecture:
   - title: Gordian Architecture
     children:
