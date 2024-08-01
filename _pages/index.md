@@ -35,9 +35,9 @@ email](mailto:team@blockchaincommons.com) or [file an
 Issue](https://github.com/BlockchainCommons/developer-web-site/issues)
 at the repo for this website.
 
-## The <font color="#221dff">Storage</font> Layer
+## The <font color="#221dff">CSR</font> Layer
 
-{% include stack-storage.md %}
+{% include stack-csr.md %}
 
 ## The <font color="#038e3e">Seed</font> Layer
 
