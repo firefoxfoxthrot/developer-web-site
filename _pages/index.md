@@ -21,7 +21,7 @@ The Gordian Stack is a layered set of specifications founded on the CBOR data fo
 explain the elements in the Stack, and their importance, and make it easy
 for you to adopt them.
 
-![bc-stack](https://hackmd.io/_uploads/ByXO-7kFC.png)
+![bc-stack](https://developer.blockchaincommons.com/assets/images/bc-stack.png)
 
 The heart of the Gordian Stack is the [<font color="#ffac1c">Gordian Envelope</font>](/envelope/), a simple data-storage mechanism that organizes content into semantic triples. You don't need to know about the underlying elements to use Envelopes, so as a developer you can jump straight in and be confident that everything under Envelope is correctly abstracted to maintain layer divisions.
 
