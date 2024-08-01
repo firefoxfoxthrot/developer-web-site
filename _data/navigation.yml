@@ -11,6 +11,7 @@ main:
     url: https://www.blockchaincommons.com/sponsors/
 mainside:
   - title: Main Pages
+    children:
     - title: "Developer Home"
       url: /
     - title: "Architecture"
