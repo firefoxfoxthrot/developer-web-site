@@ -9,7 +9,7 @@ title: The CSR Layer
 hide_description: false
 classes:
   - wide
-permalink: /storage/overview/
+permalink: /csr/overview/
 sidebar:
   nav: mainside
 ---
