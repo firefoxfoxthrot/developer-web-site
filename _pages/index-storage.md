@@ -5,7 +5,7 @@ header:
   overlay_filter: "0.25"
   overlay_image: /assets/images/qr-background.jpg
   og_image: /assets/images/bc-card.jpg
-title: Blockchain Commons Developer Pages: Storage
+title: Blockchain Commons Developer Pages&colon; Storage
 hide_description: false
 classes:
   - wide
