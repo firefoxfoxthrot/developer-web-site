@@ -9,7 +9,7 @@ title: The Storage Layer
 hide_description: false
 classes:
   - wide
-permalink: /storage/
+permalink: /storage/overview/
 sidebar:
   nav: mainside
 ---
