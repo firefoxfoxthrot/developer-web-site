@@ -11,7 +11,9 @@ classes:
   - wide
 permalink: /ur/sskr/
 sidebar:
-  nav: ur
+  nav:
+    - ur
+    - urlayer
 ---
 
 Uniform Resources (URs) allow for the encoding of a variety of
