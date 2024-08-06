@@ -11,7 +11,9 @@ classes:
   - wide
 permalink: /ur/
 sidebar:
-  nav: ur, urlayer
+  nav:
+    - ur
+    - urlayer
 ---
 
 ## Overview
