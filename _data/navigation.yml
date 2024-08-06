@@ -53,6 +53,7 @@ architecture:
       url: /architecture/patterns/auth/
 urlayer:
   - title: "UR Layer (Text Encodign)"
+    children:
     - title: "Animated QRs"
       url: /animated-qrs/
     - title: "ByteWords"
