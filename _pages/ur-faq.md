@@ -9,7 +9,9 @@ title: UR FAQ
 hide_description: true
 permalink: /ur/faq/
 sidebar:
-  nav: ur
+  nav:
+    - ur
+    - urlayer
 toc: true
 toc_label: UR FAQ  
 ---
