@@ -31,8 +31,6 @@ mainside:
 architecture:
   - title: Gordian Architecture
     children:
-    - title: "Home"
-      url: /
     - title: "Gordian Principles"
       url: /principles/
     - title: "Open Development"
@@ -51,6 +49,8 @@ architecture:
       url: /torgap/
     - title: "Auth Design Patterns"
       url: /architecture/patterns/auth/
+    - title: "Return to Main Page"
+      url: /
 urlayer:
   - title: "UR Layer (Text Encodign)"
     children:
