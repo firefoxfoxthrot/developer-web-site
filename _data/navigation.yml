@@ -94,8 +94,8 @@ envelope:
       url: /envelope/use-cases/
     - title: "Use Cases Listing"
       url: /envelope/use-cases/summary/
-    - title: "Return to Data Format"
-      url: /dataformat/
+    - title: "Return to Envelope Layer"
+      url: /envelope/overview/
 envelopereq:
   - title: "Request & Response"
     children:
@@ -141,8 +141,8 @@ ur:
       url: /ur/psbts/
     - title: "URs for SSKR"
       url: /ur/sskr/
-    - title: "Return to Data Format"
-      url: /dataformat/
+    - title: "Return to UR Layer"
+      url: /ur/overview/
 seedrecovery:
   - title: "Sovereign & Social Recovery"
     children:
@@ -167,8 +167,8 @@ ckm:
       url: /ckm/architecture/
     - title: "Use Cases"
       url: /ckm/use-cases
-    - title: "Return to Recovery"
-      url: /seedrecovery/
+    - title: "Return to Main Page"
+      url: /
 csr:
   - title: CSR
     children:
@@ -180,8 +180,8 @@ csr:
       url: /csr/architecture/
     - title: "Use Cases"
       url: /csr/use-cases
-    - title: "Return to Recovery"
-      url: /seedrecovery/
+    - title: "Return to CSR Layer"
+      url: /csr/overview/
 frost:
   - title: FROST
     children:
@@ -191,8 +191,8 @@ frost:
       url: /frost/meeting1/
     - title: "Developers Meeting I"
       url: /frost/developers1/
-    - title: "Return to Recovery"
-      url: /seedrecovery/
+    - title: "Return to Main Page"
+      url: /
 sskr:
   - title: SSKR
     children:
@@ -206,8 +206,8 @@ sskr:
       url: /sskr/vectors/
     - title: "Use Case"
       url: /sskr/use-cases/cold/
-    - title: "Return to Recovery"
-      url: /seedrecovery/
+    - title: "Return to Seed Layer"
+      url: /seed/overview/
 ux:
   - title: UX Design
     children:
@@ -234,8 +234,8 @@ lifehash:
       url: /lifehash/vectors/
     - title: "Use Cases"
       url: /lifehash/use-cases/
-    - title: "Return to UX Design"
-      url: /ux/
+    - title: "Return to Seed Layer"
+      url: /seed/overview/
     - title: "OIBs with LifeHash"
       url: /oib/
 oib:
@@ -247,7 +247,7 @@ oib:
       url: /oib/best-practices/
     - title: "Test Vectors"
       url: /oib/vectors/
-    - title: "Return to UX Design"
-      url: /ux/
+    - title: "Return to Seed Layer"
+      url: /seed/overview/
     - title: "LifeHash in OIB"
       url: /lifehash/
