@@ -51,6 +51,16 @@ architecture:
       url: /torgap/
     - title: "Auth Design Patterns"
       url: /architecture/patterns/auth/
+cborlayer:
+  - title: "CBOR Layer (Binary Encoding)"
+csrlayer:
+  - title: "CSR Layer (Storage)"
+envelopelayer:
+  - title: "Envelope Layer (Data)"
+seedlayer: 
+  - title: "Seed Layer (Secrets)"
+urlayer:
+  - title: "UR Layer (Text Encodign)"
 dataformat:
   - title: Data Formats
     children:
