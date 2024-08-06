@@ -11,7 +11,9 @@ classes:
   - wide
 permalink: /ur/implementations/
 sidebar:
-  nav: ur
+  nav:
+    - ur
+    - urlayer
 ---
 
 Uniform Resources (URs) have been Blockchain Commons' most successful
