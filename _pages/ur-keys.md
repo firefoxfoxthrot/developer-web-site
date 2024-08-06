@@ -11,7 +11,9 @@ classes:
   - wide
 permalink: /ur/keys/
 sidebar:
-  nav: ur
+  nav:
+    - ur
+    - urlayer
 ---
 
 Uniform Resources (URs) allow for the encoding of self-describing,
