@@ -11,7 +11,7 @@ classes:
   - wide
 permalink: /animated-qrs/
 sidebar:
-  nav: dataformat
+  nav: urlayer
 ---
 
 ## Overview
