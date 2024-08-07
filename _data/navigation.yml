@@ -191,7 +191,23 @@ oib:
     - title: "Test Vectors"
       url: /oib/vectors/
     - title: "Return to Seed Layer"
-      url: /seed/overview/ur:
+      url: /seed/overview/
+sskr:
+  - title: SSKR
+    children:
+    - title: "Intro to SSKR"
+      url: /sskr/
+    - title: "SSKR FAQ"
+      url: /sskr/faq/
+    - title: "SSKR Lexicon"
+      url: /sskr/lexicon/
+    - title: "Test Vectors"
+      url: /sskr/vectors/
+    - title: "Use Case"
+      url: /sskr/use-cases/cold/
+    - title: "Return to Seed Layer"
+      url: /seed/overview/
+ur:
   - title: Uniform Resources
     children:
     - title: "Intro to URs"
@@ -210,19 +226,4 @@ oib:
       url: /ur/sskr/
     - title: "Return to UR Layer"
       url: /ur/overview/
-sskr:
-  - title: SSKR
-    children:
-    - title: "Intro to SSKR"
-      url: /sskr/
-    - title: "SSKR FAQ"
-      url: /sskr/faq/
-    - title: "SSKR Lexicon"
-      url: /sskr/lexicon/
-    - title: "Test Vectors"
-      url: /sskr/vectors/
-    - title: "Use Case"
-      url: /sskr/use-cases/cold/
-    - title: "Return to Seed Layer"
-      url: /seed/overview/
 
