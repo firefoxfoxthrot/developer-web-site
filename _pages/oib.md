@@ -11,7 +11,9 @@ classes:
   - wide
 permalink: /oib/
 sidebar:
-  nav: oib
+  nav:
+    - oib
+    - seedlayer
 ---
 
 ## Overview
