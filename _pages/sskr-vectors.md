@@ -11,7 +11,9 @@ classes:
   - wide
 permalink: /sskr/vectors/
 sidebar:
-  nav: sskr
+  nav:
+    - sskr
+    - seedlayer
 ---
 
 The following examples demonstrate SSKR test vectors for Blockchain
