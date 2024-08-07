@@ -11,7 +11,9 @@ classes:
   - wide
 permalink: /lifehash/vectors/
 sidebar:
-  nav: lifehash
+  nav:
+    - lifehash
+    - seedlayer
 ---
 
 The following examples display [v2](/lifehash/versions/) LifeHashes
