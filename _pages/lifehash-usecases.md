@@ -11,7 +11,9 @@ classes:
   - wide
 permalink: /lifehash/use-cases/
 sidebar:
-  nav: lifehash
+  nav:
+    - lifehash
+    - seedlayer
 ---
 
 LifeHash provides a beautiful visual representation of any digital
