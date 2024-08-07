@@ -11,7 +11,9 @@ classes:
   - wide
 permalink: /sskr/lexicon/
 sidebar:
-  nav: sskr
+  nav:
+    - sskr
+    - seedlayer
 ---
 
 An [incomplete
