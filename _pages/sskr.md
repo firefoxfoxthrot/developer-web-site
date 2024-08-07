@@ -11,7 +11,9 @@ classes:
   - wide
 permalink: /sskr/
 sidebar:
-  nav: sskr
+  nav:
+    - sskr
+    - sskrlayer
 ---
 
 ## Overview
