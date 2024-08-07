@@ -11,7 +11,9 @@ classes:
   - wide
 permalink: /lifehash/best-practices/
 sidebar:
-  nav: lifehash
+  nav:
+    - lifehash
+    - seedlayer
 ---
 
 LifeHashes can improve the security of digital data in conjunection
