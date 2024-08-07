@@ -73,7 +73,30 @@ urlayer:
       url: /ur/
     - title: "Return to UR Layer"
       url: /ur/overview/
-envelope:
+ckm:
+  - title: CKM
+    children:
+    - title: "Intro to CKM"
+      url: /ckm/
+    - title: "Architectural Overview"
+      url: /ckm/architecture/
+    - title: "Use Cases"
+      url: /ckm/use-cases
+    - title: "Return to Main Page"
+      url: /
+csr:
+  - title: CSR
+    children:
+    - title: "Intro to CSR"
+      url: /csr/
+    - title: "CSR FAQ"
+      url: /csr/faq/
+    - title: "Architectural Overview"
+      url: /csr/architecture/
+    - title: "Use Cases"
+      url: /csr/use-cases
+    - title: "Return to CSR Layer"
+      url: /csr/overview/envelope:
   - title: Gordian Envelope
     children:
     - title: "Intro to Envelopes"
@@ -92,6 +115,13 @@ envelope:
       url: /envelope/use-cases/summary/
     - title: "Return to Envelope Layer"
       url: /envelope/overview/
+dcbor:
+  - title: dCBOR
+    children:
+    - title: "Intro to dCBOR"
+      url: /dCBOR/
+    - title: "Return to CBOR Layer"
+      url: /csr/cbor/envelope:
 envelopereq:
   - title: "Request & Response"
     children:
@@ -120,49 +150,6 @@ envelopeuse:
       url: https://github.com/BlockchainCommons/developer-web-site/blob/master/_pages/envelope-usecases-software.md
     - title: "Return to Envelope"
       url: /envelope/
-ur:
-  - title: Uniform Resources
-    children:
-    - title: "Intro to URs"
-      url: /ur/
-    - title: "UR FAQs"
-      url: /ur/faq/
-    - title: "UR Implementations"
-      url: /ur/implementations/
-    - title: "crypto-seed Vectors"
-      url: /ur/vectors/seeds
-    - title: "URs for Keys"
-      url: /ur/keys/
-    - title: "URs for PSBTs"
-      url: /ur/psbts/
-    - title: "URs for SSKR"
-      url: /ur/sskr/
-    - title: "Return to UR Layer"
-      url: /ur/overview/
-ckm:
-  - title: CKM
-    children:
-    - title: "Intro to CKM"
-      url: /ckm/
-    - title: "Architectural Overview"
-      url: /ckm/architecture/
-    - title: "Use Cases"
-      url: /ckm/use-cases
-    - title: "Return to Main Page"
-      url: /
-csr:
-  - title: CSR
-    children:
-    - title: "Intro to CSR"
-      url: /csr/
-    - title: "CSR FAQ"
-      url: /csr/faq/
-    - title: "Architectural Overview"
-      url: /csr/architecture/
-    - title: "Use Cases"
-      url: /csr/use-cases
-    - title: "Return to CSR Layer"
-      url: /csr/overview/
 frost:
   - title: FROST
     children:
@@ -174,21 +161,6 @@ frost:
       url: /frost/developers1/
     - title: "Return to Main Page"
       url: /
-sskr:
-  - title: SSKR
-    children:
-    - title: "Intro to SSKR"
-      url: /sskr/
-    - title: "SSKR FAQ"
-      url: /sskr/faq/
-    - title: "SSKR Lexicon"
-      url: /sskr/lexicon/
-    - title: "Test Vectors"
-      url: /sskr/vectors/
-    - title: "Use Case"
-      url: /sskr/use-cases/cold/
-    - title: "Return to Seed Layer"
-      url: /seed/overview/
 lifehash:
   - title: LifeHash
     children:
@@ -208,8 +180,6 @@ lifehash:
       url: /lifehash/use-cases/
     - title: "Return to Seed Layer"
       url: /seed/overview/
-    - title: "OIBs with LifeHash"
-      url: /oib/
 oib:
   - title: OIB
     children:
@@ -220,6 +190,38 @@ oib:
     - title: "Test Vectors"
       url: /oib/vectors/
     - title: "Return to Seed Layer"
+      url: /seed/overview/ur:
+  - title: Uniform Resources
+    children:
+    - title: "Intro to URs"
+      url: /ur/
+    - title: "UR FAQs"
+      url: /ur/faq/
+    - title: "UR Implementations"
+      url: /ur/implementations/
+    - title: "crypto-seed Vectors"
+      url: /ur/vectors/seeds
+    - title: "URs for Keys"
+      url: /ur/keys/
+    - title: "URs for PSBTs"
+      url: /ur/psbts/
+    - title: "URs for SSKR"
+      url: /ur/sskr/
+    - title: "Return to UR Layer"
+      url: /ur/overview/
+sskr:
+  - title: SSKR
+    children:
+    - title: "Intro to SSKR"
+      url: /sskr/
+    - title: "SSKR FAQ"
+      url: /sskr/faq/
+    - title: "SSKR Lexicon"
+      url: /sskr/lexicon/
+    - title: "Test Vectors"
+      url: /sskr/vectors/
+    - title: "Use Case"
+      url: /sskr/use-cases/cold/
+    - title: "Return to Seed Layer"
       url: /seed/overview/
-    - title: "LifeHash in OIB"
-      url: /lifehash/
+
