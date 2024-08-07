@@ -11,7 +11,9 @@ classes:
   - wide
 permalink: /sskr/use-cases/cold/
 sidebar:
-  nav: sskr
+  nav:
+    - sskr
+    - seedlayer
 ---
 
 [Smart Custody](https://www.smartcustody.com/) suggests maintaining
