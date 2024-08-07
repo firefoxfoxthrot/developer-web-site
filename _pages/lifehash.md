@@ -11,7 +11,9 @@ classes:
   - wide
 permalink: /lifehash/
 sidebar:
-  nav: lifehash
+  nav:
+    - lifehash
+    - seedlayer
 ---
 
 ## Overview
