@@ -9,7 +9,9 @@ title: "Lifehash FAQ"
 hide_description: true
 permalink: /lifehash/faq/
 sidebar:
-  nav: lifehash
+  nav:
+    - lifehash
+    - seedlayer
 toc: true
 toc_label: Lifehash FAQ
 ---
