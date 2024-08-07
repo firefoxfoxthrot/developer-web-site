@@ -101,9 +101,9 @@ dcbor:
   - title: dCBOR
     children:
     - title: "Intro to dCBOR"
-      url: /dCBOR/
+      url: /dcbor/
     - title: "Return to CBOR Layer"
-      url: /csr/cbor/
+      url: /cbor/overview/
 envelope:
   - title: Gordian Envelope
     children:
