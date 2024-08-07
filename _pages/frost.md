@@ -5,7 +5,7 @@ header:
   overlay_filter: "0.25"
   overlay_image: /assets/images/dev-seed-background.jpg
   og_image: /assets/images/bc-card.jpg
-title: "FROST: Flexible Round-Optimized Schnorr Threshold Signatures"
+title: "Future Development: Flexible Round-Optimized Schnorr Threshold Signatures (FROST)"
 hide_description: true
 classes:
   - wide
