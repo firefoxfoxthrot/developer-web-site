@@ -13,7 +13,7 @@ permalink: /sskr/
 sidebar:
   nav:
     - sskr
-    - sskrlayer
+    - seedlayer
 ---
 
 ## Overview
