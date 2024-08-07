@@ -9,7 +9,9 @@ title: "SSKR FAQ"
 hide_description: true
 permalink: /sskr/faq/
 sidebar:
-  nav: sskr
+  nav:
+    - sskr
+    - seedlayer
 toc: true
 toc_label: SSKR FAQ
 ---
