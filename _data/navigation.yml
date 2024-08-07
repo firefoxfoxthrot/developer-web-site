@@ -60,6 +60,8 @@ seedlayer:
       url: /oib/
     - title: "SSKR"
       url: /sskr/
+    - title: "Return to Seed Layer"
+      url: /seed/overview/
 urlayer:
   - title: "UR Layer (Text Encoding)"
     children:
@@ -69,23 +71,8 @@ urlayer:
       url: /bytewords/
     - title: "Uniform Resources"
       url: /ur/
-dataformat:
-  - title: Data Formats
-    children:
-    - title: "Home"
-      url: /
-    - title: "Animated QRs"
-      url: /animated-qrs/
-    - title: "ByteWords"
-      url: /bytewords/
-    - title: "dCBOR"
-      url: /dcbor/
-    - title: "Envelope"
-      url: /envelope/
-    - title: "Quick Connect"
-      url: /quickconnect/
-    - title: "Uniform Resources"
-      url: /ur/
+    - title: "Return to UR Layer"
+      url: /ur/overview/
 envelope:
   - title: Gordian Envelope
     children:
@@ -152,21 +139,6 @@ ur:
       url: /ur/sskr/
     - title: "Return to UR Layer"
       url: /ur/overview/
-seedrecovery:
-  - title: "Sovereign & Social Recovery"
-    children:
-    - title: "Home"
-      url: /
-    - title: "SSKR"
-      url: /sskr/
-    - title: "Collaborative Seed Recovery"
-      url: /csr/
-    - title: "Collaborative Key Management"
-      url: /ckm/
-    - title: "FROST"
-      url: /frost/
-    - title: "Smart Custody"
-      url: https://www.smartcustody.com
 ckm:
   - title: CKM
     children:
@@ -217,15 +189,6 @@ sskr:
       url: /sskr/use-cases/cold/
     - title: "Return to Seed Layer"
       url: /seed/overview/
-ux:
-  - title: UX Design
-    children:
-    - title: "Home"
-      url: /
-    - title: "LifeHash"
-      url: /lifehash/
-    - title: "Object Identity Block"
-      url: /oib/
 lifehash:
   - title: LifeHash
     children:
