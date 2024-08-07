@@ -96,7 +96,15 @@ csr:
     - title: "Use Cases"
       url: /csr/use-cases
     - title: "Return to CSR Layer"
-      url: /csr/overview/envelope:
+      url: /csr/overview/
+dcbor:
+  - title: dCBOR
+    children:
+    - title: "Intro to dCBOR"
+      url: /dCBOR/
+    - title: "Return to CBOR Layer"
+      url: /csr/cbor/
+envelope:
   - title: Gordian Envelope
     children:
     - title: "Intro to Envelopes"
@@ -115,13 +123,6 @@ csr:
       url: /envelope/use-cases/summary/
     - title: "Return to Envelope Layer"
       url: /envelope/overview/
-dcbor:
-  - title: dCBOR
-    children:
-    - title: "Intro to dCBOR"
-      url: /dCBOR/
-    - title: "Return to CBOR Layer"
-      url: /csr/cbor/envelope:
 envelopereq:
   - title: "Request & Response"
     children:
