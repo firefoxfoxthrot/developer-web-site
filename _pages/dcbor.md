@@ -11,7 +11,7 @@ classes:
   - wide
 permalink: /dcbor/
 sidebar:
-  nav: dataformat
+  nav: dcbor
 ---
 
 ## Overview
