@@ -35,25 +35,37 @@ email](mailto:team@blockchaincommons.com) or [file an
 Issue](https://github.com/BlockchainCommons/developer-web-site/issues)
 at the repo for this website.
 
-## The <font color="#221dff">CSR</font> Layer
+## Core: <font color="#221dff">CSR</font> Layer
 
 {% include stack-csr.md %}
 
-## The <font color="#038e3e">Seed</font> Layer
-
-{% include stack-seed.md %}
-
-## The <font color="#ffac1c">Envelope</font> Layer
+## Core: <font color="#ffac1c">Envelope</font> Layer
 
 {% include stack-envelope.md %}
-   
-## The <font color="#c96055">UR</font> Layer
+
+## Core: <font color="#8f1402">CBOR</font> Layer
+
+{% include stack-cbor.md %}
+
+## UX: <font color="#2df775">OIB</font> Layer
+
+{% include stack-oib.md %}
+
+## UX: <font color="#c96055">UR</font> Layer
 
 {% include stack-ur.md %}
 
-## The <font color="#8f1402">CBOR</font> Layer
+## Crypto: <font color="#888888">CKM</font> Layer
 
-{% include stack-cbor.md %}
+{% include stack-ckm.md %}
+
+## Crypto: <font color="#038e3e">Sharding</font> Layer
+
+{% include stack-sharding.md %}
+
+## Crypto: <font color="#038e3e">Seed</font> Layer
+
+{% include stack-seed.md %}
 
 ## Architectural Overview
 
@@ -62,7 +74,6 @@ _The Gordian Stack is built atop a carefully considered architecture that works 
 * **Architecture.** The Gordian architecture is built on specific [principles](/principles/), using specific [design patterns](/architecture/patterns/auth/), and with a general philosophy of functional partition.
    * See [our architecture page](/architecture/)
    * See [Musings of a Trust Architect](https://www.blockchaincommons.com/musings/)
-
 
 ## Other <font color="#888888">Future</font> Development
 
