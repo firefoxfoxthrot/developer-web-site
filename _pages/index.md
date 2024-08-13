@@ -79,12 +79,6 @@ _The Gordian Stack is built atop a carefully considered architecture that works 
 
 _A few other technologies are currently in early stages of development or integration._
 
-* **FROST.** FROST is a Schnorr-based signature system that offers more robust multisigs. It also has the advantage of optionally integrating Distributed Key Generation (DKG), where portions of a key are held by different devices.
-   * See our [FROST page](/frost/)
- 
-* **Collaborative Key Management (CKM).** A next-generation key-management solution, CKM uses Secure Multi Party Computation (SMPC) to keep a key separated, rather than having it all in one place. This offers an alternative to a system such as CSR that is potentially more secure. Currently, ZF FROST is the only production-ready implemention of CKM, so it's likely CKM and FROST will go hand in hand.
-   * See our [CKM page](/ckm/) 
-
 * **The Discovery Layer.** A discovery layer is planned that will allow end-users to find and identify Gordian Depositories or other online services.
   
 ## For More Info
