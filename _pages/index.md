@@ -35,35 +35,47 @@ email](mailto:team@blockchaincommons.com) or [file an
 Issue](https://github.com/BlockchainCommons/developer-web-site/issues)
 at the repo for this website.
 
-## Core: <font color="#221dff">CSR</font> Layer
+## The Core Stack
+
+_Blockchain Commons' Core Stack includes its two major user-facing innovations, Collaborative Seed Recovery (CSR) and Envelope, plus the binary encoding scheme that enables them both (dCBOR)._
+
+### Core: <font color="#221dff">CSR</font> Layer
 
 {% include stack-csr.md %}
 
-## Core: <font color="#ffac1c">Envelope</font> Layer
+### Core: <font color="#ffac1c">Envelope</font> Layer
 
 {% include stack-envelope.md %}
 
-## Core: <font color="#8f1402">CBOR</font> Layer
+### Core: <font color="#8f1402">CBOR</font> Layer
 
 {% include stack-cbor.md %}
 
-## UX: <font color="#2df775">OIB</font> Layer
+## The UX Stack
+
+_The UX Stack includes graphical and text encodings that further empower the Core Stack._
+
+### UX: <font color="#2df775">OIB</font> Layer
 
 {% include stack-oib.md %}
 
-## UX: <font color="#c96055">UR</font> Layer
+### UX: <font color="#c96055">UR</font> Layer
 
 {% include stack-ur.md %}
 
-## Crypto: <font color="#888888">CKM</font> Layer
+## The Crypto Stack
+
+_The Crypto Stack features the cryptographic elements in Blockchain Commons' stack, including seeds, sharding, and DKG systems._
+
+### Crypto: <font color="#888888">CKM</font> Layer
 
 {% include stack-ckm.md %}
 
-## Crypto: <font color="#038e3e">Sharding</font> Layer
+### Crypto: <font color="#038e3e">Sharding</font> Layer
 
 {% include stack-sharding.md %}
 
-## Crypto: <font color="#038e3e">Seed</font> Layer
+### Crypto: <font color="#038e3e">Seed</font> Layer
 
 {% include stack-seed.md %}
 
