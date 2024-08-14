@@ -13,7 +13,6 @@ permalink: /ur/
 sidebar:
   nav:
     - ur
-    - urlayer
 ---
 
 ## Overview
