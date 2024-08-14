@@ -12,6 +12,8 @@ classes:
 permalink: /csr/
 sidebar:
   nav: csr
+redirect_from:
+  - /csr/overview/
 ---
 
 ## Overview
