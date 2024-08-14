@@ -14,7 +14,7 @@ sidebar:
   nav: stack-ux
 ---
 
-<a href="/ux-stack/"><img src="https://developer.blockchaincommons.com/assets/images/bc-stack-ux-0.png" style="margin-left: 20px; float: right" width="25%"></a><i>The UX Stack includes graphical and text encodings that further empower the Core Stack.</i>
+<a href="/"><img src="https://developer.blockchaincommons.com/assets/images/bc-stack-ux-0.png" style="margin-left: 20px; float: right" width="25%"></a><i>The UX Stack includes graphical and text encodings that further empower the Core Stack.</i>
 
 ## The <font color="#2df775">OIB</font> Layer
 
