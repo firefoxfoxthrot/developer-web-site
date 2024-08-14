@@ -16,6 +16,8 @@ sidebar:
 
 ## Overview
 
+<a href="/ux-stack"><img src="/assets/images/bc-stack-ux-animated-qrs.png" width="25%" style="float: right; margin-left: 20px;"></a>
+
 **Animated QRs** are an interoperable specification for transmitting
 data that allows for the transmission of relatively large amounts of
 data (compared to standard QRs).
