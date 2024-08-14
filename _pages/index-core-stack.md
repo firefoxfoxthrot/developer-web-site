@@ -11,7 +11,9 @@ classes:
   - wide
 permalink: /core-stack/
 sidebar:
-  nav: stack-core
+  nav:
+    - mainstacks
+    - stack-core
 ---
 
 _Blockchain Commons' Core Stack includes its two major user-facing innovations, Collaborative Seed Recovery (CSR) and Envelope, plus the binary encoding scheme that enables them both (dCBOR)._
