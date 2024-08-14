@@ -16,6 +16,7 @@ mainside:
       url: /
     - title: "Architecture"
       url: /architecture/
+mainstacks:
   - title: The Stacks
     children:
     - title: "Core Stack"
