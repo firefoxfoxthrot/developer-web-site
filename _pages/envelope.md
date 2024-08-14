@@ -12,6 +12,8 @@ classes:
 permalink: /envelope/
 sidebar:
   nav: envelope
+redirect_from:
+  - /envelope/overview/
 ---
 
 ## Overview
