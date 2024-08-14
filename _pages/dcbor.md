@@ -12,6 +12,8 @@ classes:
 permalink: /dcbor/
 sidebar:
   nav: dcbor
+redirect_from:
+  - /cbor/overview/
 ---
 
 ## Overview
