@@ -47,6 +47,15 @@ architecture:
       url: /architecture/patterns/auth/
     - title: "Return to Main Page"
       url: /
+stack-core:
+  - title: The Core Stack
+    children:
+    - title: "Collaborative Seed Recovery (CSR)"
+      url: /csr/
+    - title: "dCBOR"
+      url: /dcbor/
+    - title: "Envelope"
+      url: /envelope/
 stack-ux:
   - title: The UX Stack
     children:
