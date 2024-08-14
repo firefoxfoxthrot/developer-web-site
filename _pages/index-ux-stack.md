@@ -15,7 +15,7 @@ sidebar:
     - mainstacks
     - stack-ux
 redirect_from:
-  - ux
+  - /ux/
 ---
 
 <i>The UX Stack includes graphical and text encodings that further empower the Core Stack.</i>
