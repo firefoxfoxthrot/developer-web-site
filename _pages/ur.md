@@ -13,6 +13,8 @@ permalink: /ur/
 sidebar:
   nav:
     - ur
+redirect_from:
+  - /ur/overview/
 ---
 
 ## Overview
