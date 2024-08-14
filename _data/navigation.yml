@@ -189,8 +189,8 @@ lifehash:
       url: /lifehash/vectors/
     - title: "Use Cases"
       url: /lifehash/use-cases/
-    - title: "Return to Seed Layer"
-      url: /seed/overview/
+    - title: "Return to UX Stack"
+      url: https://developer.blockchaincommons.com/#the-ux-stack
 oib:
   - title: OIB
     children:
