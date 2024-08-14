@@ -13,7 +13,6 @@ permalink: /lifehash/versions/
 sidebar:
   nav:
     - lifehash
-    - seedlayer
 ---
 
 LifeHashes can be displayed in one of five ways (one of which is deprecated):
