@@ -101,8 +101,8 @@ ckm:
       url: /ckm/architecture/
     - title: "Use Cases"
       url: /ckm/use-cases
-    - title: "Return to Main Page"
-      url: /
+    - title: "Return to Crypto Stack"
+      url: /crypto-stack/
 csr:
   - title: CSR
     children:
@@ -179,8 +179,8 @@ frost:
       url: /frost/meeting1/
     - title: "Developers Meeting I"
       url: /frost/developers1/
-    - title: "Return to Main Page"
-      url: /
+    - title: "Return to Crypto Stack"
+      url: /crypto-stack/
 lifehash:
   - title: LifeHash
     children:
@@ -224,8 +224,8 @@ sskr:
       url: /sskr/vectors/
     - title: "Use Case"
       url: /sskr/use-cases/cold/
-    - title: "Return to Seed Layer"
-      url: /seed/overview/
+    - title: "Return to Crypto Stack"
+      url: /crypto-stack/
 ur:
   - title: Uniform Resources
     children:
