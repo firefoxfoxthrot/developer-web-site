@@ -14,6 +14,7 @@ sidebar:
   nav: csr
 redirect_from:
   - /csr/overview/
+  - /seedrecovery/
 ---
 
 ## Overview
