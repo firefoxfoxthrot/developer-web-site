@@ -18,12 +18,14 @@ sidebar:
 
 ## Overview
 
-_SSKR is Sharded Secret Key Reconstruction. It's a way that you can
+<a href="/crypto-stack/"><img src="https://developer.blockchaincommons.com/assets/images/bc-stack-crypto-sskr.png" style="margin-left: 20px; float: right" width="25%"></a>
+
+SSKR is Sharded Secret Key Reconstruction. It's a way that you can
 divide ("shard") the master seed underlying a Bitcoin HD wallet into
 "shares", which a user can then distribute to friends, family, or
 fiduciaries. If the user ever loses their seed, they can then
 "reconstruct" it by collecting sufficient of the shares (the
-"threshold")._
+"threshold").
 
 ## Why is SSKR Important?
 
