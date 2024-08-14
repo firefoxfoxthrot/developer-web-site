@@ -11,7 +11,7 @@ classes:
   - wide
 permalink: /crypto-stack/
 sidebar:
-  nav: stack-ux
+  nav: stack-crypto
 ---
 
 _The Crypto Stack features the cryptographic elements in Blockchain Commons' stack, including seeds, sharding, and DKG systems._
