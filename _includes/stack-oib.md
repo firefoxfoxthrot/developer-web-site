@@ -1,4 +1,4 @@
-_It's important to be able to identify a seed, no matter how it's stored or transmitted._
+<i>It's important to be able to identify a seed, no matter how it's stored or transmitted.</i><img src="https://developer.blockchaincommons.com/assets/images/bc-stack-ux-1.png" style="margin-left: 20px; float: right" width="25%">
 
 * **Object Identity Block (OIB).** The OIB suggests best practices for organizing and displaying data that can help users  toidentify seeds. An OIB includes an icon, a name, abbreviated digest, and Lifehashes.
    * See our [OIB page](/oib/)
