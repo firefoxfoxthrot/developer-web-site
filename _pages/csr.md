@@ -16,26 +16,28 @@ sidebar:
 
 ## Overview
 
-_CSR allows for the recovery of seeds and other secrets by dividing
+<a href="/core-stack/"><img src="https://developer.blockchaincommons.com/assets/images/bc-stack-core-csr.png" style="float: right; margin-left: 20px;" width="25%"></a>
+
+CSR allows for the recovery of seeds and other secrets by dividing
 responsibility for recovery up between multiple devices, some (but not
 all) of which will be necessary for recovery. Its baseline recovery
 mechanism uses self-sovereign recovery (controlled entirely by the
 user), while more advanced scenarios allow for social key recovery
 (supported by friends or family). Backup is meant to be largely
 automated, especially in the baseline scenario, while recovery may
-require some user intervention._
+require some user intervention.
 
-_One of the advantages of CSR over traditional social key recovery is
+One of the advantages of CSR over traditional social key recovery is
 that you don't have to choose friends or family that you trust. Though
 you can do so in advanced scenarios, you can also entrust fragments of
 keys to companies running share servers. You don't have to worry about
 them stealing keys, because you're only giving them fragments
 (shares), but you can trust that they'll likely still be around when
-you need to reconstruct your key._
+you need to reconstruct your key.
 
-_CSR is built using [SSKR](/sskr/) to lock [Envelopes](/envelope/) of
+CSR is built using [SSKR](/sskr/) to lock [Envelopes](/envelope/) of
 data and to allow recovery using a variety of Authentication
-methods._
+methods.
 
 ## Why is CSR Important?
 
