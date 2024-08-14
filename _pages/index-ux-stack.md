@@ -11,7 +11,9 @@ classes:
   - wide
 permalink: /ux-stack/
 sidebar:
-  nav: stack-ux
+  nav:
+    - mainstacks
+    - stack-ux
 ---
 
 <i>The UX Stack includes graphical and text encodings that further empower the Core Stack.</i>
