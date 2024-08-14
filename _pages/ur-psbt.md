@@ -13,7 +13,6 @@ permalink: /ur/psbts/
 sidebar:
   nav:
     - ur
-    - urlayer
 ---
 
 Uniform Resources (URs) allow for the encoding of a variety of
