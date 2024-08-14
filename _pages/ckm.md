@@ -16,15 +16,17 @@ sidebar:
 
 ## Overview
 
-_Collaborative Key Management (CKM) is a Blockchain Commons
+<a href="/crypto-stack/"><img src="https://developer.blockchaincommons.com/assets/images/bc-stack-crypto-ckm.png" style="margin-left: 20px; float: right" width="25%"></a>
+
+Collaborative Key Management (CKM) is a Blockchain Commons
 architecture for generating, storing, and using keys in a
 collaborative way, where several different devices or entities come
 together and use their individual secrets to generate and regenerate
 keys solely for the brief instant that they're needed. Keys do not exist except when they're being used! Our roadmap
 target for deployment of solutions leveraging this CKM architecture is
-2024+._
+2024+.
 
-_CKM expands upon [Collaborative Seed Recovery (CSR)](/csr/), our
+CKM expands upon [Collaborative Seed Recovery (CSR)](/csr/), our
 existing architecture (begun in 2019 with [SSKR](/sskr/), then
 expanded to the wider CSR architecture in 2022), which supports the
 resilience and recovery of seeds (not keys) using well-reviewed
@@ -33,7 +35,7 @@ uses similar fragmenting of keys during their usage!
 CKM is still a future project, but these current
 pages are intended to create a touchstone for the current CSR work, so
 that it's appropriately future-proofed against current CKM
-development._
+development.
 
 ## Why Is CKM Important?
 
