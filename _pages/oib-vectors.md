@@ -13,7 +13,6 @@ permalink: /oib/vectors//
 sidebar:
   nav:
     - oib
-    - seedlayer
 ---
 
 The following OIBs drawn from [Gordian
