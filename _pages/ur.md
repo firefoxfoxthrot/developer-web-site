@@ -17,6 +17,8 @@ sidebar:
 
 ## Overview
 
+<a href="/ux-stack"><img src="/assets/images/bc-stack-ux-urs.png" width="25%" style="float: right; margin-left: 20px;"></a>
+
 The [Uniform
 Resources](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2020-005-ur.md)
 specification is a method for encoding structured CBOR binary data in
