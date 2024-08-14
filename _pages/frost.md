@@ -16,11 +16,13 @@ sidebar:
 
 ## Overview
 
-_FROST (Flexible Round-Optimized Schnorr Threshold Signatures) is a threshold signature scheme built on Schnorr signatures that allows for
+<a href="/crypto-stack/"><img src="https://developer.blockchaincommons.com/assets/images/bc-stack-crypto-frost.png" style="margin-left: 20px; float: right" width="25%"></a>
+
+FROST (Flexible Round-Optimized Schnorr Threshold Signatures) is a threshold signature scheme built on Schnorr signatures that allows for
 "T of N" signers, each of whom hold a share of a private key, to produce a valid signature for that private key. Because of its
 [foundation in Schnorr](https://www.blockchaincommons.com/musings/Schnorr-Intro/), it has several interesting characteristics, such as signature aggregation,
 where a set of signatures look exactly the same as a single signature. Beyond that, FROST improves on the fundamentals
-of Schnorr through improved network efficiency and protection against forgery attacks._
+of Schnorr through improved network efficiency and protection against forgery attacks.
 
 ## Upcoming Events
 
