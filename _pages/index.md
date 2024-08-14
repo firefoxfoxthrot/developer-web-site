@@ -37,7 +37,7 @@ at the repo for this website.
 
 ## The Core Stack
 
-<img src="https://developer.blockchaincommons.com/assets/images/bc-stack-core-0.png" style="float: right">
+<img src="https://developer.blockchaincommons.com/assets/images/bc-stack-core-0.png" style="float: right" width="20%">
 
 _Blockchain Commons' Core Stack includes its two major user-facing innovations, Collaborative Seed Recovery (CSR) and Envelope, plus the binary encoding scheme that enables them both (dCBOR)._
 
@@ -55,7 +55,7 @@ _Blockchain Commons' Core Stack includes its two major user-facing innovations, 
 
 ## The UX Stack
 
-<img src="https://developer.blockchaincommons.com/assets/images/bc-stack-ux-0.png" style="float: right">
+<img src="https://developer.blockchaincommons.com/assets/images/bc-stack-ux-0.png" style="float: right" width="20%">
 
 _The UX Stack includes graphical and text encodings that further empower the Core Stack._
 
@@ -69,7 +69,7 @@ _The UX Stack includes graphical and text encodings that further empower the Cor
 
 ## The Crypto Stack
 
-<img src="https://developer.blockchaincommons.com/assets/images/bc-stack-crypto-0.png" style="float: right">
+<img src="https://developer.blockchaincommons.com/assets/images/bc-stack-crypto-0.png" style="float: right" width="20%">
 
 _The Crypto Stack features the cryptographic elements in Blockchain Commons' stack, including seeds, sharding, and DKG systems._
 
