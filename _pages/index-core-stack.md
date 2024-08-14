@@ -22,7 +22,7 @@ _Blockchain Commons' Core Stack includes its two major user-facing innovations, 
 
 {% include stack-csr.md %}
 
-## The<font color="#ffac1c">Envelope</font> Layer
+## The <font color="#ffac1c">Envelope</font> Layer
 
 {% include stack-envelope.md %}
 
