@@ -14,6 +14,8 @@ sidebar:
   nav:
     - mainstacks
     - stack-crypto
+redirect_from:
+  - /seed/overview/
 ---
 
 _The Crypto Stack features the cryptographic elements in Blockchain Commons' stack, including seeds, sharding, and DKG systems._
