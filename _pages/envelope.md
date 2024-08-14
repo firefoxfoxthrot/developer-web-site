@@ -16,10 +16,8 @@ sidebar:
 
 ## Overview
 
-_**Latest News:** Added [Executive Summary](/envelope/summary/) and [Feature List](/envelope/features/) pages (4/24/24).  Released [IETF Envelope I-D v7](https://datatracker.ietf.org/doc/draft-mcnally-envelope/) (3/31/24). Added [Multisig Custody use case for Request & Response](https://github.com/BlockchainCommons/SmartCustody/blob/master/Docs/Scenario-Multisig-RR.md) (2/28/24). Published [Envelope Request & Response Implementation Guide](https://github.com/BlockchainCommons/Research/blob/master/papers/bcr-2024-004-request.md) (2/20/24)._
+_**Latest News:** Released [Undestanding Envelope](https://www.youtube.com/watch?v=-vcLCFKQvik), [Understanding Envelope Extensions](https://www.youtube.com/watch?v=uFxStP3ATkw), and [Understanding GSTP](https://www.youtube.com/watch?v=QnH14LkJOnI) videos (8/13/24). Added [Executive Summary](/envelope/summary/) and [Feature List](/envelope/features/) pages (4/24/24)._
 {: .notice--info}
-
-<a href="https://www.youtube.com/watch?v=OcnpYqHn8NQ"><img src="https://img.youtube.com/vi/OcnpYqHn8NQ/mqdefault.jpg" style="float: right; border: 2px solid blue"></a>
 
 <a href="/core-stack/"><img src="https://developer.blockchaincommons.com/assets/images/bc-stack-core-envelope.png" style="float: right; margin-left: 20px;" width="25%"></a>
 
@@ -105,15 +103,21 @@ structure.
 <table width="100%">
   <tr>
     <td width="640px">
-      <b>Intro to Envelopes:</b>
+      <b>Understanding Envelopes I:</b>
 
-{% include video id="OcnpYqHn8NQ" provider="youtube" %}
+{% include video id="-vcLCFKQvik" provider="youtube" %}
 
     </td>
     <td width="640px">
-      <b>MVA & Ciphers:</b>
+      <b>Understanding Envelopes II:</b>
 
-{% include video id="S0deyIHXukk" provider="youtube" %}
+{% include video id="uFxStP3ATkw" provider="youtube" %}
+
+    </td>    
+    <td width="640px">
+      <b>Understanding GSTP:</b>
+
+{% include video id="QnH14LkJOnI" provider="youtube" %}
 
     </td>    
   </tr>
