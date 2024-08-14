@@ -67,7 +67,8 @@ bytewords:
     - title: "Intro to Bytewords"
       url: /bytewords/
     - title: "Return to UX Stack"
-      url: https://developer.blockchaincommons.com/#the-ux-stackckm:
+      url: https://developer.blockchaincommons.com/#the-ux-stack
+ckm:
   - title: CKM
     children:
     - title: "Intro to CKM"
