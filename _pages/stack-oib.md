@@ -14,4 +14,6 @@ sidebar:
   nav: mainside
 ---
 
+<img src="https://developer.blockchaincommons.com/assets/images/bc-stack-ux-1.png" style="margin-left: 20px; float: right" width="25%">
+
 {% include stack-oib.md %}
