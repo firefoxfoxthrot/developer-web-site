@@ -28,7 +28,7 @@ mainside:
     children:
     - title: "OIB Layer (Data Description)"
       url: /oib/overview/
-    - title: "UR Layer (Text Encoding)"
+    - title: "UR Layer (Text/QR Encoding)"
       url: /ur/overview/
   - title: Crypto Stack
     children:
