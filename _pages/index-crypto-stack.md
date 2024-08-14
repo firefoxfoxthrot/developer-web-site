@@ -14,18 +14,19 @@ sidebar:
   nav: stack-ux
 ---
 
-<a href="/crypto-stack/"><img src="https://developer.blockchaincommons.com/assets/images/bc-stack-crypto-0.png" style="float: right" width="20%"></a>
-
 _The Crypto Stack features the cryptographic elements in Blockchain Commons' stack, including seeds, sharding, and DKG systems._
 
-### Crypto: <font color="#888888">CKM</font> Layer
+## The <font color="#888888">CKM</font> Layer
+
+<a href="/crypto-stack/"><img src="https://developer.blockchaincommons.com/assets/images/crypto.png" style="margin-left: 20px; float: right" width="25%"></a>{% include stack-oib.md %}
+
 
 {% include stack-ckm.md %}
 
-### Crypto: <font color="#038e3e">Sharding</font> Layer
+## The <font color="#038e3e">Sharding</font> Layer
 
 {% include stack-sharding.md %}
 
-### Crypto: <font color="#038e3e">Seed</font> Layer
+## The <font color="#038e3e">Seed</font> Layer
 
 {% include stack-seed.md %}
