@@ -13,7 +13,6 @@ permalink: /ur/implementations/
 sidebar:
   nav:
     - ur
-    - urlayer
 ---
 
 Uniform Resources (URs) have been Blockchain Commons' most successful
