@@ -13,7 +13,6 @@ permalink: /oib/best-practices/
 sidebar:
   nav:
     - oib
-    - seedlayer
 ---
 
 _Also see the [LifeHash Best Practices](/lifehash/best-practices/)._
