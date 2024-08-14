@@ -60,6 +60,13 @@ stack-ux:
       url: /oib/
     - title: "Uniform Resources (URs)"
       url: /ur/
+animated-qrs:
+  - title: "Animated QRs"
+    children:
+    - title: "Intro to Animated QRs"
+      url: /animated-qrs/
+    - title: "Return to UX Stack"
+      url: /ux-stack/
 bytewords:
   - title: Bytewords
     children:
