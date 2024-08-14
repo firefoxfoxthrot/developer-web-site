@@ -13,6 +13,8 @@ permalink: /oib/
 sidebar:
   nav:
     - oib
+redirect_from:
+  - /oib/overview/
 ---
 
 ## Overview
