@@ -13,7 +13,6 @@ permalink: /ur/keys/
 sidebar:
   nav:
     - ur
-    - urlayer
 ---
 
 Uniform Resources (URs) allow for the encoding of self-describing,
