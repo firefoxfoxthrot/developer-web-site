@@ -14,6 +14,9 @@ sidebar:
   nav:
     - mainside
     - mainstacks
+    - stack-core
+    - stack-crypto
+    - stack-ux
 redirect_from:
     - /dataformat/
     - /seedrecovery/
