@@ -13,7 +13,6 @@ permalink: /oib/
 sidebar:
   nav:
     - oib
-    - seedlayer
 ---
 
 ## Overview
