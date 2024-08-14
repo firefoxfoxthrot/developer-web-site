@@ -18,7 +18,7 @@ _The Crypto Stack features the cryptographic elements in Blockchain Commons' sta
 
 ## The <font color="#888888">CKM</font> Layer
 
-<a href="/crypto-stack/"><img src="https://developer.blockchaincommons.com/assets/images/bc-stack-crypto.png" style="margin-left: 20px; float: right" width="25%"></a>{% include stack-oib.md %}
+<a href="/"><img src="https://developer.blockchaincommons.com/assets/images/bc-stack-crypto.png" style="margin-left: 20px; float: right" width="25%"></a>
 
 
 {% include stack-ckm.md %}
