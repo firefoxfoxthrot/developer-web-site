@@ -11,7 +11,9 @@ classes:
   - wide
 permalink: /
 sidebar:
-  nav: mainside
+  nav:
+    - mainside
+    - mainstacks
 ---
 
 _**Latest News:** Added [Achitectural Design Patterns & Auth Patterns](/architecture/patterns/auth) pages (5/8/24). Added [Envelope Executive Summary](/envelope/summary/) and [Feature List](/envelope/features/) pages (4/24/24)._
