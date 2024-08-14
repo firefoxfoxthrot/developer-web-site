@@ -3,7 +3,7 @@ cover: true
 header:
   overlay_color: "#000"
   overlay_filter: "0.25"
-  overlay_image: /assets/images/qr-background.jpg
+  overlay_image: /assets/images/dev-ux-background.jpg
   og_image: /assets/images/bc-card.jpg
 title: The UX Stack
 hide_description: false
@@ -14,6 +14,8 @@ sidebar:
   nav:
     - mainstacks
     - stack-ux
+redirect_from:
+  - ux
 ---
 
 <i>The UX Stack includes graphical and text encodings that further empower the Core Stack.</i>
