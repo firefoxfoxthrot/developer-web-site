@@ -67,7 +67,7 @@ _Blockchain Commons' Core Stack includes its two major user-facing innovations, 
 
 ## The Crypto Stack
 
-<a href="/crypto-stack/"><img src="https://developer.blockchaincommons.com/assets/images/bc-stack-crypto.png" style="float: right" width="20%"></a>
+<a href="/crypto-stack/"><img src="https://developer.blockchaincommons.com/assets/images/bc-stack-crypto.png" style="float: right; margin-left: 20px" width="25%"></a>
 
 _The Crypto Stack features the cryptographic elements in Blockchain Commons' stack, including seeds, sharding, and DKG systems._
 
