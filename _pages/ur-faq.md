@@ -11,7 +11,6 @@ permalink: /ur/faq/
 sidebar:
   nav:
     - ur
-    - urlayer
 toc: true
 toc_label: UR FAQ  
 ---
