@@ -13,7 +13,6 @@ permalink: /ur/vectors/seeds/
 sidebar:
   nav:
     - ur
-    - urlayer
 ---
 
 * [128 Bit Examples (Yinmn Blue)](#128-bit-examples-yinmn-blue)
