@@ -105,15 +105,15 @@ csr:
       url: /csr/architecture/
     - title: "Use Cases"
       url: /csr/use-cases
-    - title: "Return to CSR Layer"
-      url: /csr/overview/
+    - title: "Return to Core Stack"
+      url: /core-stack/
 dcbor:
   - title: dCBOR
     children:
     - title: "Intro to dCBOR"
       url: /dcbor/
-    - title: "Return to CBOR Layer"
-      url: /cbor/overview/
+    - title: "Return to Core Stack"
+      url: /core-stack/
 envelope:
   - title: Gordian Envelope
     children:
@@ -131,8 +131,8 @@ envelope:
       url: /envelope/use-cases/
     - title: "Use Cases Listing"
       url: /envelope/use-cases/summary/
-    - title: "Return to Envelope Layer"
-      url: /envelope/overview/
+    - title: "Return to Core Stack"
+      url: /core-stack/
 envelopereq:
   - title: "Request & Response"
     children:
