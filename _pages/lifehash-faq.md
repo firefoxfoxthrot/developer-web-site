@@ -11,7 +11,6 @@ permalink: /lifehash/faq/
 sidebar:
   nav:
     - lifehash
-    - seedlayer
 toc: true
 toc_label: Lifehash FAQ
 ---
