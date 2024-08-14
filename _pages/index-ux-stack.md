@@ -14,11 +14,11 @@ sidebar:
   nav: stack-ux
 ---
 
-<a href="/"><img src="https://developer.blockchaincommons.com/assets/images/bc-stack-ux.png" style="margin-left: 20px; float: right" width="25%"></a><i>The UX Stack includes graphical and text encodings that further empower the Core Stack.</i>
+<i>The UX Stack includes graphical and text encodings that further empower the Core Stack.</i>
 
 ## The <font color="#2df775">OIB</font> Layer
 
-{% include stack-oib.md %}
+<a href="/"><img src="https://developer.blockchaincommons.com/assets/images/bc-stack-ux.png" style="margin-left: 20px; float: right" width="25%"></a>{% include stack-oib.md %}
 
 ## The <font color="#c96055">UR</font> Layer
 
