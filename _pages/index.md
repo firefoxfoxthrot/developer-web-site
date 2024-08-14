@@ -37,7 +37,7 @@ at the repo for this website.
 
 ## The Core Stack
 
-<img src="https://developer.blockchaincommons.com/assets/images/bc-stack-core-0.png" style="float: right" width="20%">
+<img src="https://developer.blockchaincommons.com/assets/images/bc-stack-core-0.png" style="float: right; margin-left: 20px;" width="25%">
 
 _Blockchain Commons' Core Stack includes its two major user-facing innovations, Collaborative Seed Recovery (CSR) and Envelope, plus the binary encoding scheme that enables them both (dCBOR)._
 
