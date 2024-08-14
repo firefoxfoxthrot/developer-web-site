@@ -11,7 +11,7 @@ classes:
   - wide
 permalink: /bytewords/
 sidebar:
-  nav: urlayer
+  nav: bytewords
 ---
 
 ## Overview
