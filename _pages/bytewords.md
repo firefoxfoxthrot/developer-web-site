@@ -16,7 +16,7 @@ sidebar:
 
 ## Overview
 
-<a href="/ux-stack"><img src="/assets/images/bc-stack-ux-bytewords.png" width="25%" style="float: right"></a>
+<a href="/ux-stack"><img src="/assets/images/bc-stack-ux-bytewords.png" width="25%" style="float: right; margin-left: 20px;"></a>
 
 Bytewords is a method for encoding binary objects as a sequence of
 four-letter English words.
