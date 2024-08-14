@@ -13,7 +13,6 @@ permalink: /lifehash/
 sidebar:
   nav:
     - lifehash
-    - seedlayer
 ---
 
 ## Overview
