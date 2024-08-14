@@ -12,6 +12,8 @@ classes:
 permalink: /ckm/
 sidebar:
   nav: ckm
+redirect_from:
+  - /ckm/overview/
 ---
 
 ## Overview
