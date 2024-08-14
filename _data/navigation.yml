@@ -16,28 +16,14 @@ mainside:
       url: /
     - title: "Architecture"
       url: /architecture/
-  - title: Core Stack
+  - title: The Stacks
     children:
-    - title: "CSR Layer (Storage)"
-      url: /csr/overview/
-    - title: "Envelope Layer (Data)"
-      url: /envelope/overview/
-    - title: "CBOR Layer (Binary Encoding)"
-      url: /cbor/overview/
-  - title: UX Stack
-    children:
-    - title: "OIB Layer (Data Description)"
-      url: /oib/overview/
-    - title: "UR Layer (Text/QR Encoding)"
-      url: /ur/overview/
-  - title: Crypto Stack
-    children:
-    - title: "CKM Layer (Storage)"
-      url: /ckm/overview/
-    - title: "Sharding Layer (Shares)"
-      url: /sskr/overview/
-    - title: "Seed Layer (Secrets)"
-      url: /seed/overview/
+    - title: "Core Stack"
+      url: /core-stack/
+    - title: "Crypto Stack"
+      url: /crypto-stack/
+    - title: "UX Stack"
+      url: /ux-stack/
 architecture:
   - title: Gordian Architecture
     children:
