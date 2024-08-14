@@ -13,7 +13,6 @@ permalink: /lifehash/best-practices/
 sidebar:
   nav:
     - lifehash
-    - seedlayer
 ---
 
 LifeHashes can improve the security of digital data in conjunection
