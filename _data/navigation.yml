@@ -66,7 +66,7 @@ bytewords:
     - title: "Intro to Bytewords"
       url: /bytewords/
     - title: "Return to UX Stack"
-      url: https://developer.blockchaincommons.com/#the-ux-stack
+      url: /ux-stack/
 ckm:
   - title: CKM
     children:
@@ -174,7 +174,7 @@ lifehash:
     - title: "Use Cases"
       url: /lifehash/use-cases/
     - title: "Return to UX Stack"
-      url: https://developer.blockchaincommons.com/#the-ux-stack
+      url: /ux-stack/
 oib:
   - title: OIB
     children:
@@ -185,7 +185,7 @@ oib:
     - title: "Test Vectors"
       url: /oib/vectors/
     - title: "Return to UX Stack"
-      url: https://developer.blockchaincommons.com/#the-ux-stack
+      url: /ux-stack/
 sskr:
   - title: SSKR
     children:
@@ -219,5 +219,5 @@ ur:
     - title: "URs for SSKR"
       url: /ur/sskr/
     - title: "Return to UX Stack"
-      url: https://developer.blockchaincommons.com/#the-ux-stack
+      url: /ux-stack/
 
