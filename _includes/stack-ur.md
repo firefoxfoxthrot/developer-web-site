@@ -1,4 +1,4 @@
-<i>The UR layer encodes structured CBOR binary data into plain text strings. It's a method for sending plain-text strings or for efficiently encoding data into QRs. It's used by Envelopes, Animated QRs, and other higher level capabilities.</I><img src="https://developer.blockchaincommons.com/assets/images/bc-stack-ux-2.png" style="margin-left: 20px; float: right" width="25%">
+<i>The UR layer encodes structured CBOR binary data into plain text strings. It's a method for sending plain-text strings or for efficiently encoding data into QRs. It's used by Envelopes, Animated QRs, and other higher level capabilities.</I>
 
 * **Bytewords.** The foundation of URs are ByteWords, which are a set of 256 carefully chosen words which each translate a byte (from `0x00` to `0xff`) into a four-letter English word. A four-word checksum for data then improves resilience.
   * See our [Bytewords page](/bytewords/)
