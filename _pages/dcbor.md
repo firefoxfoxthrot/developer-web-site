@@ -16,6 +16,8 @@ sidebar:
 
 ## Overview
 
+<a href="/core-stack/"><img src="https://developer.blockchaincommons.com/assets/images/bc-stack-core-dcbor.png" style="float: right; margin-left: 20px;" width="25%"></a>
+
 dCBOR is deterministic CBOR, a profile for CBOR as specified in [RFC
 8949](https://www.rfc-editor.org/rfc/rfc8949.html#name-deterministically-encoded-c). dCBOR
 itself is specified in [an IETF
