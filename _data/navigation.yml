@@ -200,8 +200,8 @@ oib:
       url: /oib/best-practices/
     - title: "Test Vectors"
       url: /oib/vectors/
-    - title: "Return to Seed Layer"
-      url: /seed/overview/
+    - title: "Return to UX Stack"
+      url: https://developer.blockchaincommons.com/#the-ux-stack
 sskr:
   - title: SSKR
     children:
@@ -234,6 +234,6 @@ ur:
       url: /ur/psbts/
     - title: "URs for SSKR"
       url: /ur/sskr/
-    - title: "Return to UR Layer"
-      url: /ur/overview/
+    - title: "Return to UX Stack"
+      url: https://developer.blockchaincommons.com/#the-ux-stack
 
