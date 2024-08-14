@@ -13,7 +13,6 @@ permalink: /lifehash/use-cases/
 sidebar:
   nav:
     - lifehash
-    - seedlayer
 ---
 
 LifeHash provides a beautiful visual representation of any digital
