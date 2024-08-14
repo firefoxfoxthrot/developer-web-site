@@ -17,6 +17,8 @@ sidebar:
 
 ## Overview
 
+<a href="/ux-stack"><img src="/assets/images/bc-stack-ux-oib.png" width="25%" style="float: right; margin-left: 20px;"></a>
+
 The Object Identity Block (OIB) is a methodology for making a digital object
 immediately recognizable to users (or at least as recognizable as
 possible given the challenges of representing large digital numbers).
