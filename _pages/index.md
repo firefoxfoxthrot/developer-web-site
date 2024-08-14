@@ -57,9 +57,9 @@ _Blockchain Commons' Core Stack includes its two major user-facing innovations, 
 
 _The UX Stack includes graphical and text encodings that further empower the Core Stack._
 
-<img src="https://developer.blockchaincommons.com/assets/images/bc-stack-ux-0.png" style="margin-left: 20px; float: right" width="25%%">
-
 ### UX: <font color="#2df775">OIB</font> Layer
+
+<img src="https://developer.blockchaincommons.com/assets/images/bc-stack-ux-0.png" style="margin-left: 20px; float: right" width="25%%">
 
 {% include stack-oib.md %}
 
