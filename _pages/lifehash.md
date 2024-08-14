@@ -17,6 +17,8 @@ sidebar:
 
 ## Overview
 
+<a href="/ux-stack"><img src="/assets/images/bc-stack-ux-lifehash.png" width="25%" style="float: right; margin-left: 20px;"></a>
+
 _LifeHash is a method of hash visualization based on Conway's Game of
 Life that creates beautiful icons that are deterministic, yet distinct
 and unique given the input data. It is part of the [OIB](/oib/)._
