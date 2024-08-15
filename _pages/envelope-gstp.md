@@ -30,15 +30,15 @@ GSTP allows for the transmission of data where the sender needs to be verified a
 
 Among the main use cases for GSTP are:
 
-* Requesting services.
-* Transmitting sensitive data, even using insecure protocols.
-* Transmitting important data, even using unreliable protocols.
-* Storing sensitive data on a remote server ([CSR](/csr/) or [CKM](/ckm/)).
-* Recovering sensitive data from a remote server.
-* Automating systems where sensitive data is transmitted back and forth in multiple passes.
-* Automating systems requiring state, even when parties can't manage that state on their own.
+* Requesting services (e.g., requesting a pricing service).
+* Transmitting sensitive data, even using insecure protocols (e.g. storing data to an NFC tag).
+* Transmitting important data, even using unreliable protocols (e.g., sending data via Bluetooth).
+* Storing sensitive data on a remote server (e.g., storing a share with [CSR](/csr/)).
+* Recovering sensitive data from a remote server (e.g., recovering a share with [CSR](/csr/)).
+* Automating systems where sensitive data is transmitted back and forth in multiple passes (e.g., creating a multisig).
+* Automating systems requiring state, even when parties can't manage that state on their own (e.g., communicating with load-balancing servers).
 
-GSTP was originally built for digital-asset wallets, to allow the storage and recovery of shares from [Gordian Depos](https://github.com/BlockchainCommons/bc-depo-rust). It might also be used for numerous other digital-asset use cases such as requesting pricing information, requesting keys with specific derivations, sharing private metadata, and building multisigs.
+GSTP was originally built for digital-asset wallets, to allow the storage and recovery of shares from [Gordian Despositories](https://github.com/BlockchainCommons/bc-depo-rust). It might also be used for numerous other digital-asset use cases such as requesting pricing information, requesting keys with specific derivations, sharing private metadata, and building multisigs.
 
 ## How Does GSTP Work?
 
@@ -90,6 +90,6 @@ _See the [Gordian Envelope playlist](https://www.youtube.com/playlist?list=PLCkr
 
 **Developer Reference Apps:**
 
-* [**Gordian Depo**](https://github.com/BlockchainCommons/bc-depo-rust)
-* [**Gordian Depo API**](https://github.com/BlockchainCommons/bc-depo-api-rust)
+* [**Gordian Depository**](https://github.com/BlockchainCommons/bc-depo-rust)
+* [**Gordian Depository API**](https://github.com/BlockchainCommons/bc-depo-api-rust)
 * [**bc-envelope-cli-rust**](https://github.com/BlockchainCommons/bc-envelope-cli-rust)
