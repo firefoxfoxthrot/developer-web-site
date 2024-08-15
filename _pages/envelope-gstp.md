@@ -26,6 +26,8 @@ This means:
 
 GSTP allows for the transmission of data where the sender needs to be verified and/or the data needs to be protected.
 
+![](/assets/images/gstp-overview.jpeg)
+
 ## Why is GSTP Important?
 
 Among the main use cases for GSTP are:
