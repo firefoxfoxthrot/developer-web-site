@@ -91,5 +91,5 @@ _See the [Gordian Envelope playlist](https://www.youtube.com/playlist?list=PLCkr
 **Developer Reference Apps:**
 
 * [**Gordian Depo**](https://github.com/BlockchainCommons/bc-depo-rust)
-* [**Gordian Depo API](https://github.com/BlockchainCommons/bc-depo-rust-api)
+* [**Gordian Depo API**](https://github.com/BlockchainCommons/bc-depo-api-rust)
 * [**bc-envelope-cli-rust**](https://github.com/BlockchainCommons/bc-envelope-cli-rust)
